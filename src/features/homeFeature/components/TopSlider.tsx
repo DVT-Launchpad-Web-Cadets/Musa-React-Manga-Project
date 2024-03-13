@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import topManga from "../../../mockData/topManga.json";
 import { MangaSummary } from "../models/manga";
 import TopSliderDetails from "./TopSliderDetails";
@@ -9,18 +8,19 @@ const TopSlider = () => {
   }
 
   const topSliderManga: MangaSummary[] = topManga["7"] as MangaSummary[];
-  console.log("top", topSliderManga);
 
   // box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  // shadow-[0]
   return (
-    <div className="w-full h-[46%] carousel carousel-center relative">
+    <div className="w-full h-[46%] carousel carousel-center relative bg-primary-text-color">
       {topSliderManga ? (
         <>
           {topSliderManga.slice(0, 10).map((manga) => (
             <div className="carousel-item w-full">
+              <div className="absolute shadow-3xl w-full h-full z-20"></div>
               <img
                 src={`https://meo3.comick.pictures/${manga.md_covers[0].b2key}`}
-                className="w-full object-cover object-top brightness-[.45]"
+                className="w-full object-cover object-top"
                 alt={manga.title}
               />
               <TopSliderDetails

@@ -12,9 +12,9 @@ const TopSliderDetails = ({
 }) => {
   const formattedFollowerCount = formatFollowers(followerCount);
   return (
-    <div className="absolute px-4 py-12  bottom-0 w-full flex flex-col gap-1">
-      <p className="overflow-ellipses text-xs">{artist}</p>
-      <p className="overflow-ellipses text-2xl font-semibold text-nowrap truncate">
+    <div className="absolute px-4 py-12  bottom-0 w-full flex flex-col gap-1 z-30">
+      <p className="text-xs truncate">{artist}</p>
+      <p className="text-2xl font-semibold text-nowrap truncate">
         {title}
       </p>
       <span className="flex items-center gap-1">
