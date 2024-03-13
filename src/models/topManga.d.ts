@@ -1,4 +1,4 @@
-export interface Root {
+export interface TopManga {
   "7": MangaSummary[];
   "30": MangaSummary[];
   "90": MangaSummary[];
@@ -19,3 +19,4 @@ export interface MdCover {
   h: number;
   b2key: string;
 }
+

@@ -1,5 +1,5 @@
 import { FaHeart } from "react-icons/fa";
-import { MangaSummary } from "../models/manga";
+import { MangaSummary } from "../../../models/topManga";
 import formatFollowers from "../../utilities/utility";
 
 const MangaCard = ({ cardInfo }: { cardInfo: MangaSummary }) => {

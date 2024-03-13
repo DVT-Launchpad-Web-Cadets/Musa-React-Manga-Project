@@ -14,7 +14,8 @@ export default {
         rubik: ['"Rubik"', ...defaultTheme.fontFamily.sans],
       },
       boxShadow: {
-        "3xl": "rgba(0, 0, 0, 0.90) 1px 1px 90px 60px inset;",
+        slider: "rgba(0, 0, 0, 0.90) 1px 1px 90px 60px inset;",
+        viewer: "0 -200px 50px #160b1a",
       },
     },
   },

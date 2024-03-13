@@ -1,5 +1,5 @@
 import topManga from "../../../mockData/topManga.json";
-import { MangaSummary } from "../models/manga";
+import { MangaSummary } from "../../../models/topManga";
 import MangaCard from "./MangaCard";
 
 const CardsCarousel = () => {

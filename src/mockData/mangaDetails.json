@@ -1,0 +1,543 @@
+{
+  "firstChap": {
+    "chap": "1",
+    "hid": "_TNsx8Wh",
+    "lang": "en",
+    "group_name": null,
+    "vol": null
+  },
+  "comic": {
+    "id": 76885,
+    "hid": "rAOgI71x",
+    "title": "The Amazing Village Creator: Slow Living with the Village Building Cheat Skill",
+    "country": "jp",
+    "status": 1,
+    "links": {
+      "al": "141343",
+      "ap": "the-amazing-village-creator-slow-living-with-the-village-building-cheat-skill",
+      "bw": "series/327220",
+      "kt": "bannou-murazukuri-cheat-de-otegaru-slow-life-mura-desu-ga-nani-ka",
+      "mu": "tsjn5lj",
+      "nu": "bannou-murazukuri-cheat-de-otegaru-slow-life-mura-desu-ga-nani-ka",
+      "amz": "https://www.amazon.co.jp/dp/B0B5H43YG5",
+      "cdj": "https://www.cdjapan.co.jp/searchuni?fq.category=UD%3A14&q=%E4%B8%87%E8%83%BD%E3%80%8C%E6%9D%91%E3%81%A5%E3%81%8F%E3%82%8A%E3%80%8D%E3%83%81%E3%83%BC%E3%83%88%E3%81%A7%E3%81%8A%E6%89%8B%E8%BB%BD%E3%82%B9%E3%83%AD%E3%83%BC%E3%83%A9%E3%82%A4%E3%83%95%E3%80%80%EF%BD%9E%E6%9D%91%E3%81%A7%E3%81%99%E3%81%8C%E4%BD%95%E3%81%8B%EF%BC%9F%EF%BD%9E&order=reldesc&opt.exclude_prx=on",
+      "ebj": "https://ebookjapan.yahoo.co.jp/books/665005/",
+      "mal": "154394",
+      "raw": "https://magazine.jp.square-enix.com/mangaup/original/muradukuri/",
+      "engtl": "https://global.manga-up.com/manga/228"
+    },
+    "last_chapter": 32,
+    "chapter_count": 48,
+    "demographic": 1,
+    "hentai": false,
+    "user_follow_count": 5444,
+    "follow_rank": 1042,
+    "comment_count": 430,
+    "follow_count": 0,
+    "desc": "Presented with the strange Gift of Village Building, Luke, the son of a lord, is cast out of the domain in shame. He arrives in a barren land with plans to develop it as well as he can, and to live a simple, quiet life...when suddenly his mysterious Gift activates! Enjoy Luke’s amazing, slow life, and watch as his village grows, his Gift levels up, and his village-building capabilities transform in this new comedic series!",
+    "parsed": "<p>Presented with the strange Gift of Village Building, Luke, the son of a lord, is cast out of the domain in shame. He arrives in a barren land with plans to develop it as well as he can, and to live a simple, quiet life...when suddenly his mysterious Gift activates! Enjoy Luke’s amazing, slow life, and watch as his village grows, his Gift levels up, and his village-building capabilities transform in this new comedic series!</p>\n",
+    "slug": "the-amazing-village-creator-slow-living-with-the-village-building-cheat-skill",
+    "mismatch": null,
+    "year": 2021,
+    "bayesian_rating": "8.22",
+    "rating_count": 169,
+    "content_rating": "suggestive",
+    "translation_completed": false,
+    "chapter_numbers_reset_on_new_volume_manual": false,
+    "final_chapter": null,
+    "final_volume": null,
+    "noindex": true,
+    "adsense": true,
+    "recommendations": [
+      {
+        "up": 16,
+        "down": 0,
+        "total": 16,
+        "relates": {
+          "title": "Okiraku Ryoushu no Tanoshii Ryouchi Bouei",
+          "slug": "okiraku-ryoushu-no-tanoshii-ryouchi-bouei",
+          "hid": "QgUcS9Uc",
+          "md_covers": [
+            {
+              "vol": "4",
+              "w": 1687,
+              "h": 2400,
+              "b2key": "MXrkKN.jpg"
+            }
+          ]
+        }
+      }
+    ],
+    "relate_from": [],
+    "md_titles": [
+      {
+        "title": "万能「村づくり」チートでお手軽スローライフ　～村ですが何か？～",
+        "lang": "ja"
+      },
+      {
+        "title": "Bannou \"Murazukuri\" Cheat de Otegaru Slow Life ~Mura desu ga Nani ka?~",
+        "lang": "ja-ro"
+      },
+      {
+        "title": "Amazing Muradukuri",
+        "lang": "en"
+      },
+      {
+        "title": "Amazing Village Building",
+        "lang": "en"
+      },
+      {
+        "title": "Slow Living With the Village Building Cheat Skill",
+        "lang": "en"
+      },
+      {
+        "title": "The Amazing Village Creator",
+        "lang": "en"
+      },
+      {
+        "title": "The Amazing Village Creator: Slow Living With the Village Building Cheat Skill",
+        "lang": "en"
+      }
+    ],
+    "md_comic_md_genres": [
+      {
+        "md_genres": {
+          "name": "Action",
+          "type": "main",
+          "slug": "action",
+          "group": "Genre"
+        }
+      },
+      {
+        "md_genres": {
+          "name": "Adventure",
+          "type": null,
+          "slug": "adventure",
+          "group": "Genre"
+        }
+      },
+      {
+        "md_genres": {
+          "name": "Comedy",
+          "type": "main",
+          "slug": "comedy",
+          "group": "Genre"
+        }
+      },
+      {
+        "md_genres": {
+          "name": "Ecchi",
+          "type": "main",
+          "slug": "ecchi",
+          "group": "Content"
+        }
+      },
+      {
+        "md_genres": {
+          "name": "Fantasy",
+          "type": null,
+          "slug": "fantasy",
+          "group": "Genre"
+        }
+      },
+      {
+        "md_genres": {
+          "name": "Harem",
+          "type": "main",
+          "slug": "harem",
+          "group": "Theme"
+        }
+      },
+      {
+        "md_genres": {
+          "name": "Romance",
+          "type": "main",
+          "slug": "romance",
+          "group": "Genre"
+        }
+      },
+      {
+        "md_genres": {
+          "name": "Isekai",
+          "type": null,
+          "slug": "isekai",
+          "group": "Genre"
+        }
+      },
+      {
+        "md_genres": {
+          "name": "Adaptation",
+          "type": null,
+          "slug": "adaptation",
+          "group": "Format"
+        }
+      }
+    ],
+    "md_covers": [
+      {
+        "vol": "4",
+        "w": 1350,
+        "h": 1920,
+        "b2key": "nRY06r.jpg"
+      }
+    ],
+    "mu_comics": {
+      "mu_comic_publishers": [
+        {
+          "mu_publishers": {
+            "title": "Square Enix",
+            "slug": "square-enix"
+          }
+        }
+      ],
+      "licensed_in_english": null,
+      "mu_comic_categories": [
+        {
+          "mu_categories": {
+            "title": "Shotacon",
+            "slug": "shotacon"
+          },
+          "positive_vote": 1,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Young Protagonist",
+            "slug": "young-protagonist"
+          },
+          "positive_vote": 1,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Unique Ability/ies",
+            "slug": "unique-ability-ies"
+          },
+          "positive_vote": 1,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Older Female Younger Male",
+            "slug": "older-female-younger-male"
+          },
+          "positive_vote": 1,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Perverted Female Lead",
+            "slug": "perverted-female-lead"
+          },
+          "positive_vote": 1,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Male Protagonist",
+            "slug": "male-protagonist"
+          },
+          "positive_vote": 1,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Reincarnation",
+            "slug": "reincarnation"
+          },
+          "positive_vote": 1,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Strong Female Side Character/s",
+            "slug": "strong-female-side-character-s"
+          },
+          "positive_vote": 1,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Fantasy World",
+            "slug": "fantasy-world"
+          },
+          "positive_vote": 1,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Age Gap",
+            "slug": "age-gap"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Maid/s",
+            "slug": "maid-s"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Strong Father",
+            "slug": "strong-father"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Bandit/s",
+            "slug": "bandit-s"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Tough Girl",
+            "slug": "tough-girl"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Mind Reading",
+            "slug": "mind-reading"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Strong Family",
+            "slug": "strong-family"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Thief/ves",
+            "slug": "thief-ves"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Refugee/s",
+            "slug": "refugee-s"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Kind Protagonist",
+            "slug": "kind-protagonist"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "War/s",
+            "slug": "war-s"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "War Between Countries",
+            "slug": "war-between-countries"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Outcast/s",
+            "slug": "outcast-s"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Shota Protagonist",
+            "slug": "shota-protagonist"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Villager/s",
+            "slug": "villager-s"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Master-Servant Relationship",
+            "slug": "master-servant-relationship"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Weak to Strong",
+            "slug": "weak-to-strong"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Human Trafficking",
+            "slug": "human-trafficking"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Isekai",
+            "slug": "isekai"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Corruption",
+            "slug": "corruption"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Kidnapping/s",
+            "slug": "kidnapping-s"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Forced into Marriage",
+            "slug": "forced-into-marriage"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Pedophile",
+            "slug": "pedophile"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Political Marriage",
+            "slug": "political-marriage"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Discrimination",
+            "slug": "discrimination"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Social Class Discrimination",
+            "slug": "social-class-discrimination"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Pedophilia",
+            "slug": "pedophilia"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Child Bride",
+            "slug": "child-bride"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Village",
+            "slug": "village"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Slavery",
+            "slug": "slavery"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Historical Fantasy",
+            "slug": "historical-fantasy"
+          },
+          "positive_vote": 0,
+          "negative_vote": 1
+        }
+      ]
+    },
+    "iso639_1": "ja",
+    "lang_name": "Japanese",
+    "lang_native": "日本語 (にほんご／にっぽんご)"
+  },
+  "artists": [
+    {
+      "name": "Kaidouj1",
+      "slug": "kaidouj1"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Isegawa Yasutaka",
+      "slug": "isegawa-yasutaka"
+    },
+    {
+      "name": "Kuzu Shichio",
+      "slug": "kuzu-shichio"
+    }
+  ],
+  "langList": ["en", "pt-br", "tr"],
+  "recommendable": true,
+  "demographic": "Shounen",
+  "englishLink": null,
+  "matureContent": true,
+  "checkVol2Chap1": false
+}
