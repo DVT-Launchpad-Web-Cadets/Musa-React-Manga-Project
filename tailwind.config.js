@@ -8,6 +8,9 @@ export default {
       "primary-text-color": "whitesmoke",
       "text-botton-color": "#606abb",
       "card-follower-count": "#c36034",
+      "icon-color": "yellow",
+      "chip-color": "#2b161d",
+      "gradient-color": "#28102b",
     },
     extend: {
       fontFamily: {
@@ -15,7 +18,6 @@ export default {
       },
       boxShadow: {
         slider: "rgba(0, 0, 0, 0.90) 1px 1px 90px 60px inset;",
-        viewer: "0 -200px 50px #160b1a",
       },
     },
   },

@@ -12,7 +12,7 @@ export interface MangaDetails {
 }
 
 export interface FirstChap {
-  chap: string;
+  chap: string | null;
   hid: string;
   lang: string;
   group_name: unknown[] | null;
