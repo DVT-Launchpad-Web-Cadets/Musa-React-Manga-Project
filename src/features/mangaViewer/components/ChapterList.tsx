@@ -1,4 +1,3 @@
-import { Chapters } from "../../../models/chapters";
 import chapters from "../../../mockData/chapters.json";
 import ChapterCard from "./ChapterCard";
 
@@ -10,7 +9,6 @@ const ChapterList = () => {
       ))}
     </div>
   );
-
 };
 
 export default ChapterList;

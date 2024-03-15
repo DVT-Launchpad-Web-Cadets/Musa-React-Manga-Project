@@ -1,5 +1,5 @@
 import { FaHeart } from "react-icons/fa";
-import formatFollowers from "../../utilities/utility";
+import formatFollowers from "../../../utils/utils";
 import { Recommendation } from "../../../models/mangaDetails";
 
 const SimilarManga = ({ cardInfo }: { cardInfo: Recommendation }) => {

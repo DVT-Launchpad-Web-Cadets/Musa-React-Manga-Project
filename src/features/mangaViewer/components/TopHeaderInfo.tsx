@@ -1,6 +1,6 @@
-import { FaCalendar, FaHeart, FaStar } from "react-icons/fa";
+import { FaFlag, FaHeart, FaStar } from "react-icons/fa";
 import { MangaDetails } from "../../../models/mangaDetails";
-import formatFollowers from "../../utilities/utility";
+import formatFollowers, { getMangaStatus } from "../../../utils/utils";
 
 const TopHeaderInfo = ({ mangaInfo }: { mangaInfo: MangaDetails }) => {
   return (
@@ -10,8 +10,8 @@ const TopHeaderInfo = ({ mangaInfo }: { mangaInfo: MangaDetails }) => {
       </h1>
       <p className="text-sm font-thin">by {mangaInfo.authors[0].name}</p>
       <span className="flex text-sm font-light items-center gap-4">
-        <FaCalendar className="text-icon-color " />
-        <p>{mangaInfo.comic.year}</p>
+        <FaFlag className="text-icon-color " />
+        <p>{getMangaStatus(mangaInfo.comic.status)}</p>
       </span>
       <span className="flex text-xl font-light items-center gap-4">
         <span className="flex gap-2 items-center">

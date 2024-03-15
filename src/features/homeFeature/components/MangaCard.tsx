@@ -1,6 +1,6 @@
 import { FaHeart } from "react-icons/fa";
 import { MangaSummary } from "../../../models/topManga";
-import formatFollowers from "../../utilities/utility";
+import formatFollowers from "../../../utils/utils";
 
 const MangaCard = ({ cardInfo }: { cardInfo: MangaSummary }) => {
   const formattedFollowerCount = formatFollowers(55000);

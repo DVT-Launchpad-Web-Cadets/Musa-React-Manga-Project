@@ -1,5 +1,5 @@
 import { MangaDetails } from "../../../models/mangaDetails";
-import GenreChip from "./GenreChip";
+import Chip from "../../../sharedComponents/Chip";
 
 const GenreList = ({ mangaDetails }: { mangaDetails: MangaDetails }) => {
   return (
@@ -7,7 +7,7 @@ const GenreList = ({ mangaDetails }: { mangaDetails: MangaDetails }) => {
       <h1>Genres</h1>
       <div className="flex gap-6">
         {mangaDetails.comic.md_comic_md_genres.slice(0, 3).map((genre) => (
-          <GenreChip genre={genre.md_genres.name} />
+          <Chip genre={genre.md_genres.name} />
         ))}
       </div>
     </div>

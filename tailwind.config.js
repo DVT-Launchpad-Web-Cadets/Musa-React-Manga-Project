@@ -4,6 +4,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
+      white: "white",
       "primary-color": "#160b1a",
       "primary-text-color": "whitesmoke",
       "text-botton-color": "#606abb",
@@ -11,6 +12,10 @@ export default {
       "icon-color": "yellow",
       "chip-color": "#2b161d",
       "gradient-color": "#28102b",
+      "button-background": "rgba(255, 255, 255, 0.6)",
+      "header-background": "rgba(0, 0, 0, 0.6)",
+      "search-color": "#342d37",
+      "search-header-color": "#120815",
     },
     extend: {
       fontFamily: {
