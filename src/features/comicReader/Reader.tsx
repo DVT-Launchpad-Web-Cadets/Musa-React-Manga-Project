@@ -1,6 +1,6 @@
 import comic from "../../mockData/chapter.json";
 import { Comic } from "../../models/chapterComic";
-import BackButton from "../../sharedComponents/backButton";
+import BackButton from "../../sharedComponents/BackButton";
 
 const Reader = () => {
   const reader = comic as Comic;

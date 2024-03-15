@@ -1,5 +1,5 @@
+import BackButton from "../../../sharedComponents/BackButton";
 import { MangaDetails } from "../../../models/mangaDetails";
-import BackButton from "../../../sharedComponents/backButton";
 import TopHeaderInfo from "./TopHeaderInfo";
 
 const TopHeader = ({ mangaInfo }: { mangaInfo: MangaDetails }) => {
@@ -9,7 +9,7 @@ const TopHeader = ({ mangaInfo }: { mangaInfo: MangaDetails }) => {
       <div className="flex gap-4 w-full ">
         <div className="w-auto flex-1 object-cover object-top">
           <img
-            src={`https://meo3.comick.pictures/${mangaInfo.comic.md_covers[0].b2key}`}
+            src={`https://meo3.comick.pictures/${mangaInfo?.comic.md_covers[0]?.b2key}`}
             alt=""
             className=" w-full h-full object-cover rounded-2xl shadow-2xl"
           />

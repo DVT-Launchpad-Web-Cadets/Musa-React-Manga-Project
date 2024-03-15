@@ -8,10 +8,12 @@ const ChapterCard = ({ chapter }: { chapter: Chapter }) => {
         <FaBook />
       </div>
       <div className="w-full max-w-36 flex flex-col gap-1">
-        <h1 className="truncate">{chapter.title}</h1>
-        <p className="text-sm font-light">Chapter {chapter.chap}</p>
+        <h1 className="truncate">
+          {chapter.title ? chapter.title : "Unknown Title"}
+        </h1>
+        <p className="text-sm font-light">Chapter {chapter?.chap}</p>
       </div>
-      <p className="text-sm">{chapter.created_at.slice(0, 10)}</p>
+      <p className="text-sm">{chapter?.created_at?.slice(0, 10)}</p>
     </div>
   );
 };

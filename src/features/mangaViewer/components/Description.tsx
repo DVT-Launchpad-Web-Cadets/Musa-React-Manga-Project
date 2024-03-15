@@ -5,7 +5,7 @@ const Description = ({ mangaDetails }: { mangaDetails: MangaDetails }) => {
     <div className="flex flex-col gap-3">
       <h1>Description</h1>
       <div className="flex gap-6 text-sm font-thin ">
-        {mangaDetails.comic.desc}
+        {mangaDetails?.comic?.desc}
       </div>
     </div>
   );

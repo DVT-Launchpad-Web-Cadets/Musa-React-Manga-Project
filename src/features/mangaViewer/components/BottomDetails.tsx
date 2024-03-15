@@ -18,7 +18,7 @@ const BottomDetails = ({ mangaInfo }: { mangaInfo: MangaDetails }) => {
           onClick={() => setSelectedTab(1)}
         >
           <p className="text-sm h-20 text-nowrap">
-            Chapters ({mangaInfo.comic.last_chapter})
+            Chapters ({mangaInfo?.comic?.last_chapter})
           </p>
         </a>
         <a
@@ -39,7 +39,7 @@ const BottomDetails = ({ mangaInfo }: { mangaInfo: MangaDetails }) => {
       {selectedTab === 1 && <ChaptersTab />}
       {selectedTab === 2 && <DetailsTab mangaDetails={mangaInfo} />}
       {selectedTab === 3 && (
-        <SimilarTab recommendations={mangaInfo.comic.recommendations} />
+        <SimilarTab recommendations={mangaInfo?.comic?.recommendations} />
       )}
     </div>
   );

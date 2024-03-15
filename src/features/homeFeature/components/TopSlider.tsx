@@ -1,14 +1,7 @@
-import topManga from "../../../mockData/topManga.json";
 import { MangaSummary } from "../../../models/topManga";
 import TopSliderDetails from "./TopSliderDetails";
 
-const TopSlider = () => {
-  if (!topManga?.["7"]) {
-    return <h1> No Manga to display</h1>;
-  }
-
-  const topSliderManga: MangaSummary[] = topManga["7"] as MangaSummary[];
-
+const TopSlider = ({ topSliderManga }: { topSliderManga: MangaSummary[] }) => {
   return (
     <div className="w-full h-[46%] carousel carousel-center relative bg-primary-text-color">
       {topSliderManga ? (
@@ -18,7 +11,7 @@ const TopSlider = () => {
               <div className="absolute shadow-slider w-full h-full z-20"></div>
               <img
                 src={`https://meo3.comick.pictures/${manga.md_covers[0].b2key}`}
-                className="w-full object-cover object-top"
+                className="w-full object-cover object-top brightness-50"
                 alt={manga.title}
               />
               <TopSliderDetails

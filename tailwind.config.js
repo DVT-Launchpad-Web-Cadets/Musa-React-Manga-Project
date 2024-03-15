@@ -6,6 +6,7 @@ export default {
     colors: {
       white: "white",
       "primary-color": "#160b1a",
+      "secondary-color": "#5c4ef2",
       "primary-text-color": "whitesmoke",
       "text-botton-color": "#606abb",
       "card-follower-count": "#c36034",
@@ -22,7 +23,7 @@ export default {
         rubik: ['"Rubik"', ...defaultTheme.fontFamily.sans],
       },
       boxShadow: {
-        slider: "rgba(0, 0, 0, 0.90) 1px 1px 90px 60px inset;",
+        slider: "rgba(0, 0, 0, 0.45) 0px -200px 36px -28px inset",
       },
     },
   },

@@ -7,12 +7,16 @@ const SimilarManga = ({ cardInfo }: { cardInfo: Recommendation }) => {
   return (
     <div className="carousel-item flex flex-col h-full w-40">
       <img
-        src={`https://meo3.comick.pictures/${cardInfo.relates.md_covers[0].b2key}`}
+        src={`https://meo3.comick.pictures/${cardInfo?.relates.md_covers[0]?.b2key}`}
         className="w-full h-5/6 object-cover object-top rounded-2xl"
-        alt={cardInfo.relates.title}
+        alt={cardInfo?.relates?.title}
       />
       <div className="py-1">
-        <p className="truncate">{cardInfo.relates.title}</p>
+        <p className="truncate">
+          {cardInfo.relates && cardInfo.relates.title
+            ? cardInfo.relates.title
+            : "Unknown Title"}
+        </p>
         <span className="text-card-follower-count flex gap-1 items-center">
           <FaHeart />
           <p className="font-light text-sm">{formattedFollowerCount}</p>
