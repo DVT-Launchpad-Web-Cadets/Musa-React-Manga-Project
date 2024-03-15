@@ -7,12 +7,14 @@ const MangaCard = ({ cardInfo }: { cardInfo: MangaSummary }) => {
   return (
     <div className="carousel-item flex flex-col h-full w-40">
       <img
-        src={`https://meo3.comick.pictures/${cardInfo.md_covers[0].b2key}`}
+        src={`https://meo3.comick.pictures/${cardInfo?.md_covers[0]?.b2key}`}
         className="w-full h-5/6 object-cover object-top rounded-2xl"
-        alt={cardInfo.title}
+        alt={cardInfo?.title}
       />
       <div className="py-1">
-        <p className="truncate">{cardInfo.title}</p>
+        <p className="truncate">
+          {cardInfo.title ? cardInfo.title : "Unknown Title"}
+        </p>
         <span className="text-card-follower-count flex gap-1 items-center">
           <FaHeart />
           <p className="font-light text-sm">{formattedFollowerCount}</p>
