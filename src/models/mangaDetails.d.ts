@@ -48,7 +48,7 @@ export interface Comic {
   final_volume: any;
   noindex: boolean;
   adsense: boolean;
-  recommendations: any[];
+  recommendations: Recommendation[];
   relate_from: any[];
   md_titles: MdTitle[];
   md_comic_md_genres: MdComicMdGenre[];
@@ -94,4 +94,18 @@ export interface Artist {
 export interface Author {
   name: string;
   slug: string;
+}
+
+export interface Recommendation {
+  up: number;
+  down: number;
+  total: number;
+  relates: Relates;
+}
+
+export interface Relates {
+  title: string;
+  slug: string;
+  hid: string;
+  md_covers: MdCover[];
 }

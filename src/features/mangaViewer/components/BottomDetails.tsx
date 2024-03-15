@@ -9,7 +9,7 @@ const BottomDetails = ({ mangaInfo }: { mangaInfo: MangaDetails }) => {
   return (
     <div
       className="
-     w-full flex-1"
+     w-full h-[55%] grow-0 flex flex-col"
     >
       <div role="tablist" className="tabs tabs-bordered flex">
         <a
@@ -17,7 +17,7 @@ const BottomDetails = ({ mangaInfo }: { mangaInfo: MangaDetails }) => {
           className={`tab ${selectedTab === 1 ? "tab-active" : ""} flex-1`}
           onClick={() => setSelectedTab(1)}
         >
-          <p className="text-sm h-20">
+          <p className="text-sm h-20 text-nowrap">
             Chapters ({mangaInfo.comic.last_chapter})
           </p>
         </a>
@@ -26,19 +26,21 @@ const BottomDetails = ({ mangaInfo }: { mangaInfo: MangaDetails }) => {
           className={`tab ${selectedTab === 2 ? "tab-active" : ""} flex-1`}
           onClick={() => setSelectedTab(2)}
         >
-          <p className="text-sm h-20">Details</p>
+          <p className="text-sm h-20 text-nowrap">Details</p>
         </a>
         <a
           role="tab"
           className={`tab ${selectedTab === 3 ? "tab-active" : ""} flex-1`}
           onClick={() => setSelectedTab(3)}
         >
-          <p className="text-sm h-20">Similar</p>
+          <p className="text-sm h-20 text-nowrap">Similar</p>
         </a>
       </div>
       {selectedTab === 1 && <ChaptersTab />}
       {selectedTab === 2 && <DetailsTab mangaDetails={mangaInfo} />}
-      {selectedTab === 3 && <SimilarTab />}
+      {selectedTab === 3 && (
+        <SimilarTab recommendations={mangaInfo.comic.recommendations} />
+      )}
     </div>
   );
 };
