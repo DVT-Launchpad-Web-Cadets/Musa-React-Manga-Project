@@ -9,11 +9,12 @@ const Reader = () => {
       <div className="fixed w-full h-14 flex pl-4 items-center top-0 left-0 bg-header-background">
         <BackButton />
       </div>
-      {reader.chapter.md_images.map((comic) => (
+      {reader?.chapter?.md_images?.map((comic) => (
         <div className="h-full">
           <img
-            src={`https://meo3.comick.pictures/${comic.b2key}`}
+            src={`https://meo3.comick.pictures/${comic?.b2key}`}
             className="w-full"
+            alt="missing page"
           />
         </div>
       ))}
