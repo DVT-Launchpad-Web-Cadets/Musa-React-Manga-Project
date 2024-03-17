@@ -12,7 +12,7 @@ const SimilarManga = ({ cardInfo }: { cardInfo: Recommendation }) => {
         alt={cardInfo?.relates?.title}
       />
       <div className="py-1">
-        <p className="truncate">
+        <p className="line-clamp-1 hover:line-clamp-none">
           {cardInfo.relates && cardInfo.relates.title
             ? cardInfo.relates.title
             : "Unknown Title"}

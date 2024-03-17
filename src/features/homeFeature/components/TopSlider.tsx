@@ -1,5 +1,6 @@
 import { MangaSummary } from "../../../models/topManga";
 import TopSliderDetails from "./TopSliderDetails";
+import TopSliderItem from "./TopSliderItem";
 
 const TopSlider = ({ topSliderManga }: { topSliderManga: MangaSummary[] }) => {
   return (
@@ -7,19 +8,7 @@ const TopSlider = ({ topSliderManga }: { topSliderManga: MangaSummary[] }) => {
       {topSliderManga ? (
         <>
           {topSliderManga?.slice(0, 10).map((manga) => (
-            <div className="carousel-item w-full">
-              <div className="absolute shadow-slider w-full h-full z-20"></div>
-              <img
-                src={`https://meo3.comick.pictures/${manga?.md_covers[0]?.b2key}`}
-                className="w-full object-cover object-top brightness-50"
-                alt={manga?.title}
-              />
-              <TopSliderDetails
-                title={manga?.title}
-                followerCount={55500}
-                artist="Naoya Tajimi"
-              />
-            </div>
+            <TopSliderItem mangaInfo={manga} />
           ))}
         </>
       ) : (
