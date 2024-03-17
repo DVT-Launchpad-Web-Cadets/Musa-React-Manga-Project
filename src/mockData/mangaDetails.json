@@ -1,0 +1,1695 @@
+{
+  "firstChap": {
+    "chap": null,
+    "hid": "9znVx",
+    "lang": "en",
+    "group_name": [
+      "Official"
+    ],
+    "vol": "0"
+  },
+  "comic": {
+    "id": 23880,
+    "hid": "TA22I5O7",
+    "title": "Jujutsu Kaisen",
+    "country": "jp",
+    "status": 1,
+    "links": {
+      "al": "101517",
+      "ap": "jujutsu-kaisen",
+      "bw": "series/163351",
+      "kt": "40815",
+      "mu": "147557",
+      "amz": "https://www.amazon.co.jp/dp/B07H3TPZR9",
+      "cdj": "https://www.cdjapan.co.jp/product/NEOBK-2655626",
+      "ebj": "https://ebookjapan.yahoo.co.jp/books/464912/",
+      "mal": "113138",
+      "raw": "https://shonenjumpplus.com/episode/10834108156650001170",
+      "engtl": "https://mangaplus.shueisha.co.jp/titles/100034"
+    },
+    "last_chapter": 253,
+    "chapter_count": 1730,
+    "demographic": 1,
+    "hentai": false,
+    "user_follow_count": 60737,
+    "follow_rank": 3,
+    "comment_count": 25138,
+    "follow_count": 43966,
+    "desc": "Yuuji is a genius at track and field. But he has zero interest running around in circles, he's happy as a clam in the Occult Research Club. Although he's only in the club for kicks, things get serious when a real spirit shows up at school! Life's about to get really strange in Sugisawa Town #3 High School!",
+    "parsed": "<p>Yuuji is a genius at track and field. But he has zero interest running around in circles, he's happy as a clam in the Occult Research Club. Although he's only in the club for kicks, things get serious when a real spirit shows up at school! Life's about to get really strange in Sugisawa Town #3 High School!</p>\n",
+    "slug": "00-jujutsu-kaisen",
+    "mismatch": null,
+    "year": 2018,
+    "bayesian_rating": "9.03",
+    "rating_count": 4995,
+    "content_rating": "safe",
+    "translation_completed": false,
+    "chapter_numbers_reset_on_new_volume_manual": false,
+    "final_chapter": null,
+    "final_volume": null,
+    "noindex": true,
+    "adsense": true,
+    "recommendations": [
+      {
+        "up": 444,
+        "down": -2,
+        "total": 442,
+        "relates": {
+          "title": "Bleach",
+          "slug": "bleach",
+          "hid": "ir_Nk1aG",
+          "md_covers": [
+            {
+              "vol": "74",
+              "w": 764,
+              "h": 1200,
+              "b2key": "45LlWX.png"
+            }
+          ]
+        }
+      },
+      {
+        "up": 396,
+        "down": 0,
+        "total": 396,
+        "relates": {
+          "title": "Jigokuraku",
+          "slug": "jigokuraku",
+          "hid": "Nn_gNGBD",
+          "md_covers": [
+            {
+              "vol": "13",
+              "w": 763,
+              "h": 1200,
+              "b2key": "KoArv.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 274,
+        "down": -1,
+        "total": 273,
+        "relates": {
+          "title": "Hunter x Hunter",
+          "slug": "hunter-x-hunter",
+          "hid": "HgmyWiv9",
+          "md_covers": [
+            {
+              "vol": "37",
+              "w": 1411,
+              "h": 2217,
+              "b2key": "8npWp.png"
+            }
+          ]
+        }
+      },
+      {
+        "up": 214,
+        "down": 0,
+        "total": 214,
+        "relates": {
+          "title": "Kimetsu no Yaiba - Digital Colored Comics",
+          "slug": "00-kimetsu-no-yaiba-digital-colored-comics",
+          "hid": "Qst_rTfq",
+          "md_covers": [
+            {
+              "vol": "1",
+              "w": 764,
+              "h": 1200,
+              "b2key": "Og8Q0.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 127,
+        "down": 0,
+        "total": 127,
+        "relates": {
+          "title": "Yu★Yu★Hakusho",
+          "slug": "yu-yu-hakusho",
+          "hid": "eHekVMHS",
+          "md_covers": [
+            {
+              "vol": "19",
+              "w": 760,
+              "h": 1200,
+              "b2key": "b5w3K.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 113,
+        "down": 0,
+        "total": 113,
+        "relates": {
+          "title": "Tokyo Ghoul",
+          "slug": "tokyo-ghoul",
+          "hid": "yVHmsg54",
+          "md_covers": [
+            {
+              "vol": null,
+              "w": 844,
+              "h": 1200,
+              "b2key": "lrMdY.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 82,
+        "down": -1,
+        "total": 81,
+        "relates": {
+          "title": "Hono Mieru Shonen",
+          "slug": "phantom-seer",
+          "hid": "k1AFzdF1",
+          "md_covers": [
+            {
+              "vol": "4",
+              "w": 763,
+              "h": 1200,
+              "b2key": "npb0X.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 76,
+        "down": 0,
+        "total": 76,
+        "relates": {
+          "title": "Kaiju No. 8",
+          "slug": "kaiju-no-8",
+          "hid": "d2PFTHKg",
+          "md_covers": [
+            {
+              "vol": "11",
+              "w": 764,
+              "h": 1200,
+              "b2key": "Z8kgYZ.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 72,
+        "down": 0,
+        "total": 72,
+        "relates": {
+          "title": "Ao no Exorcist",
+          "slug": "ao-no-exorcist",
+          "hid": "fkidFa8c",
+          "md_covers": [
+            {
+              "vol": "30",
+              "w": 764,
+              "h": 1200,
+              "b2key": "kRxxny.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 68,
+        "down": -1,
+        "total": 67,
+        "relates": {
+          "title": "Kagurabachi",
+          "slug": "kagura-bachi",
+          "hid": "10ZRNmsG",
+          "md_covers": [
+            {
+              "vol": "1",
+              "w": 1400,
+              "h": 2200,
+              "b2key": "EOmd2O.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 64,
+        "down": 0,
+        "total": 64,
+        "relates": {
+          "title": "Ayashimon",
+          "slug": "00-ayashimon",
+          "hid": "xAQR0RtL",
+          "md_covers": [
+            {
+              "vol": "3",
+              "w": 762,
+              "h": 1200,
+              "b2key": "1l5q0.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 59,
+        "down": 0,
+        "total": 59,
+        "relates": {
+          "title": "Kemono Jihen",
+          "slug": "kemono-jihen",
+          "hid": "UgyjGqhL",
+          "md_covers": [
+            {
+              "vol": "20",
+              "w": 764,
+              "h": 1200,
+              "b2key": "W8d2N2.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 56,
+        "down": 0,
+        "total": 56,
+        "relates": {
+          "title": "Tokyo Ghoul:re",
+          "slug": "tokyo-ghoul-re",
+          "hid": "9IvxMFYp",
+          "md_covers": [
+            {
+              "vol": "16",
+              "w": 900,
+              "h": 1280,
+              "b2key": "MNeMy.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 58,
+        "down": -2,
+        "total": 56,
+        "relates": {
+          "title": "Tougen Anki",
+          "slug": "tougen-anki",
+          "hid": "icrz_s7Z",
+          "md_covers": [
+            {
+              "vol": "18",
+              "w": 440,
+              "h": 680,
+              "b2key": "rxa2gG.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 46,
+        "down": 0,
+        "total": 46,
+        "relates": {
+          "title": "Black Torch",
+          "slug": "black-torch",
+          "hid": "AevlD3Y2",
+          "md_covers": [
+            {
+              "vol": "5",
+              "w": 764,
+              "h": 1200,
+              "b2key": "aYmx5.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 46,
+        "down": 0,
+        "total": 46,
+        "relates": {
+          "title": "Bungou Stray Dogs",
+          "slug": "01-bungo-stray-dogs",
+          "hid": "RNu55yIG",
+          "md_covers": [
+            {
+              "vol": "24",
+              "w": 1512,
+              "h": 2151,
+              "b2key": "DWG88Q.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 41,
+        "down": 0,
+        "total": 41,
+        "relates": {
+          "title": "Noragami",
+          "slug": "noragami",
+          "hid": "uLDUk2r9",
+          "md_covers": [
+            {
+              "vol": "27",
+              "w": 2717,
+              "h": 4063,
+              "b2key": "br1QoW.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 37,
+        "down": -1,
+        "total": 36,
+        "relates": {
+          "title": "Gokurakugai",
+          "slug": "gokurakugai",
+          "hid": "tDWCFoaC",
+          "md_covers": [
+            {
+              "vol": "3",
+              "w": 1302,
+              "h": 2048,
+              "b2key": "pvk0qW.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 32,
+        "down": 0,
+        "total": 32,
+        "relates": {
+          "title": "Kara no Kioku",
+          "slug": "00-kara-no-kioku",
+          "hid": "bBJMYtYR",
+          "md_covers": [
+            {
+              "vol": "4",
+              "w": 1801,
+              "h": 2560,
+              "b2key": "xlYQqp.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 29,
+        "down": 0,
+        "total": 29,
+        "relates": {
+          "title": "Naruto",
+          "slug": "naruto",
+          "hid": "1J46csio",
+          "md_covers": [
+            {
+              "vol": "1",
+              "w": 780,
+              "h": 1200,
+              "b2key": "7rX2v.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 26,
+        "down": 0,
+        "total": 26,
+        "relates": {
+          "title": "No.9",
+          "slug": "no-9",
+          "hid": "RJIg2YpN",
+          "md_covers": [
+            {
+              "vol": null,
+              "w": 877,
+              "h": 1280,
+              "b2key": "rNlZz.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 21,
+        "down": 0,
+        "total": 21,
+        "relates": {
+          "title": "Dorondororon",
+          "slug": "dorondororon",
+          "hid": "Gr2g9D_1",
+          "md_covers": [
+            {
+              "vol": "5",
+              "w": 762,
+              "h": 1200,
+              "b2key": "Rvjwz.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 20,
+        "down": 0,
+        "total": 20,
+        "relates": {
+          "title": "D.Gray-man",
+          "slug": "d-gray-man",
+          "hid": "GN5sctxe",
+          "md_covers": [
+            {
+              "vol": "28",
+              "w": 762,
+              "h": 1200,
+              "b2key": "Q8kE8.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 19,
+        "down": 0,
+        "total": 19,
+        "relates": {
+          "title": "Black Clover",
+          "slug": "black-clover",
+          "hid": "vEsHRcGs",
+          "md_covers": [
+            {
+              "vol": "36",
+              "w": 742,
+              "h": 1200,
+              "b2key": "Lyl03n.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 16,
+        "down": 0,
+        "total": 16,
+        "relates": {
+          "title": "Funbari no Uta",
+          "slug": "funbari-no-uta",
+          "hid": "4r6Bml_z",
+          "md_covers": [
+            {
+              "vol": null,
+              "w": 770,
+              "h": 1200,
+              "b2key": "arBjY.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 18,
+        "down": -2,
+        "total": 16,
+        "relates": {
+          "title": "NotFound",
+          "slug": "not-found-kigpnaly",
+          "hid": "gbJRGl_d",
+          "md_covers": []
+        }
+      },
+      {
+        "up": 15,
+        "down": 0,
+        "total": 15,
+        "relates": {
+          "title": "Mob Psycho 100",
+          "slug": "mob-psycho-100",
+          "hid": "A1QV0SBt",
+          "md_covers": [
+            {
+              "vol": "16",
+              "w": 847,
+              "h": 1200,
+              "b2key": "NR1xz.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 11,
+        "down": 0,
+        "total": 11,
+        "relates": {
+          "title": "Sakamoto Days",
+          "slug": "sakamoto-days",
+          "hid": "U7pnGzCh",
+          "md_covers": [
+            {
+              "vol": "15",
+              "w": 764,
+              "h": 1200,
+              "b2key": "KrggR5.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 12,
+        "down": -1,
+        "total": 11,
+        "relates": {
+          "title": "Parasyte - Full Color Edition",
+          "slug": "parasyte-digital-colored-comics",
+          "hid": "R8DBIVJ3",
+          "md_covers": [
+            {
+              "vol": "10",
+              "w": 1433,
+              "h": 2048,
+              "b2key": "ZBmRga.jpg"
+            }
+          ]
+        }
+      },
+      {
+        "up": 8,
+        "down": 0,
+        "total": 8,
+        "relates": {
+          "title": "Nikai Bongai Barabarujura",
+          "slug": "nikai-bongai-barabarujura",
+          "hid": "slut77Zs",
+          "md_covers": [
+            {
+              "vol": null,
+              "w": 876,
+              "h": 1280,
+              "b2key": "p7WLl.jpg"
+            }
+          ]
+        }
+      }
+    ],
+    "relate_from": [
+      {
+        "relate_to": {
+          "slug": "00-jujutsu-kaisen-official-colored",
+          "title": "Jujutsu Kaisen (Official Colored)"
+        },
+        "md_relates": {
+          "name": "Coloured"
+        }
+      },
+      {
+        "relate_to": {
+          "slug": "jujutsu-kaisen-fan-colored",
+          "title": "Jujutsu Kaisen (Fan Colored)"
+        },
+        "md_relates": {
+          "name": "Coloured"
+        }
+      },
+      {
+        "relate_to": {
+          "slug": "tokyo-metropolitan-magic-technical-school",
+          "title": "Jujutsu Kaisen 0"
+        },
+        "md_relates": {
+          "name": "Prequel"
+        }
+      },
+      {
+        "relate_to": {
+          "slug": "jujutsu-kaisen-official-fan-book",
+          "title": "Jujutsu Kaisen Official Fan Book"
+        },
+        "md_relates": {
+          "name": "Same franchise"
+        }
+      },
+      {
+        "relate_to": {
+          "slug": "jujutsu-kaisen-manjushage-no-yume-no-naka",
+          "title": "Jujutsu Kaisen - Manjushage no Yume no Naka"
+        },
+        "md_relates": {
+          "name": "Doujinshi"
+        }
+      },
+      {
+        "relate_to": {
+          "slug": "fragancia-de-la-oscuridad-sombras-de-la-flora",
+          "title": "Jujutsu Kaisen - Ankousoei (Doujinshi)"
+        },
+        "md_relates": {
+          "name": "Doujinshi"
+        }
+      },
+      {
+        "relate_to": {
+          "slug": "jujutsu-kaisen-dj-forked-road",
+          "title": "Jujutsu Kaisen - Forked Road (Doujinshi)"
+        },
+        "md_relates": {
+          "name": "Doujinshi"
+        }
+      },
+      {
+        "relate_to": {
+          "slug": "jujutsu-kaisen-dj-you-can-t-leave-this-room-unless-you-xxxx",
+          "title": "Jujutsu Kaisen - You Can't Leave This Room Unless You XXXX (Doujinshi)"
+        },
+        "md_relates": {
+          "name": "Doujinshi"
+        }
+      },
+      {
+        "relate_to": {
+          "slug": "jujutsu-kaisen-le-plus-fort-des-exorcistes",
+          "title": "Jujutsu Kaisen - Le Plus Fort des Exorcistes"
+        },
+        "md_relates": {
+          "name": "Doujinshi"
+        }
+      }
+    ],
+    "md_titles": [
+      {
+        "title": "Магическая битва",
+        "lang": "ru"
+      },
+      {
+        "title": "주술회전",
+        "lang": "ko"
+      },
+      {
+        "title": "Batalla de hechiceros",
+        "lang": "es"
+      },
+      {
+        "title": "Жүжүцү Кайсэн",
+        "lang": "ru"
+      },
+      {
+        "title": "咒術回戰",
+        "lang": "zh-hk"
+      },
+      {
+        "title": "咒术回战",
+        "lang": "zh"
+      },
+      {
+        "title": "Магічна Битва",
+        "lang": "uk"
+      },
+      {
+        "title": "呪術廻戦",
+        "lang": "ja"
+      },
+      {
+        "title": "ججك",
+        "lang": "en"
+      },
+      {
+        "title": "مكافحة السحر",
+        "lang": "en"
+      },
+      {
+        "title": "Büyülü Dövüş Sanatları",
+        "lang": "tr"
+      },
+      {
+        "title": "Magic Martial Arts",
+        "lang": "en"
+      },
+      {
+        "title": "Magic Jujutsu",
+        "lang": "en"
+      },
+      {
+        "title": "Jujutsu Kaisen",
+        "lang": "fr"
+      },
+      {
+        "title": "Алас талас",
+        "lang": "kk"
+      },
+      {
+        "title": "Jujutsu Kaisen - Batalha de Feiticeiros",
+        "lang": "pt-br"
+      },
+      {
+        "title": "Chú Thuật Hồi Chiến",
+        "lang": "en"
+      },
+      {
+        "title": "Jujutsu Kaisen - Contiendas de brujería",
+        "lang": "en"
+      },
+      {
+        "title": "Lanet Savaşları",
+        "lang": "en"
+      },
+      {
+        "title": "Sorcery Fight",
+        "lang": "en"
+      },
+      {
+        "title": "جوجوتسو كايسين",
+        "lang": "en"
+      },
+      {
+        "title": "जादुई लडाई",
+        "lang": "en"
+      },
+      {
+        "title": "มหาเวทย์ผนึกมาร (SIC)",
+        "lang": "en"
+      },
+      {
+        "title": "咒術迴戰",
+        "lang": "en"
+      },
+      {
+        "title": "Сиқырлы шайқас",
+        "lang": "kk"
+      }
+    ],
+    "md_comic_md_genres": [
+      {
+        "md_genres": {
+          "name": "Action",
+          "type": "main",
+          "slug": "action",
+          "group": "Genre"
+        }
+      },
+      {
+        "md_genres": {
+          "name": "Drama",
+          "type": "main",
+          "slug": "drama",
+          "group": "Genre"
+        }
+      },
+      {
+        "md_genres": {
+          "name": "Martial Arts",
+          "type": null,
+          "slug": "martial-arts",
+          "group": "Theme"
+        }
+      },
+      {
+        "md_genres": {
+          "name": "Mystery",
+          "type": "main",
+          "slug": "mystery",
+          "group": "Genre"
+        }
+      },
+      {
+        "md_genres": {
+          "name": "School Life",
+          "type": "main",
+          "slug": "school-life",
+          "group": "Theme"
+        }
+      },
+      {
+        "md_genres": {
+          "name": "Supernatural",
+          "type": "main",
+          "slug": "supernatural",
+          "group": "Theme"
+        }
+      },
+      {
+        "md_genres": {
+          "name": "Tragedy",
+          "type": null,
+          "slug": "tragedy",
+          "group": "Genre"
+        }
+      },
+      {
+        "md_genres": {
+          "name": "Gore",
+          "type": null,
+          "slug": "gore",
+          "group": "Content"
+        }
+      },
+      {
+        "md_genres": {
+          "name": "Thriller",
+          "type": null,
+          "slug": "thriller",
+          "group": "Genre"
+        }
+      },
+      {
+        "md_genres": {
+          "name": "Ghosts",
+          "type": null,
+          "slug": "ghosts",
+          "group": "Theme"
+        }
+      },
+      {
+        "md_genres": {
+          "name": "Magic",
+          "type": null,
+          "slug": "magic",
+          "group": "Theme"
+        }
+      },
+      {
+        "md_genres": {
+          "name": "Monsters",
+          "type": null,
+          "slug": "monsters",
+          "group": "Theme"
+        }
+      }
+    ],
+    "md_covers": [
+      {
+        "vol": "25",
+        "w": 763,
+        "h": 1200,
+        "b2key": "3K58eZ.jpg"
+      }
+    ],
+    "mu_comics": {
+      "mu_comic_publishers": [
+        {
+          "mu_publishers": {
+            "title": "Shueisha",
+            "slug": "shueisha"
+          }
+        }
+      ],
+      "licensed_in_english": true,
+      "mu_comic_categories": [
+        {
+          "mu_categories": {
+            "title": "Mentor/s",
+            "slug": "mentor-s"
+          },
+          "positive_vote": 17,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Monster/s",
+            "slug": "monster-s"
+          },
+          "positive_vote": 17,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Possession",
+            "slug": "possession"
+          },
+          "positive_vote": 17,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Adapted to Anime",
+            "slug": "adapted-to-anime"
+          },
+          "positive_vote": 17,
+          "negative_vote": 1
+        },
+        {
+          "mu_categories": {
+            "title": "21st Century",
+            "slug": "21st-century"
+          },
+          "positive_vote": 16,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Supernatural Elements",
+            "slug": "supernatural-elements"
+          },
+          "positive_vote": 16,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Straightforward Male Lead",
+            "slug": "straightforward-male-lead"
+          },
+          "positive_vote": 15,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Dead Family Member/s",
+            "slug": "dead-family-member-s"
+          },
+          "positive_vote": 16,
+          "negative_vote": 1
+        },
+        {
+          "mu_categories": {
+            "title": "Special Ability/ies",
+            "slug": "special-ability-ies"
+          },
+          "positive_vote": 15,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Body Horror",
+            "slug": "body-horror"
+          },
+          "positive_vote": 15,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Death",
+            "slug": "death"
+          },
+          "positive_vote": 15,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Exorcism",
+            "slug": "exorcism"
+          },
+          "positive_vote": 15,
+          "negative_vote": 1
+        },
+        {
+          "mu_categories": {
+            "title": "High School Student/s",
+            "slug": "high-school-student-s"
+          },
+          "positive_vote": 14,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Strong-Willed Male Lead",
+            "slug": "strong-willed-male-lead"
+          },
+          "positive_vote": 14,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Sorcerer/s",
+            "slug": "sorcerer-s"
+          },
+          "positive_vote": 15,
+          "negative_vote": 1
+        },
+        {
+          "mu_categories": {
+            "title": "Exorcist/s",
+            "slug": "exorcist-s"
+          },
+          "positive_vote": 16,
+          "negative_vote": 2
+        },
+        {
+          "mu_categories": {
+            "title": "High School",
+            "slug": "high-school"
+          },
+          "positive_vote": 15,
+          "negative_vote": 1
+        },
+        {
+          "mu_categories": {
+            "title": "Blood and Gore",
+            "slug": "blood-and-gore"
+          },
+          "positive_vote": 13,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Masked Character/s",
+            "slug": "masked-character-s"
+          },
+          "positive_vote": 13,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Body Modification",
+            "slug": "body-modification"
+          },
+          "positive_vote": 13,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Sorcery",
+            "slug": "sorcery"
+          },
+          "positive_vote": 13,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Death of Loved One/s",
+            "slug": "death-of-loved-one-s"
+          },
+          "positive_vote": 13,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Kind Male Lead",
+            "slug": "kind-male-lead"
+          },
+          "positive_vote": 13,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Body Sharing",
+            "slug": "body-sharing"
+          },
+          "positive_vote": 12,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Japan",
+            "slug": "japan"
+          },
+          "positive_vote": 13,
+          "negative_vote": 1
+        },
+        {
+          "mu_categories": {
+            "title": "Kind Protagonist",
+            "slug": "kind-protagonist"
+          },
+          "positive_vote": 12,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Character Death/s",
+            "slug": "character-death-s"
+          },
+          "positive_vote": 12,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Strong Male Lead",
+            "slug": "strong-male-lead"
+          },
+          "positive_vote": 12,
+          "negative_vote": 1
+        },
+        {
+          "mu_categories": {
+            "title": "Simple-Minded Male Lead",
+            "slug": "simple-minded-male-lead"
+          },
+          "positive_vote": 11,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Shaman/s",
+            "slug": "shaman-s"
+          },
+          "positive_vote": 13,
+          "negative_vote": 2
+        },
+        {
+          "mu_categories": {
+            "title": "Hatred",
+            "slug": "hatred"
+          },
+          "positive_vote": 10,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Shikigami",
+            "slug": "shikigami"
+          },
+          "positive_vote": 10,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Quirky Character/s",
+            "slug": "quirky-character-s"
+          },
+          "positive_vote": 10,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Transfer Student/s",
+            "slug": "transfer-student-s"
+          },
+          "positive_vote": 11,
+          "negative_vote": 1
+        },
+        {
+          "mu_categories": {
+            "title": "Adapted to Drama CD",
+            "slug": "adapted-to-drama-cd"
+          },
+          "positive_vote": 6,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Muscular Male Lead",
+            "slug": "muscular-male-lead"
+          },
+          "positive_vote": 5,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Handsome Male Character/s",
+            "slug": "handsome-male-character-s"
+          },
+          "positive_vote": 5,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Award-Winning Work",
+            "slug": "award-winning-work"
+          },
+          "positive_vote": 4,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Unrealistic Fighting",
+            "slug": "unrealistic-fighting"
+          },
+          "positive_vote": 4,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Award-Nominated Work",
+            "slug": "award-nominated-work"
+          },
+          "positive_vote": 4,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Bloodlines",
+            "slug": "bloodlines"
+          },
+          "positive_vote": 4,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Muscular Protagonist",
+            "slug": "muscular-protagonist"
+          },
+          "positive_vote": 4,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Scarred Protagonist",
+            "slug": "scarred-protagonist"
+          },
+          "positive_vote": 4,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Blood as a Weapon",
+            "slug": "blood-as-a-weapon"
+          },
+          "positive_vote": 4,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Handsome Male Lead",
+            "slug": "handsome-male-lead"
+          },
+          "positive_vote": 4,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Muscular Female/s",
+            "slug": "muscular-female-s"
+          },
+          "positive_vote": 5,
+          "negative_vote": 2
+        },
+        {
+          "mu_categories": {
+            "title": "Special Body",
+            "slug": "special-body"
+          },
+          "positive_vote": 3,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Intelligent Antagonist/s",
+            "slug": "intelligent-antagonist-s"
+          },
+          "positive_vote": 3,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Life-Changing Event/s",
+            "slug": "life-changing-event-s"
+          },
+          "positive_vote": 3,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Strong Antagonist/s",
+            "slug": "strong-antagonist-s"
+          },
+          "positive_vote": 3,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Corruption",
+            "slug": "corruption"
+          },
+          "positive_vote": 3,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Crazy Character/s",
+            "slug": "crazy-character-s"
+          },
+          "positive_vote": 3,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Resurrection",
+            "slug": "resurrection"
+          },
+          "positive_vote": 3,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Insanity",
+            "slug": "insanity"
+          },
+          "positive_vote": 3,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Mass Murder/s",
+            "slug": "mass-murder-s"
+          },
+          "positive_vote": 3,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Unpredictable Outcome",
+            "slug": "unpredictable-outcome"
+          },
+          "positive_vote": 3,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Partial Nudity",
+            "slug": "partial-nudity"
+          },
+          "positive_vote": 3,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Survival",
+            "slug": "survival"
+          },
+          "positive_vote": 3,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Dark Fantasy",
+            "slug": "dark-fantasy"
+          },
+          "positive_vote": 3,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Psychopath/s",
+            "slug": "psychopath-s"
+          },
+          "positive_vote": 3,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Murder/s",
+            "slug": "murder-s"
+          },
+          "positive_vote": 3,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Panda/s",
+            "slug": "panda-s"
+          },
+          "positive_vote": 3,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Violence",
+            "slug": "violence"
+          },
+          "positive_vote": 3,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Hunted Protagonist",
+            "slug": "hunted-protagonist"
+          },
+          "positive_vote": 3,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Young Male Lead",
+            "slug": "young-male-lead"
+          },
+          "positive_vote": 3,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Adapted to Movie",
+            "slug": "adapted-to-movie"
+          },
+          "positive_vote": 5,
+          "negative_vote": 3
+        },
+        {
+          "mu_categories": {
+            "title": "Bloodlust",
+            "slug": "bloodlust"
+          },
+          "positive_vote": 2,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Scar/s",
+            "slug": "scar-s"
+          },
+          "positive_vote": 3,
+          "negative_vote": 1
+        },
+        {
+          "mu_categories": {
+            "title": "Strong Father",
+            "slug": "strong-father"
+          },
+          "positive_vote": 2,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Unusual First Meeting",
+            "slug": "unusual-first-meeting"
+          },
+          "positive_vote": 2,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Introspection",
+            "slug": "introspection"
+          },
+          "positive_vote": 2,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Terrorist/s",
+            "slug": "terrorist-s"
+          },
+          "positive_vote": 2,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Demon/s",
+            "slug": "demon-s"
+          },
+          "positive_vote": 2,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Cult",
+            "slug": "cult"
+          },
+          "positive_vote": 2,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Amputee/s",
+            "slug": "amputee-s"
+          },
+          "positive_vote": 2,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Friendship",
+            "slug": "friendship"
+          },
+          "positive_vote": 2,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Torture",
+            "slug": "torture"
+          },
+          "positive_vote": 2,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Urban Setting",
+            "slug": "urban-setting"
+          },
+          "positive_vote": 2,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Urban Fantasy",
+            "slug": "urban-fantasy"
+          },
+          "positive_vote": 2,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Beautiful Female Character/s",
+            "slug": "beautiful-female-character-s"
+          },
+          "positive_vote": 1,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Friendly Male Lead",
+            "slug": "friendly-male-lead"
+          },
+          "positive_vote": 1,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Appearance Different from Actual Age",
+            "slug": "appearance-different-from-actual-age"
+          },
+          "positive_vote": 1,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Female Fighter/s",
+            "slug": "female-fighter-s"
+          },
+          "positive_vote": 2,
+          "negative_vote": 1
+        },
+        {
+          "mu_categories": {
+            "title": "Opposites Become Friends",
+            "slug": "opposites-become-friends"
+          },
+          "positive_vote": 1,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Dark Ambience",
+            "slug": "dark-ambience"
+          },
+          "positive_vote": 2,
+          "negative_vote": 1
+        },
+        {
+          "mu_categories": {
+            "title": "Strong Character/s",
+            "slug": "strong-character-s"
+          },
+          "positive_vote": 2,
+          "negative_vote": 1
+        },
+        {
+          "mu_categories": {
+            "title": "Urban Legends",
+            "slug": "urban-legends"
+          },
+          "positive_vote": 1,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Straightforward Female Lead",
+            "slug": "straightforward-female-lead"
+          },
+          "positive_vote": 2,
+          "negative_vote": 2
+        },
+        {
+          "mu_categories": {
+            "title": "Kick-Ass Female Lead",
+            "slug": "kick-ass-female-lead"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Gender Swapped Character/s",
+            "slug": "gender-swapped-character-s"
+          },
+          "positive_vote": 0,
+          "negative_vote": 0
+        },
+        {
+          "mu_categories": {
+            "title": "Adapted to Novel",
+            "slug": "adapted-to-novel"
+          },
+          "positive_vote": 2,
+          "negative_vote": 2
+        },
+        {
+          "mu_categories": {
+            "title": "Foul-Mouthed Character/s",
+            "slug": "foul-mouthed-character-s"
+          },
+          "positive_vote": 1,
+          "negative_vote": 1
+        },
+        {
+          "mu_categories": {
+            "title": "Strong Female Lead",
+            "slug": "strong-female-lead"
+          },
+          "positive_vote": 1,
+          "negative_vote": 1
+        },
+        {
+          "mu_categories": {
+            "title": "Revenge",
+            "slug": "revenge"
+          },
+          "positive_vote": 1,
+          "negative_vote": 1
+        },
+        {
+          "mu_categories": {
+            "title": "Flashbacks",
+            "slug": "flashbacks"
+          },
+          "positive_vote": 1,
+          "negative_vote": 1
+        }
+      ]
+    },
+    "iso639_1": "ja",
+    "lang_name": "Japanese",
+    "lang_native": "日本語 (にほんご／にっぽんご)"
+  },
+  "artists": [
+    {
+      "name": "Akutami Gege",
+      "slug": "akutami-gege"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Akutami Gege",
+      "slug": "akutami-gege"
+    }
+  ],
+  "langList": [
+    "ar",
+    "cs",
+    "de",
+    "en",
+    "es",
+    "es-419",
+    "fr",
+    "he",
+    "hu",
+    "id",
+    "it",
+    "mn",
+    "ms",
+    "pl",
+    "pt-br",
+    "ru",
+    "sr",
+    "tr",
+    "uk",
+    "vi",
+    "zh-hk"
+  ],
+  "recommendable": true,
+  "demographic": "Shounen",
+  "englishLink": null,
+  "matureContent": true,
+  "checkVol2Chap1": false
+}

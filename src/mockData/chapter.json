@@ -1,0 +1,2558 @@
+{
+    "chapter": {
+      "id": 3084218,
+      "chap": "253",
+      "vol": null,
+      "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ㉕",
+      "hid": "OKsiYbst",
+      "group_name": [
+        "TCB Scans"
+      ],
+      "chapter_id": null,
+      "created_at": "2024-03-08T21:08:26.548Z",
+      "updated_at": "2024-03-15T06:07:40.346Z",
+      "crawled_at": "2024-03-10T20:16:06.000Z",
+      "mdid": "7ee40a42-bef9-461c-96ca-9965cf5f4b56",
+      "comment_count": 261,
+      "up_count": 934,
+      "down_count": 0,
+      "status": "OK",
+      "adsense": true,
+      "lang": "en",
+      "is_the_last_chapter": false,
+      "md_comics": {
+        "id": 23880,
+        "title": "Jujutsu Kaisen",
+        "country": "jp",
+        "slug": "00-jujutsu-kaisen",
+        "desc": "Yuuji is a genius at track and field. But he has zero interest running around in circles, he's happy as a clam in the Occult Research Club. Although he's only in the club for kicks, things get serious when a real spirit shows up at school! Life's about to get really strange in Sugisawa Town #3 High School!",
+        "links": {
+          "al": "101517",
+          "ap": "jujutsu-kaisen",
+          "bw": "series/163351",
+          "kt": "40815",
+          "mu": "147557",
+          "amz": "https://www.amazon.co.jp/dp/B07H3TPZR9",
+          "cdj": "https://www.cdjapan.co.jp/product/NEOBK-2655626",
+          "ebj": "https://ebookjapan.yahoo.co.jp/books/464912/",
+          "mal": "113138",
+          "raw": "https://shonenjumpplus.com/episode/10834108156650001170",
+          "engtl": "https://mangaplus.shueisha.co.jp/titles/100034"
+        },
+        "genres": [
+          292,
+          305,
+          244,
+          300,
+          257,
+          303,
+          286,
+          250,
+          265,
+          272,
+          261,
+          273
+        ],
+        "hid": "TA22I5O7",
+        "content_rating": "safe",
+        "chapter_numbers_reset_on_new_volume_manual": false,
+        "noindex": true,
+        "mu_comics": {
+          "mu_comic_publishers": [
+            {
+              "mu_publishers": {
+                "title": "Shueisha",
+                "slug": "shueisha"
+              }
+            }
+          ]
+        },
+        "md_covers": [
+          {
+            "w": 763,
+            "h": 1200,
+            "b2key": "3K58eZ.jpg"
+          }
+        ]
+      },
+      "md_images": [
+        {
+          "h": 1606,
+          "w": 1100,
+          "name": "jjk_253_25_001.png",
+          "s": 3060797,
+          "b2key": "0-n4CFXOE4Ddu6x.png",
+          "optimized": 381685
+        },
+        {
+          "h": 1200,
+          "w": 1600,
+          "name": "jjk_253_25_01.png",
+          "s": 2906821,
+          "b2key": "1-2MLuOr2F_IOHa.png",
+          "optimized": 251299
+        },
+        {
+          "h": 1606,
+          "w": 2200,
+          "name": "jjk_253_25_002.png",
+          "s": 4821699,
+          "b2key": "2-s5cD61jfInIzh.png",
+          "optimized": 496286
+        },
+        {
+          "h": 1606,
+          "w": 1100,
+          "name": "jjk_253_25_003.png",
+          "s": 833049,
+          "b2key": "3-k63CBgesfyYeJ.png",
+          "optimized": 215371
+        },
+        {
+          "h": 1606,
+          "w": 1100,
+          "name": "jjk_253_25_004.png",
+          "s": 1641543,
+          "b2key": "4-rto5VZ2Lr3kVX.png",
+          "optimized": 391190
+        },
+        {
+          "h": 1606,
+          "w": 1100,
+          "name": "jjk_253_25_005.png",
+          "s": 1891689,
+          "b2key": "5-RSLUERIPlHGEK.png",
+          "optimized": 427560
+        },
+        {
+          "h": 1606,
+          "w": 1100,
+          "name": "jjk_253_25_006.png",
+          "s": 1726564,
+          "b2key": "6-E5MtTOE8RQMar.png",
+          "optimized": 397205
+        },
+        {
+          "h": 1606,
+          "w": 1100,
+          "name": "jjk_253_25_007.png",
+          "s": 1725919,
+          "b2key": "7-CWJ7CavwHYSHM.png",
+          "optimized": 424780
+        },
+        {
+          "h": 1606,
+          "w": 1100,
+          "name": "jjk_253_25_008.png",
+          "s": 1704605,
+          "b2key": "8-iKJWT0y0YYzqy.png",
+          "optimized": 368515
+        },
+        {
+          "h": 1606,
+          "w": 1100,
+          "name": "jjk_253_25_009.png",
+          "s": 1496951,
+          "b2key": "9-FXZM_HPrlsHrJ.png",
+          "optimized": 363805
+        },
+        {
+          "h": 1606,
+          "w": 1100,
+          "name": "jjk_253_25_010.png",
+          "s": 1472987,
+          "b2key": "10-zSE5nSpvYV3sZ.png",
+          "optimized": 373299
+        },
+        {
+          "h": 1606,
+          "w": 1100,
+          "name": "jjk_253_25_011.png",
+          "s": 1730584,
+          "b2key": "11-vy80gZ4MVShv8.png",
+          "optimized": 381378
+        },
+        {
+          "h": 1606,
+          "w": 1100,
+          "name": "jjk_253_25_012.png",
+          "s": 1354028,
+          "b2key": "12-MpzmyN6jxEWcQ.png",
+          "optimized": 322428
+        },
+        {
+          "h": 1606,
+          "w": 1100,
+          "name": "jjk_253_25_013.png",
+          "s": 1528713,
+          "b2key": "13-_ivaqZ6Il7g0O.png",
+          "optimized": 318100
+        },
+        {
+          "h": 1606,
+          "w": 1100,
+          "name": "jjk_253_25_014.png",
+          "s": 1289965,
+          "b2key": "14-JtT3J9qI_JRmr.png",
+          "optimized": 324651
+        },
+        {
+          "h": 1606,
+          "w": 1100,
+          "name": "jjk_253_25_015.png",
+          "s": 1228658,
+          "b2key": "15-dH8E_2ZVIwcDn.png",
+          "optimized": 294403
+        },
+        {
+          "h": 1606,
+          "w": 1100,
+          "name": "jjk_253_25_016.png",
+          "s": 1423826,
+          "b2key": "16-ownevE-3dgxhQ.png",
+          "optimized": 328362
+        },
+        {
+          "h": 1606,
+          "w": 1100,
+          "name": "jjk_253_25_017.png",
+          "s": 1201296,
+          "b2key": "17-H5oaSP6n-RNM5.png",
+          "optimized": 335818
+        },
+        {
+          "h": 1606,
+          "w": 1100,
+          "name": "jjk_253_25_018v2.png",
+          "s": 1322978,
+          "b2key": "18-xWCNyuaU_LkWu.png",
+          "optimized": 364293
+        },
+        {
+          "h": 1606,
+          "w": 1100,
+          "name": "jjk_253_25_019.png",
+          "s": 1728565,
+          "b2key": "19-jZijBk2v0qvNW.png",
+          "optimized": 424054
+        },
+        {
+          "h": 1606,
+          "w": 1100,
+          "name": "jjk_253_25_020.png",
+          "s": 1471800,
+          "b2key": "20-NHsuq5kPvksi3.png",
+          "optimized": 338891
+        },
+        {
+          "h": 1606,
+          "w": 1100,
+          "name": "jjk_253_25_021.png",
+          "s": 969623,
+          "b2key": "21-6BZd4wHnMEa1_.png",
+          "optimized": 254495
+        }
+      ],
+      "md_chapters_groups": [
+        {
+          "md_group_id": 10895,
+          "md_groups": {
+            "slug": "tcb-scans",
+            "title": "TCB Scans"
+          }
+        }
+      ]
+    },
+    "next": null,
+    "prev": {
+      "chap": "252",
+      "vol": null,
+      "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ㉔",
+      "hid": "Q2OANAIy",
+      "lang": "en",
+      "id": 3074850,
+      "href": "/comic/00-jujutsu-kaisen/Q2OANAIy-chapter-252-en"
+    },
+    "matureContent": true,
+    "chapters": [
+      {
+        "chap": "253",
+        "vol": null,
+        "hid": "OKsiYbst",
+        "lang": "en",
+        "id": 3084218,
+        "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ㉕"
+      },
+      {
+        "chap": "252",
+        "vol": null,
+        "hid": "Q2OANAIy",
+        "lang": "en",
+        "id": 3074850,
+        "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ㉔"
+      },
+      {
+        "chap": "251",
+        "vol": null,
+        "hid": "LcfHfh3s",
+        "lang": "en",
+        "id": 3074848,
+        "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ㉓"
+      },
+      {
+        "chap": "250",
+        "vol": null,
+        "hid": "ukFRHZHu",
+        "lang": "en",
+        "id": 3046545,
+        "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ㉒"
+      },
+      {
+        "chap": "249",
+        "vol": null,
+        "hid": "kl_OScAh",
+        "lang": "en",
+        "id": 3036251,
+        "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ㉑"
+      },
+      {
+        "chap": "248",
+        "vol": null,
+        "hid": "bWA5a_j1",
+        "lang": "en",
+        "id": 3036252,
+        "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ⑳"
+      },
+      {
+        "chap": "247",
+        "vol": null,
+        "hid": "Al2kS1Ou",
+        "lang": "en",
+        "id": 2986731,
+        "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ⑲"
+      },
+      {
+        "chap": "246",
+        "vol": null,
+        "hid": "DyKLzq8_",
+        "lang": "en",
+        "id": 2969043,
+        "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ⑱"
+      },
+      {
+        "chap": "245",
+        "vol": null,
+        "hid": "e40AFgct",
+        "lang": "en",
+        "id": 2969040,
+        "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ⑰"
+      },
+      {
+        "chap": "244",
+        "vol": null,
+        "hid": "1EDC0AhX",
+        "lang": "en",
+        "id": 2938609,
+        "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ⑯"
+      },
+      {
+        "chap": "243",
+        "vol": null,
+        "hid": "9u_03KkC",
+        "lang": "en",
+        "id": 2928075,
+        "title": "Idiot Survivor!! Bounce Off the Walls"
+      },
+      {
+        "chap": "242",
+        "vol": null,
+        "hid": "xkrLIk7n",
+        "lang": "en",
+        "id": 2928074,
+        "title": "Idiot Survivor!! Soar Ever Higher"
+      },
+      {
+        "chap": "241",
+        "vol": null,
+        "hid": "p16BslFv",
+        "lang": "en",
+        "id": 2890193,
+        "title": "Idiot Survivor!! ~Move On Up~"
+      },
+      {
+        "chap": "240",
+        "vol": null,
+        "hid": "yl8NmgeV",
+        "lang": "en",
+        "id": 2877754,
+        "title": "Idiot Survivor!! ~Live On~"
+      },
+      {
+        "chap": "239",
+        "vol": null,
+        "hid": "BGuXnO6F",
+        "lang": "en",
+        "id": 2862398,
+        "title": "Idiot Survivor!!"
+      },
+      {
+        "chap": "238",
+        "vol": null,
+        "hid": "aWaXJu2m",
+        "lang": "en",
+        "id": 2844005,
+        "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ⑮"
+      },
+      {
+        "chap": "237",
+        "vol": null,
+        "hid": "BSObYaIa",
+        "lang": "en",
+        "id": 2833816,
+        "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ⑭"
+      },
+      {
+        "chap": "236",
+        "vol": null,
+        "hid": "9hhPVXZJ",
+        "lang": "en",
+        "id": 2833820,
+        "title": "Go South"
+      },
+      {
+        "chap": "235",
+        "vol": null,
+        "hid": "u9AXf8pv",
+        "lang": "en",
+        "id": 2805353,
+        "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ⑬"
+      },
+      {
+        "chap": "234",
+        "vol": null,
+        "hid": "iSBCrxE5",
+        "lang": "en",
+        "id": 2794550,
+        "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ⑫"
+      },
+      {
+        "chap": "233",
+        "vol": null,
+        "hid": "_h_y3aks",
+        "lang": "en",
+        "id": 2783857,
+        "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ⑪"
+      },
+      {
+        "chap": "232",
+        "vol": null,
+        "hid": "_fBxohBB",
+        "lang": "en",
+        "id": 2773835,
+        "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ⑩"
+      },
+      {
+        "chap": "231",
+        "vol": null,
+        "hid": "RWg8YWwA",
+        "lang": "en",
+        "id": 2758425,
+        "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ⑨"
+      },
+      {
+        "chap": "230",
+        "vol": null,
+        "hid": "5J5QY2mz",
+        "lang": "en",
+        "id": 2744913,
+        "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ⑧"
+      },
+      {
+        "chap": "229",
+        "vol": null,
+        "hid": "FpVRw2u5",
+        "lang": "en",
+        "id": 2724319,
+        "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ⑦"
+      },
+      {
+        "chap": "228",
+        "vol": null,
+        "hid": "7lFzeJvM",
+        "lang": "en",
+        "id": 2719998,
+        "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ⑥"
+      },
+      {
+        "chap": "227",
+        "vol": null,
+        "hid": "I6aDtgt8",
+        "lang": "en",
+        "id": 2705797,
+        "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ⑤"
+      },
+      {
+        "chap": "226",
+        "vol": null,
+        "hid": "B8Ej3TZZ",
+        "lang": "en",
+        "id": 2679085,
+        "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ④"
+      },
+      {
+        "chap": "225",
+        "vol": null,
+        "hid": "JWaiOxyI",
+        "lang": "en",
+        "id": 2668047,
+        "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ③"
+      },
+      {
+        "chap": "224",
+        "vol": null,
+        "hid": "f69ugElU",
+        "lang": "en",
+        "id": 2641083,
+        "title": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ②"
+      },
+      {
+        "chap": "223",
+        "vol": null,
+        "hid": "gqEUIMAv",
+        "lang": "en",
+        "id": 2641081,
+        "title": "The Decisive Battle in the Uninhabited Demon-Infested Shinjuku ①"
+      },
+      {
+        "chap": "222",
+        "vol": null,
+        "hid": "b7WpveJb",
+        "lang": "en",
+        "id": 2615919,
+        "title": "Omen"
+      },
+      {
+        "chap": "221",
+        "vol": null,
+        "hid": "iwboM458",
+        "lang": "en",
+        "id": 2572374,
+        "title": "Gain & Loss"
+      },
+      {
+        "chap": "220",
+        "vol": null,
+        "hid": "uSTD3Hjw",
+        "lang": "en",
+        "id": 2572371,
+        "title": "Self-Cleansing & Self Restraint"
+      },
+      {
+        "chap": "219",
+        "vol": null,
+        "hid": "_y4v4FTn",
+        "lang": "en",
+        "id": 2545149,
+        "title": "Bath ④"
+      },
+      {
+        "chap": "218",
+        "vol": null,
+        "hid": "aJ1Okvth",
+        "lang": "en",
+        "id": 2545141,
+        "title": "Bath ③"
+      },
+      {
+        "chap": "217",
+        "vol": "24",
+        "hid": "N87EzSz3",
+        "lang": "en",
+        "id": 2509049,
+        "title": "Bath ②"
+      },
+      {
+        "chap": "216",
+        "vol": "24",
+        "hid": "BWc7qWaU",
+        "lang": "en",
+        "id": 2492274,
+        "title": "Bath"
+      },
+      {
+        "chap": "215",
+        "vol": "24",
+        "hid": "BFDx50iJ",
+        "lang": "en",
+        "id": 2492275,
+        "title": "Cursed Womb: Under Heaven, Part 7"
+      },
+      {
+        "chap": "214",
+        "vol": "24",
+        "hid": "T7Thg0O2",
+        "lang": "en",
+        "id": 2466245,
+        "title": "Cursed Womb: Under Heaven, Part 6"
+      },
+      {
+        "chap": "213",
+        "vol": "24",
+        "hid": "cFsj5OMu",
+        "lang": "en",
+        "id": 2448099,
+        "title": "Cursed Womb: Under Heaven, Part 5"
+      },
+      {
+        "chap": "212",
+        "vol": "24",
+        "hid": "q1BqSuNd",
+        "lang": "en",
+        "id": 2439983,
+        "title": " Fester ②"
+      },
+      {
+        "chap": "211",
+        "vol": "24",
+        "hid": "dN71aRdH",
+        "lang": "en",
+        "id": 2431421,
+        "title": "Ripen"
+      },
+      {
+        "chap": "210",
+        "vol": "24",
+        "hid": "CobwnSiE",
+        "lang": "en",
+        "id": 2422159,
+        "title": "Offering to the Unknown ②"
+      },
+      {
+        "chap": "209",
+        "vol": "24",
+        "hid": "oAYeEuks",
+        "lang": "en",
+        "id": 2393157,
+        "title": "Offering to the Unknown"
+      },
+      {
+        "chap": "208",
+        "vol": "23",
+        "hid": "2PjBM",
+        "lang": "en",
+        "id": 2380101,
+        "title": "Star and Oil ④"
+      },
+      {
+        "chap": "207",
+        "vol": "23",
+        "hid": "4jM26",
+        "lang": "en",
+        "id": 2373074,
+        "title": "Star and Oil ③"
+      },
+      {
+        "chap": "206",
+        "vol": "23",
+        "hid": "1OoPG",
+        "lang": "en",
+        "id": 2353934,
+        "title": "Star and Oil ②"
+      },
+      {
+        "chap": "205",
+        "vol": "23",
+        "hid": "Xv2Vk",
+        "lang": "en",
+        "id": 2346882,
+        "title": "Star and Oil"
+      },
+      {
+        "chap": "204",
+        "vol": "23",
+        "hid": "ZxXM8",
+        "lang": "en",
+        "id": 2336354,
+        "title": "Blood and Oil ③"
+      },
+      {
+        "chap": "203",
+        "vol": "23",
+        "hid": "4j4L0",
+        "lang": "en",
+        "id": 2326139,
+        "title": "Blood and Oil ②"
+      },
+      {
+        "chap": "202",
+        "vol": "23",
+        "hid": "0NYBL",
+        "lang": "en",
+        "id": 2316702,
+        "title": "Blood and Oil"
+      },
+      {
+        "chap": "201",
+        "vol": "23",
+        "hid": "z8R15",
+        "lang": "en",
+        "id": 2296148,
+        "title": "Direct Negotiations ②"
+      },
+      {
+        "chap": "200",
+        "vol": "23",
+        "hid": "MqyZA",
+        "lang": "en",
+        "id": 2290256,
+        "title": "Direct Negotiations①"
+      },
+      {
+        "chap": "199",
+        "vol": "22",
+        "hid": "pDvB11",
+        "lang": "en",
+        "id": 2290255,
+        "title": "Epithet"
+      },
+      {
+        "chap": "198",
+        "vol": "22",
+        "hid": "y4xZn",
+        "lang": "en",
+        "id": 2261861,
+        "title": "Sakurajima Colony ⑧"
+      },
+      {
+        "chap": "197",
+        "vol": "22",
+        "hid": "y478z",
+        "lang": "en",
+        "id": 2244782,
+        "title": "Sakurajima Colony ⑦"
+      },
+      {
+        "chap": "196",
+        "vol": "22",
+        "hid": "VDN85",
+        "lang": "en",
+        "id": 2235074,
+        "title": "Sakurajima Colony ⑥"
+      },
+      {
+        "chap": "195",
+        "vol": "22",
+        "hid": "Nrx3m",
+        "lang": "en",
+        "id": 2226468,
+        "title": "Sakurajima Colony ⑤"
+      },
+      {
+        "chap": "194",
+        "vol": "22",
+        "hid": "xWRGJ",
+        "lang": "en",
+        "id": 2207084,
+        "title": "Sakurajima Colony ④"
+      },
+      {
+        "chap": "193",
+        "vol": "22",
+        "hid": "nW0r51",
+        "lang": "en",
+        "id": 2187846,
+        "title": "Sakurajima Colony ③"
+      },
+      {
+        "chap": "192",
+        "vol": "22",
+        "hid": "Mn2BO",
+        "lang": "en",
+        "id": 2169986,
+        "title": "Sakurajima Colony ②"
+      },
+      {
+        "chap": "191",
+        "vol": "22",
+        "hid": "9v6JY",
+        "lang": "en",
+        "id": 2139097,
+        "title": "Sakurajima Colony ①"
+      },
+      {
+        "chap": "190",
+        "vol": "21",
+        "hid": "3x4gM1",
+        "lang": "en",
+        "id": 2125584,
+        "title": "Tokyo No.2 Colony ⑨"
+      },
+      {
+        "chap": "189",
+        "vol": "21",
+        "hid": "yvjmg1",
+        "lang": "en",
+        "id": 2108606,
+        "title": "Tokyo No.2 Colony ⑧"
+      },
+      {
+        "chap": "188",
+        "vol": "21",
+        "hid": "rlGlk",
+        "lang": "en",
+        "id": 2098673,
+        "title": "Tokyo No.2 Colony ⑦"
+      },
+      {
+        "chap": "187",
+        "vol": "21",
+        "hid": "BY2YY",
+        "lang": "en",
+        "id": 2087760,
+        "title": "Tokyo No.2 Colony ⑥"
+      },
+      {
+        "chap": "186",
+        "vol": "21",
+        "hid": "m9q9A",
+        "lang": "en",
+        "id": 2058194,
+        "title": "Tokyo No.2 Colony ⑤"
+      },
+      {
+        "chap": "185",
+        "vol": "21",
+        "hid": "qngp7",
+        "lang": "en",
+        "id": 2040247,
+        "title": "Bye Bye"
+      },
+      {
+        "chap": "184",
+        "vol": "21",
+        "hid": "XlWw8",
+        "lang": "en",
+        "id": 2026169,
+        "title": "Tokyo No.2 Colony ④"
+      },
+      {
+        "chap": "183",
+        "vol": "21",
+        "hid": "ol25K",
+        "lang": "en",
+        "id": 1984080,
+        "title": "Tokyo No.2 Colony ③"
+      },
+      {
+        "chap": "182",
+        "vol": "21",
+        "hid": "1Pqzj",
+        "lang": "en",
+        "id": 1913808,
+        "title": "Tokyo No.2 Colony ②"
+      },
+      {
+        "chap": "181",
+        "vol": "21",
+        "hid": "vrjXL",
+        "lang": "en",
+        "id": 1900841,
+        "title": "Tokyo No.2 Colony ①"
+      },
+      {
+        "chap": "180",
+        "vol": "20",
+        "hid": "AxJ1p",
+        "lang": "en",
+        "id": 1873369,
+        "title": "Sendai Colony ⑦"
+      },
+      {
+        "chap": "179",
+        "vol": "20",
+        "hid": "r6z6B",
+        "lang": "en",
+        "id": 1862401,
+        "title": "Sendai Colony ⑥"
+      },
+      {
+        "chap": "178",
+        "vol": "20",
+        "hid": "QRMzl",
+        "lang": "en",
+        "id": 1850227,
+        "title": "Sendai Colony ⑤"
+      },
+      {
+        "chap": "177",
+        "vol": "20",
+        "hid": "wlvNR",
+        "lang": "en",
+        "id": 1835425,
+        "title": "Sendai Colony ④"
+      },
+      {
+        "chap": "176",
+        "vol": "20",
+        "hid": "ORXkN",
+        "lang": "en",
+        "id": 1825133,
+        "title": "Sendai Colony ③"
+      },
+      {
+        "chap": "175",
+        "vol": "20",
+        "hid": "pPXJ61",
+        "lang": "en",
+        "id": 1814868,
+        "title": "Sendai Colony ②"
+      },
+      {
+        "chap": "174",
+        "vol": "20",
+        "hid": "9m1M8",
+        "lang": "en",
+        "id": 1800168,
+        "title": "Sendai Colony ①"
+      },
+      {
+        "chap": "173",
+        "vol": "20",
+        "hid": "NRDgK",
+        "lang": "en",
+        "id": 1795786,
+        "title": "Tokyo No.1 Colony ⑬"
+      },
+      {
+        "chap": "172",
+        "vol": "20",
+        "hid": "8xkY3",
+        "lang": "en",
+        "id": 1795787,
+        "title": "Tokyo No.1 Colony ⑫"
+      },
+      {
+        "chap": "171",
+        "vol": "19",
+        "hid": "mn1Q9",
+        "lang": "en",
+        "id": 1795783,
+        "title": "Tokyo No.1 Colony ⑪"
+      },
+      {
+        "chap": "170",
+        "vol": "19",
+        "hid": "N2v4N",
+        "lang": "en",
+        "id": 1795784,
+        "title": "Tokyo No.1 Colony ⑩"
+      },
+      {
+        "chap": "169",
+        "vol": "19",
+        "hid": "gGj49",
+        "lang": "en",
+        "id": 1795785,
+        "title": "Tokyo No.1 Colony ⑨"
+      },
+      {
+        "chap": "168.5",
+        "vol": "19",
+        "hid": "1noOZ",
+        "lang": "en",
+        "id": 1800166,
+        "title": "Extra"
+      },
+      {
+        "chap": "168.1",
+        "vol": null,
+        "hid": "fypPHRj1",
+        "lang": "en",
+        "id": 2512052,
+        "title": null
+      },
+      {
+        "chap": "168",
+        "vol": "19",
+        "hid": "1nkRj",
+        "lang": "en",
+        "id": 1795778,
+        "title": "Tokyo No.1 Colony ⑧"
+      },
+      {
+        "chap": "167",
+        "vol": "19",
+        "hid": "ZonOE",
+        "lang": "en",
+        "id": 1795780,
+        "title": "Tokyo No.1 Colony ⑦"
+      },
+      {
+        "chap": "166",
+        "vol": "19",
+        "hid": "9yX4z",
+        "lang": "en",
+        "id": 1795781,
+        "title": "Tokyo No.1 Colony ⑥"
+      },
+      {
+        "chap": "165",
+        "vol": "19",
+        "hid": "N2pvL",
+        "lang": "en",
+        "id": 1795782,
+        "title": "Tokyo No.1 Colony ⑤"
+      },
+      {
+        "chap": "164",
+        "vol": "19",
+        "hid": "ZoZnE",
+        "lang": "en",
+        "id": 1795772,
+        "title": "Tokyo No.1 Colony ④"
+      },
+      {
+        "chap": "163",
+        "vol": "19",
+        "hid": "A2n3l",
+        "lang": "en",
+        "id": 1795773,
+        "title": "Tokyo No.1 Colony ③"
+      },
+      {
+        "chap": "162",
+        "vol": "19",
+        "hid": "pqw26",
+        "lang": "en",
+        "id": 1795774,
+        "title": "Tokyo No.1 Colony ②"
+      },
+      {
+        "chap": "161",
+        "vol": "18",
+        "hid": "OoAVQ",
+        "lang": "en",
+        "id": 1795775,
+        "title": "Tokyo No.1 Colony ①"
+      },
+      {
+        "chap": "160",
+        "vol": "18",
+        "hid": "rNOJp",
+        "lang": "en",
+        "id": 1795776,
+        "title": "Colony"
+      },
+      {
+        "chap": "159",
+        "vol": "18",
+        "hid": "w836r1",
+        "lang": "en",
+        "id": 1795766,
+        "title": "Judgement"
+      },
+      {
+        "chap": "158",
+        "vol": "18",
+        "hid": "v70qV",
+        "lang": "en",
+        "id": 1795767,
+        "title": "Kogane"
+      },
+      {
+        "chap": "157",
+        "vol": "18",
+        "hid": "VyqR1",
+        "lang": "en",
+        "id": 1795770,
+        "title": "Cogs"
+      },
+      {
+        "chap": "156",
+        "vol": "18",
+        "hid": "yOWOW",
+        "lang": "en",
+        "id": 1795771,
+        "title": "Twinkle Star"
+      },
+      {
+        "chap": "155",
+        "vol": "18",
+        "hid": "0y73V",
+        "lang": "en",
+        "id": 1795759,
+        "title": "Passion"
+      },
+      {
+        "chap": "154",
+        "vol": "18",
+        "hid": "YBx2A",
+        "lang": "en",
+        "id": 1795760,
+        "title": "Infiltration"
+      },
+      {
+        "chap": "153",
+        "vol": "18",
+        "hid": "Ll1Gg",
+        "lang": "en",
+        "id": 1795763,
+        "title": "Gambling Match"
+      },
+      {
+        "chap": "152",
+        "vol": "17",
+        "hid": "x5ZjE",
+        "lang": "en",
+        "id": 1795755,
+        "title": "Perfect Preparation Epilogue"
+      },
+      {
+        "chap": "151",
+        "vol": "17",
+        "hid": "kKz4Y",
+        "lang": "en",
+        "id": 1795756,
+        "title": "Perfect Preparation (Part 4)"
+      },
+      {
+        "chap": "150",
+        "vol": "17",
+        "hid": "Xw3Ql",
+        "lang": "en",
+        "id": 1795757,
+        "title": "Perfect Preparation (Part 3)"
+      },
+      {
+        "chap": "149",
+        "vol": "17",
+        "hid": "x5P0z",
+        "lang": "en",
+        "id": 1795758,
+        "title": "Perfect Preparation (Part 2)"
+      },
+      {
+        "chap": "148",
+        "vol": "17",
+        "hid": "q5Oq7",
+        "lang": "en",
+        "id": 1795754,
+        "title": "Perfect Preparation"
+      },
+      {
+        "chap": "147",
+        "vol": null,
+        "hid": "QmP5Z1",
+        "lang": "en",
+        "id": 1605471,
+        "title": null
+      },
+      {
+        "chap": "146",
+        "vol": null,
+        "hid": "ZyQyQ",
+        "lang": "en",
+        "id": 1590277,
+        "title": null
+      },
+      {
+        "chap": "145",
+        "vol": null,
+        "hid": "gK7Yj",
+        "lang": "en",
+        "id": 1552700,
+        "title": null
+      },
+      {
+        "chap": "144",
+        "vol": null,
+        "hid": "xyBmP",
+        "lang": "en",
+        "id": 1487812,
+        "title": null
+      },
+      {
+        "chap": "143",
+        "vol": null,
+        "hid": "W1pWx1",
+        "lang": "en",
+        "id": 1473774,
+        "title": null
+      },
+      {
+        "chap": "142",
+        "vol": null,
+        "hid": "YZX8p",
+        "lang": "en",
+        "id": 1478532,
+        "title": null
+      },
+      {
+        "chap": "141",
+        "vol": null,
+        "hid": "ZgX16",
+        "lang": "en",
+        "id": 1478533,
+        "title": null
+      },
+      {
+        "chap": "140",
+        "vol": null,
+        "hid": "1M7Lj",
+        "lang": "en",
+        "id": 1478534,
+        "title": null
+      },
+      {
+        "chap": "139",
+        "vol": null,
+        "hid": "2XJMv",
+        "lang": "en",
+        "id": 1478535,
+        "title": null
+      },
+      {
+        "chap": "138",
+        "vol": null,
+        "hid": "33JNQ",
+        "lang": "en",
+        "id": 1478536,
+        "title": null
+      },
+      {
+        "chap": "137",
+        "vol": null,
+        "hid": "42KO6",
+        "lang": "en",
+        "id": 1478537,
+        "title": null
+      },
+      {
+        "chap": "136",
+        "vol": null,
+        "hid": "5M0PR",
+        "lang": "en",
+        "id": 1478538,
+        "title": null
+      },
+      {
+        "chap": "135",
+        "vol": null,
+        "hid": "6MVQ9",
+        "lang": "en",
+        "id": 1478539,
+        "title": null
+      },
+      {
+        "chap": "134",
+        "vol": null,
+        "hid": "7MJRA",
+        "lang": "en",
+        "id": 1478540,
+        "title": null
+      },
+      {
+        "chap": "133",
+        "vol": null,
+        "hid": "8gYVo",
+        "lang": "en",
+        "id": 1478541,
+        "title": null
+      },
+      {
+        "chap": "132.5",
+        "vol": null,
+        "hid": "kJECBBWj",
+        "lang": "en",
+        "id": 2636135,
+        "title": null
+      },
+      {
+        "chap": "132.1",
+        "vol": null,
+        "hid": "alXDG8p0",
+        "lang": "en",
+        "id": 2512043,
+        "title": null
+      },
+      {
+        "chap": "132",
+        "vol": null,
+        "hid": "0M3KX",
+        "lang": "en",
+        "id": 1478543,
+        "title": null
+      },
+      {
+        "chap": "131",
+        "vol": null,
+        "hid": "gyX06",
+        "lang": "en",
+        "id": 1478544,
+        "title": null
+      },
+      {
+        "chap": "130",
+        "vol": null,
+        "hid": "jBJ15",
+        "lang": "en",
+        "id": 1478545,
+        "title": null
+      },
+      {
+        "chap": "129.5",
+        "vol": null,
+        "hid": "E73ZLm_Y",
+        "lang": "en",
+        "id": 2636134,
+        "title": null
+      },
+      {
+        "chap": "129.1",
+        "vol": null,
+        "hid": "5xMUXOs3",
+        "lang": "en",
+        "id": 2512042,
+        "title": null
+      },
+      {
+        "chap": "129",
+        "vol": null,
+        "hid": "l0616",
+        "lang": "en",
+        "id": 1478547,
+        "title": null
+      },
+      {
+        "chap": "128",
+        "vol": null,
+        "hid": "mkX50",
+        "lang": "en",
+        "id": 1478548,
+        "title": null
+      },
+      {
+        "chap": "127",
+        "vol": null,
+        "hid": "nlJ1l",
+        "lang": "en",
+        "id": 1478549,
+        "title": null
+      },
+      {
+        "chap": "126",
+        "vol": null,
+        "hid": "omJ1K",
+        "lang": "en",
+        "id": 1478550,
+        "title": null
+      },
+      {
+        "chap": "125",
+        "vol": null,
+        "hid": "pnV16",
+        "lang": "en",
+        "id": 1478551,
+        "title": null
+      },
+      {
+        "chap": "124",
+        "vol": null,
+        "hid": "qo81r",
+        "lang": "en",
+        "id": 1478552,
+        "title": null
+      },
+      {
+        "chap": "123",
+        "vol": null,
+        "hid": "rp716",
+        "lang": "en",
+        "id": 1478553,
+        "title": null
+      },
+      {
+        "chap": "122",
+        "vol": null,
+        "hid": "vwJ1r",
+        "lang": "en",
+        "id": 1478554,
+        "title": null
+      },
+      {
+        "chap": "121",
+        "vol": null,
+        "hid": "wxg1w1",
+        "lang": "en",
+        "id": 1478555,
+        "title": null
+      },
+      {
+        "chap": "120",
+        "vol": null,
+        "hid": "xyjgr",
+        "lang": "en",
+        "id": 1478556,
+        "title": null
+      },
+      {
+        "chap": "119",
+        "vol": null,
+        "hid": "yzkjW",
+        "lang": "en",
+        "id": 1478557,
+        "title": null
+      },
+      {
+        "chap": "118",
+        "vol": null,
+        "hid": "zAlk8",
+        "lang": "en",
+        "id": 1478558,
+        "title": null
+      },
+      {
+        "chap": "117",
+        "vol": null,
+        "hid": "ArOpz",
+        "lang": "en",
+        "id": 1478559,
+        "title": null
+      },
+      {
+        "chap": "116",
+        "vol": null,
+        "hid": "BvEqJ",
+        "lang": "en",
+        "id": 1478560,
+        "title": null
+      },
+      {
+        "chap": "115",
+        "vol": null,
+        "hid": "DxEvn",
+        "lang": "en",
+        "id": 1478561,
+        "title": null
+      },
+      {
+        "chap": "114",
+        "vol": null,
+        "hid": "EyQwk",
+        "lang": "en",
+        "id": 1478562,
+        "title": null
+      },
+      {
+        "chap": "113",
+        "vol": null,
+        "hid": "GAK00",
+        "lang": "en",
+        "id": 1478563,
+        "title": null
+      },
+      {
+        "chap": "112",
+        "vol": null,
+        "hid": "J1XBo",
+        "lang": "en",
+        "id": 1478564,
+        "title": null
+      },
+      {
+        "chap": "111",
+        "vol": null,
+        "hid": "KGEDn1",
+        "lang": "en",
+        "id": 1478565,
+        "title": null
+      },
+      {
+        "chap": "110",
+        "vol": null,
+        "hid": "LGBE4",
+        "lang": "en",
+        "id": 1478566,
+        "title": null
+      },
+      {
+        "chap": "109",
+        "vol": null,
+        "hid": "MXBG31",
+        "lang": "en",
+        "id": 1478567,
+        "title": null
+      },
+      {
+        "chap": "108",
+        "vol": null,
+        "hid": "NG1Jz",
+        "lang": "en",
+        "id": 1478568,
+        "title": null
+      },
+      {
+        "chap": "107",
+        "vol": null,
+        "hid": "OG9KN",
+        "lang": "en",
+        "id": 1478569,
+        "title": null
+      },
+      {
+        "chap": "106",
+        "vol": null,
+        "hid": "PGJLn",
+        "lang": "en",
+        "id": 1478570,
+        "title": null
+      },
+      {
+        "chap": "105",
+        "vol": null,
+        "hid": "QXLMY",
+        "lang": "en",
+        "id": 1478571,
+        "title": null
+      },
+      {
+        "chap": "104",
+        "vol": null,
+        "hid": "RXBNR",
+        "lang": "en",
+        "id": 1478572,
+        "title": null
+      },
+      {
+        "chap": "103",
+        "vol": null,
+        "hid": "VWZR1",
+        "lang": "en",
+        "id": 1478573,
+        "title": null
+      },
+      {
+        "chap": "102",
+        "vol": null,
+        "hid": "W1BVg",
+        "lang": "en",
+        "id": 1478574,
+        "title": null
+      },
+      {
+        "chap": "101",
+        "vol": null,
+        "hid": "XPVWm",
+        "lang": "en",
+        "id": 1478575,
+        "title": null
+      },
+      {
+        "chap": "100",
+        "vol": null,
+        "hid": "YZXKp",
+        "lang": "en",
+        "id": 1478576,
+        "title": null
+      },
+      {
+        "chap": "99",
+        "vol": null,
+        "hid": "ZgXL6",
+        "lang": "en",
+        "id": 1478577,
+        "title": null
+      },
+      {
+        "chap": "98",
+        "vol": null,
+        "hid": "1M7yj",
+        "lang": "en",
+        "id": 1478578,
+        "title": null
+      },
+      {
+        "chap": "97",
+        "vol": null,
+        "hid": "2XJ0v",
+        "lang": "en",
+        "id": 1478579,
+        "title": null
+      },
+      {
+        "chap": "96",
+        "vol": null,
+        "hid": "33JAQ",
+        "lang": "en",
+        "id": 1478580,
+        "title": null
+      },
+      {
+        "chap": "95",
+        "vol": null,
+        "hid": "42KB6",
+        "lang": "en",
+        "id": 1478581,
+        "title": null
+      },
+      {
+        "chap": "94",
+        "vol": null,
+        "hid": "5M0DR",
+        "lang": "en",
+        "id": 1478582,
+        "title": null
+      },
+      {
+        "chap": "93",
+        "vol": null,
+        "hid": "6MVE9",
+        "lang": "en",
+        "id": 1478583,
+        "title": null
+      },
+      {
+        "chap": "92",
+        "vol": null,
+        "hid": "7MJGA",
+        "lang": "en",
+        "id": 1478584,
+        "title": null
+      },
+      {
+        "chap": "91",
+        "vol": null,
+        "hid": "8gYJo",
+        "lang": "en",
+        "id": 1478585,
+        "title": null
+      },
+      {
+        "chap": "90",
+        "vol": null,
+        "hid": "9jXK3",
+        "lang": "en",
+        "id": 1478586,
+        "title": null
+      },
+      {
+        "chap": "89",
+        "vol": null,
+        "hid": "0M3xX1",
+        "lang": "en",
+        "id": 1478587,
+        "title": null
+      },
+      {
+        "chap": "88",
+        "vol": null,
+        "hid": "Op8wE",
+        "lang": "en",
+        "id": 2144569,
+        "title": null
+      },
+      {
+        "chap": "87",
+        "vol": null,
+        "hid": "No0v8",
+        "lang": "en",
+        "id": 2144568,
+        "title": null
+      },
+      {
+        "chap": "86",
+        "vol": null,
+        "hid": "Mn1r1",
+        "lang": "en",
+        "id": 2144567,
+        "title": null
+      },
+      {
+        "chap": "85",
+        "vol": null,
+        "hid": "l0636",
+        "lang": "en",
+        "id": 1478591,
+        "title": null
+      },
+      {
+        "chap": "84",
+        "vol": null,
+        "hid": "LmJqv1",
+        "lang": "en",
+        "id": 2144566,
+        "title": null
+      },
+      {
+        "chap": "83",
+        "vol": null,
+        "hid": "KlQp8",
+        "lang": "en",
+        "id": 2144565,
+        "title": null
+      },
+      {
+        "chap": "82",
+        "vol": null,
+        "hid": "omJ5K",
+        "lang": "en",
+        "id": 1478594,
+        "title": null
+      },
+      {
+        "chap": "81",
+        "vol": null,
+        "hid": "pnV36",
+        "lang": "en",
+        "id": 1478595,
+        "title": null
+      },
+      {
+        "chap": "80",
+        "vol": null,
+        "hid": "qo83r",
+        "lang": "en",
+        "id": 1478596,
+        "title": null
+      },
+      {
+        "chap": "79",
+        "vol": null,
+        "hid": "rp736",
+        "lang": "en",
+        "id": 1478597,
+        "title": null
+      },
+      {
+        "chap": "78",
+        "vol": null,
+        "hid": "vwJ3r",
+        "lang": "en",
+        "id": 1478598,
+        "title": null
+      },
+      {
+        "chap": "77",
+        "vol": null,
+        "hid": "wxg3w",
+        "lang": "en",
+        "id": 1478599,
+        "title": null
+      },
+      {
+        "chap": "76",
+        "vol": null,
+        "hid": "gyX39",
+        "lang": "en",
+        "id": 1478600,
+        "title": null
+      },
+      {
+        "chap": "75",
+        "vol": null,
+        "hid": "jBJ3W",
+        "lang": "en",
+        "id": 1478601,
+        "title": null
+      },
+      {
+        "chap": "74",
+        "vol": null,
+        "hid": "kgM3x",
+        "lang": "en",
+        "id": 1478602,
+        "title": null
+      },
+      {
+        "chap": "73",
+        "vol": null,
+        "hid": "l063l1",
+        "lang": "en",
+        "id": 1478603,
+        "title": null
+      },
+      {
+        "chap": "72",
+        "vol": null,
+        "hid": "mkX3p",
+        "lang": "en",
+        "id": 1478604,
+        "title": null
+      },
+      {
+        "chap": "71",
+        "vol": null,
+        "hid": "nlJ34",
+        "lang": "en",
+        "id": 1478605,
+        "title": null
+      },
+      {
+        "chap": "70",
+        "vol": null,
+        "hid": "omJ5z",
+        "lang": "en",
+        "id": 1478606,
+        "title": null
+      },
+      {
+        "chap": "69",
+        "vol": null,
+        "hid": "pnV31",
+        "lang": "en",
+        "id": 1478607,
+        "title": null
+      },
+      {
+        "chap": "68",
+        "vol": null,
+        "hid": "qo833",
+        "lang": "en",
+        "id": 1478608,
+        "title": null
+      },
+      {
+        "chap": "67",
+        "vol": null,
+        "hid": "rp73w",
+        "lang": "en",
+        "id": 1478609,
+        "title": null
+      },
+      {
+        "chap": "66",
+        "vol": null,
+        "hid": "vwJ3V",
+        "lang": "en",
+        "id": 1478610,
+        "title": null
+      },
+      {
+        "chap": "65",
+        "vol": null,
+        "hid": "wxg3J",
+        "lang": "en",
+        "id": 1478611,
+        "title": null
+      },
+      {
+        "chap": "64",
+        "vol": null,
+        "hid": "xyj3J",
+        "lang": "en",
+        "id": 1478612,
+        "title": null
+      },
+      {
+        "chap": "63",
+        "vol": null,
+        "hid": "yzk3V",
+        "lang": "en",
+        "id": 1478613,
+        "title": null
+      },
+      {
+        "chap": "62",
+        "vol": null,
+        "hid": "zAl3r",
+        "lang": "en",
+        "id": 1478614,
+        "title": null
+      },
+      {
+        "chap": "61.5",
+        "vol": null,
+        "hid": "ZxGRw",
+        "lang": "en",
+        "id": 2331877,
+        "title": null
+      },
+      {
+        "chap": "61",
+        "vol": null,
+        "hid": "JkQoy",
+        "lang": "en",
+        "id": 2144564,
+        "title": null
+      },
+      {
+        "chap": "60",
+        "vol": null,
+        "hid": "GN8l5",
+        "lang": "en",
+        "id": 2144563,
+        "title": null
+      },
+      {
+        "chap": "59",
+        "vol": null,
+        "hid": "DK8gk",
+        "lang": "en",
+        "id": 2144561,
+        "title": null
+      },
+      {
+        "chap": "58",
+        "vol": null,
+        "hid": "BG6Wo",
+        "lang": "en",
+        "id": 2144560,
+        "title": null
+      },
+      {
+        "chap": "57",
+        "vol": null,
+        "hid": "AE1pj",
+        "lang": "en",
+        "id": 2144559,
+        "title": null
+      },
+      {
+        "chap": "56",
+        "vol": null,
+        "hid": "zgXk2",
+        "lang": "en",
+        "id": 2144558,
+        "title": null
+      },
+      {
+        "chap": "55",
+        "vol": null,
+        "hid": "yWXjR",
+        "lang": "en",
+        "id": 2144557,
+        "title": null
+      },
+      {
+        "chap": "54",
+        "vol": null,
+        "hid": "xW1gP",
+        "lang": "en",
+        "id": 2144556,
+        "title": null
+      },
+      {
+        "chap": "53",
+        "vol": null,
+        "hid": "w6r1X",
+        "lang": "en",
+        "id": 2144555,
+        "title": null
+      },
+      {
+        "chap": "52",
+        "vol": null,
+        "hid": "v6Z1n",
+        "lang": "en",
+        "id": 2144554,
+        "title": null
+      },
+      {
+        "chap": "51",
+        "vol": null,
+        "hid": "rW91L",
+        "lang": "en",
+        "id": 2144553,
+        "title": null
+      },
+      {
+        "chap": "50",
+        "vol": null,
+        "hid": "qWZ1y",
+        "lang": "en",
+        "id": 2144552,
+        "title": null
+      },
+      {
+        "chap": "49",
+        "vol": null,
+        "hid": "pW21y",
+        "lang": "en",
+        "id": 2144551,
+        "title": null
+      },
+      {
+        "chap": "48",
+        "vol": null,
+        "hid": "oWy1L",
+        "lang": "en",
+        "id": 2144550,
+        "title": null
+      },
+      {
+        "chap": "47",
+        "vol": null,
+        "hid": "nWO1p",
+        "lang": "en",
+        "id": 2144549,
+        "title": null
+      },
+      {
+        "chap": "46",
+        "vol": null,
+        "hid": "mWy53",
+        "lang": "en",
+        "id": 2144548,
+        "title": null
+      },
+      {
+        "chap": "45",
+        "vol": null,
+        "hid": "lW711",
+        "lang": "en",
+        "id": 2144547,
+        "title": null
+      },
+      {
+        "chap": "44",
+        "vol": null,
+        "hid": "kW71v",
+        "lang": "en",
+        "id": 2144546,
+        "title": null
+      },
+      {
+        "chap": "43",
+        "vol": null,
+        "hid": "omg0k",
+        "lang": "en",
+        "id": 1495494,
+        "title": null
+      },
+      {
+        "chap": "42",
+        "vol": null,
+        "hid": "pnjqm",
+        "lang": "en",
+        "id": 1495495,
+        "title": null
+      },
+      {
+        "chap": "41",
+        "vol": null,
+        "hid": "qokrk",
+        "lang": "en",
+        "id": 1495496,
+        "title": null
+      },
+      {
+        "chap": "40",
+        "vol": null,
+        "hid": "rplvW",
+        "lang": "en",
+        "id": 1495497,
+        "title": null
+      },
+      {
+        "chap": "39",
+        "vol": "5",
+        "hid": "qQY3p",
+        "lang": "en",
+        "id": 433152,
+        "title": "Exchange Festival with the Kyoto School - Team Battle 6"
+      },
+      {
+        "chap": "38",
+        "vol": "5",
+        "hid": "vQo35",
+        "lang": "en",
+        "id": 433154,
+        "title": "Exchange Festival with the Kyoto School - Team Battle 5"
+      },
+      {
+        "chap": "37",
+        "vol": "5",
+        "hid": "x6v3B",
+        "lang": "en",
+        "id": 433156,
+        "title": "Exchange Festival with the Kyoto School - Team Battle 4"
+      },
+      {
+        "chap": "36",
+        "vol": "5",
+        "hid": "z6K3y",
+        "lang": "en",
+        "id": 433158,
+        "title": "Exchange Festival with the Kyoto School - Team Battle 3"
+      },
+      {
+        "chap": "35",
+        "vol": "5",
+        "hid": "BrLWY",
+        "lang": "en",
+        "id": 433160,
+        "title": "Exchange Festival with the Kyoto School - Team Battle 2"
+      },
+      {
+        "chap": "34.5",
+        "vol": "4",
+        "hid": "Z8VL5",
+        "lang": "en",
+        "id": 433177,
+        "title": "Jujutsu Kaisen Jump Festa 2019 Short"
+      },
+      {
+        "chap": "34",
+        "vol": null,
+        "hid": "QBpG0",
+        "lang": "en",
+        "id": 1929271,
+        "title": null
+      },
+      {
+        "chap": "33",
+        "vol": null,
+        "hid": "RDqJO",
+        "lang": "en",
+        "id": 1929272,
+        "title": null
+      },
+      {
+        "chap": "32",
+        "vol": null,
+        "hid": "VKxjv",
+        "lang": "en",
+        "id": 1929273,
+        "title": null
+      },
+      {
+        "chap": "31",
+        "vol": null,
+        "hid": "vwpzM",
+        "lang": "en",
+        "id": 1495498,
+        "title": null
+      },
+      {
+        "chap": "30",
+        "vol": null,
+        "hid": "wxqAz",
+        "lang": "en",
+        "id": 1495499,
+        "title": null
+      },
+      {
+        "chap": "29",
+        "vol": null,
+        "hid": "gy9Gj",
+        "lang": "en",
+        "id": 1495500,
+        "title": null
+      },
+      {
+        "chap": "28",
+        "vol": null,
+        "hid": "jB9k4",
+        "lang": "en",
+        "id": 1495501,
+        "title": null
+      },
+      {
+        "chap": "27",
+        "vol": null,
+        "hid": "kg0lv",
+        "lang": "en",
+        "id": 1495502,
+        "title": null
+      },
+      {
+        "chap": "26",
+        "vol": null,
+        "hid": "l09m1",
+        "lang": "en",
+        "id": 1495503,
+        "title": null
+      },
+      {
+        "chap": "25",
+        "vol": null,
+        "hid": "mk9n3",
+        "lang": "en",
+        "id": 1495504,
+        "title": null
+      },
+      {
+        "chap": "24",
+        "vol": null,
+        "hid": "nl9op",
+        "lang": "en",
+        "id": 1495505,
+        "title": null
+      },
+      {
+        "chap": "23",
+        "vol": null,
+        "hid": "omg0L",
+        "lang": "en",
+        "id": 1495506,
+        "title": null
+      },
+      {
+        "chap": "22",
+        "vol": null,
+        "hid": "pnjqy",
+        "lang": "en",
+        "id": 1495507,
+        "title": null
+      },
+      {
+        "chap": "21",
+        "vol": null,
+        "hid": "qokry",
+        "lang": "en",
+        "id": 1495508,
+        "title": null
+      },
+      {
+        "chap": "20",
+        "vol": null,
+        "hid": "rplvL",
+        "lang": "en",
+        "id": 1495509,
+        "title": null
+      },
+      {
+        "chap": "19",
+        "vol": null,
+        "hid": "vwpzn",
+        "lang": "en",
+        "id": 1495510,
+        "title": null
+      },
+      {
+        "chap": "18",
+        "vol": null,
+        "hid": "wxqAX",
+        "lang": "en",
+        "id": 1495511,
+        "title": null
+      },
+      {
+        "chap": "17",
+        "vol": null,
+        "hid": "xyrBP",
+        "lang": "en",
+        "id": 1495512,
+        "title": null
+      },
+      {
+        "chap": "16",
+        "vol": null,
+        "hid": "yzvDR",
+        "lang": "en",
+        "id": 1495513,
+        "title": null
+      },
+      {
+        "chap": "15",
+        "vol": null,
+        "hid": "zAwE2",
+        "lang": "en",
+        "id": 1495514,
+        "title": null
+      },
+      {
+        "chap": "14",
+        "vol": null,
+        "hid": "ArY2j",
+        "lang": "en",
+        "id": 1495515,
+        "title": null
+      },
+      {
+        "chap": "13",
+        "vol": null,
+        "hid": "BvYyo",
+        "lang": "en",
+        "id": 1495516,
+        "title": null
+      },
+      {
+        "chap": "12",
+        "vol": null,
+        "hid": "DxVAk",
+        "lang": "en",
+        "id": 1495517,
+        "title": null
+      },
+      {
+        "chap": "11",
+        "vol": null,
+        "hid": "EyVBl",
+        "lang": "en",
+        "id": 1495518,
+        "title": null
+      },
+      {
+        "chap": "10",
+        "vol": null,
+        "hid": "GAVE5",
+        "lang": "en",
+        "id": 1495519,
+        "title": null
+      },
+      {
+        "chap": "9",
+        "vol": null,
+        "hid": "J19Ry",
+        "lang": "en",
+        "id": 1495520,
+        "title": null
+      },
+      {
+        "chap": "8",
+        "vol": null,
+        "hid": "KGVR8",
+        "lang": "en",
+        "id": 1495521,
+        "title": null
+      },
+      {
+        "chap": "7",
+        "vol": null,
+        "hid": "LGVRv",
+        "lang": "en",
+        "id": 1495522,
+        "title": null
+      },
+      {
+        "chap": "6",
+        "vol": null,
+        "hid": "MXV61",
+        "lang": "en",
+        "id": 1495523,
+        "title": null
+      },
+      {
+        "chap": "5",
+        "vol": null,
+        "hid": "NG6R8",
+        "lang": "en",
+        "id": 1495524,
+        "title": null
+      },
+      {
+        "chap": "4",
+        "vol": null,
+        "hid": "OG0RE",
+        "lang": "en",
+        "id": 1495525,
+        "title": null
+      },
+      {
+        "chap": "3",
+        "vol": null,
+        "hid": "PGV86",
+        "lang": "en",
+        "id": 1495526,
+        "title": null
+      },
+      {
+        "chap": "2",
+        "vol": null,
+        "hid": "QX8R5",
+        "lang": "en",
+        "id": 1495527,
+        "title": null
+      },
+      {
+        "chap": "1",
+        "vol": null,
+        "hid": "RXV7w",
+        "lang": "en",
+        "id": 1495528,
+        "title": null
+      },
+      {
+        "chap": null,
+        "vol": "17",
+        "hid": "JnL0o",
+        "lang": "en",
+        "id": 2295820,
+        "title": null
+      },
+      {
+        "chap": null,
+        "vol": "16",
+        "hid": "DOByn",
+        "lang": "en",
+        "id": 2295817,
+        "title": null
+      },
+      {
+        "chap": null,
+        "vol": "15",
+        "hid": "z80W8",
+        "lang": "en",
+        "id": 2295814,
+        "title": null
+      },
+      {
+        "chap": null,
+        "vol": "14",
+        "hid": "y4RVW",
+        "lang": "en",
+        "id": 2295813,
+        "title": null
+      },
+      {
+        "chap": null,
+        "vol": "13",
+        "hid": "wNPQw",
+        "lang": "en",
+        "id": 2295811,
+        "title": null
+      },
+      {
+        "chap": null,
+        "vol": "12",
+        "hid": "vMOPr",
+        "lang": "en",
+        "id": 2295810,
+        "title": null
+      },
+      {
+        "chap": null,
+        "vol": "11",
+        "hid": "rGKL61",
+        "lang": "en",
+        "id": 2295809,
+        "title": null
+      },
+      {
+        "chap": null,
+        "vol": "10",
+        "hid": "pDGJ6",
+        "lang": "en",
+        "id": 2295807,
+        "title": null
+      },
+      {
+        "chap": null,
+        "vol": "9",
+        "hid": "oBEGK",
+        "lang": "en",
+        "id": 2295806,
+        "title": null
+      },
+      {
+        "chap": null,
+        "vol": "8",
+        "hid": "mzBD0",
+        "lang": "en",
+        "id": 2295804,
+        "title": null
+      },
+      {
+        "chap": null,
+        "vol": "7",
+        "hid": "kxzAX",
+        "lang": "en",
+        "id": 2295802,
+        "title": null
+      },
+      {
+        "chap": null,
+        "vol": "6",
+        "hid": "jwyz5",
+        "lang": "en",
+        "id": 2295801,
+        "title": null
+      },
+      {
+        "chap": null,
+        "vol": "5",
+        "hid": "vMOPm",
+        "lang": "en",
+        "id": 2295798,
+        "title": null
+      },
+      {
+        "chap": null,
+        "vol": "4",
+        "hid": "rGKLE",
+        "lang": "en",
+        "id": 2295797,
+        "title": null
+      },
+      {
+        "chap": null,
+        "vol": "3",
+        "hid": "oBEGj",
+        "lang": "en",
+        "id": 2295794,
+        "title": null
+      },
+      {
+        "chap": null,
+        "vol": "2",
+        "hid": "mzBDO",
+        "lang": "en",
+        "id": 2295792,
+        "title": null
+      },
+      {
+        "chap": null,
+        "vol": "1",
+        "hid": "kxzA5",
+        "lang": "en",
+        "id": 2295790,
+        "title": null
+      },
+      {
+        "chap": null,
+        "vol": "0",
+        "hid": "9znVx",
+        "lang": "en",
+        "id": 2295786,
+        "title": null
+      }
+    ],
+    "dupGroupChapters": [
+      {
+        "id": 3084218,
+        "hid": "OKsiYbst",
+        "chap": "253",
+        "group_name": [
+          "TCB Scans"
+        ],
+        "md_chapters_groups": [
+          {
+            "md_groups": {
+              "title": "TCB Scans"
+            }
+          }
+        ]
+      },
+      {
+        "id": 3083800,
+        "hid": "Ttk6c_2I",
+        "chap": "253",
+        "group_name": [
+          "Official"
+        ],
+        "md_chapters_groups": [
+          {
+            "md_groups": {
+              "title": "MangaPlus"
+            }
+          }
+        ]
+      }
+    ],
+    "chapterLangList": [
+      {
+        "lang": "en",
+        "hid": "Ttk6c_2I"
+      },
+      {
+        "lang": "en",
+        "hid": "OKsiYbst"
+      }
+    ],
+    "canonical": "/comic/00-jujutsu-kaisen/OKsiYbst-chapter-253-en",
+    "seoTitle": "Chapter 253 (English) - Jujutsu Kaisen",
+    "seoDescription": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ㉕",
+    "chapTitle": "The Decisive Battle in the Uninhabited, Demon-Infested Shinjuku ㉕",
+    "checkVol2Chap1": false
+  }

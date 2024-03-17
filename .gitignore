@@ -6,6 +6,8 @@ logs
 
 node_modules
 bower_components
+.prettierrc
+dist
 
 *.sublime*
 
