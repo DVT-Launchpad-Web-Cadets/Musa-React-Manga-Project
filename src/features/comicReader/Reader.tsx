@@ -10,7 +10,7 @@ const Reader = () => {
         <BackButton />
       </div>
       {reader?.chapter?.md_images?.map((comic) => (
-        <div className="h-full">
+        <div key={comic.b2key} className="h-full">
           <img
             src={`https://meo3.comick.pictures/${comic?.b2key}`}
             className="w-full"
