@@ -5,9 +5,9 @@ logs
 **/*.back.*
 
 node_modules
-dist
 bower_components
 .prettierrc
+dist
 
 *.sublime*
 

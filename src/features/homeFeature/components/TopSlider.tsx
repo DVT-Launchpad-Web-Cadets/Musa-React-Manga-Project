@@ -1,5 +1,4 @@
 import { MangaSummary } from "../../../models/topManga";
-import TopSliderDetails from "./TopSliderDetails";
 import TopSliderItem from "./TopSliderItem";
 
 const TopSlider = ({ topSliderManga }: { topSliderManga: MangaSummary[] }) => {
