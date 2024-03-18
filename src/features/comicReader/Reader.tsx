@@ -10,13 +10,12 @@ const Reader = () => {
         <BackButton />
       </div>
       {reader?.chapter?.md_images?.map((comic) => (
-        <div className="h-full">
-          <img
-            src={`https://meo3.comick.pictures/${comic?.b2key}`}
-            className="w-full"
-            alt="missing page"
-          />
-        </div>
+        <img
+          key={comic.b2key}
+          src={`https://meo3.comick.pictures/${comic?.b2key}`}
+          className="w-full"
+          alt="missing page"
+        />
       ))}
     </div>
   );

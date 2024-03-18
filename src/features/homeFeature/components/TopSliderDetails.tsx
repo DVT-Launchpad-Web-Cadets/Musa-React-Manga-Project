@@ -10,16 +10,15 @@ const TopSliderDetails = ({
   followerCount: number;
   artist: string;
 }) => {
-  const formattedFollowerCount = formatFollowers(followerCount);
   return (
     <div className="absolute px-4 py-12  bottom-0 w-full flex flex-col gap-1 z-30">
-      <p className="text-xs truncate">{artist ? artist : "Unknown Artist"}</p>
+      <p className="text-xs truncate">{artist ?? "Unknown Artist"}</p>
       <p className="text-2xl font-semibold text-nowrap truncate">
-        {title ? title : "Unknown Title"}
+        {title ?? "Unknown Title"}
       </p>
       <span className="flex items-center gap-1">
         <FaHeart />
-        <p className="font-light text-sm">{formattedFollowerCount}</p>
+        <p className="font-light text-sm">{formatFollowers(followerCount)}</p>
       </span>
     </div>
   );

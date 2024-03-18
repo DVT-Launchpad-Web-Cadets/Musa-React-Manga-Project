@@ -7,7 +7,7 @@ const TopSlider = ({ topSliderManga }: { topSliderManga: MangaSummary[] }) => {
       {topSliderManga ? (
         <>
           {topSliderManga?.slice(0, 10).map((manga) => (
-            <TopSliderItem mangaInfo={manga} />
+            <TopSliderItem key={manga.slug} mangaInfo={manga} />
           ))}
         </>
       ) : (

@@ -5,7 +5,7 @@ const ChapterList = () => {
   return (
     <div className="py-4 px-4 flex flex-col gap-3">
       {chapters?.chapters?.map((chapter) => (
-        <ChapterCard chapter={chapter} />
+        <ChapterCard key={chapter.hid} chapter={chapter} />
       ))}
     </div>
   );
