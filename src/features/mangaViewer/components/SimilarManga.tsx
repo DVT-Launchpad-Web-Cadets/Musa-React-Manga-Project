@@ -14,9 +14,7 @@ const SimilarManga = ({ cardInfo }: { cardInfo: Recommendation }) => {
         />
         <div className="py-1">
           <p className="line-clamp-1 hover:line-clamp-none">
-            {cardInfo.relates && cardInfo.relates.title
-              ? cardInfo.relates.title
-              : "Unknown Title"}
+            {cardInfo?.relates?.title ?? "Unknown Title"}
           </p>
           <span className="text-card-follower-count flex gap-1 items-center">
             <FaHeart />
