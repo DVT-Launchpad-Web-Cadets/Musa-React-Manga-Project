@@ -1,10 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./features/homeFeature/Home";
-import MangaViewer from "./features/mangaViewer/MangaViewer";
-import Search from "./features/search/Search";
-import Reader from "./features/comicReader/Reader";
-import MangaListView from "./features/homeFeature/components/MangaListView";
 import ErrorPage from "./sharedComponents/ErrorPage";
+import { Suspense, lazy } from "react";
 
 const router = createBrowserRouter([
   {
@@ -14,28 +11,34 @@ const router = createBrowserRouter([
   },
   {
     path: "/manga",
-    element: <MangaViewer />,
+    Component: lazy(() => import("./features/mangaViewer/MangaViewer")),
     errorElement: <ErrorPage />,
   },
   {
     path: "/search",
-    element: <Search />,
+    Component: lazy(() => import("./features/search/Search")),
     errorElement: <ErrorPage />,
   },
   {
     path: "/comic",
-    element: <Reader />,
+    Component: lazy(() => import("./features/comicReader/Reader")),
     errorElement: <ErrorPage />,
   },
   {
     path: "/topmanga",
-    element: <MangaListView />,
+    Component: lazy(
+      () => import("./features/homeFeature/components/MangaListView")
+    ),
     errorElement: <ErrorPage />,
   },
 ]);
 
 const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <Suspense fallback={<>Loading...</>}>
+      <RouterProvider router={router} />
+    </Suspense>
+  );
 };
 
 export default App;

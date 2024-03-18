@@ -11,7 +11,7 @@ const ChapterCard = ({ chapter }: { chapter: Chapter }) => {
         </div>
         <div className="w-full max-w-36 flex flex-col gap-1">
           <h1 className="truncate">
-            {chapter.title ? chapter.title : "Unknown Title"}
+            {chapter.title ?? "Unknown Title"}
           </h1>
           <p className="text-sm font-light">Chapter {chapter?.chap}</p>
         </div>

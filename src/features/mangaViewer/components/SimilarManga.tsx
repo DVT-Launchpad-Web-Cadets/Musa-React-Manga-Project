@@ -4,12 +4,11 @@ import { Recommendation } from "../../../models/mangaDetails";
 import { Link } from "react-router-dom";
 
 const SimilarManga = ({ cardInfo }: { cardInfo: Recommendation }) => {
-  const formattedFollowerCount = formatFollowers(44000);
   return (
     <div className="carousel-item flex flex-col h-full w-40">
       <Link to="/manga">
         <img
-          src={`https://meo3.comick.pictures/${cardInfo?.relates.md_covers[0]?.b2key}`}
+          src={`https://meo3.comick.pictures/${cardInfo?.relates.md_covers?.[0]?.b2key}`}
           className="w-full h-5/6 object-cover object-top rounded-2xl"
           alt={cardInfo?.relates?.title}
         />
@@ -21,7 +20,7 @@ const SimilarManga = ({ cardInfo }: { cardInfo: Recommendation }) => {
           </p>
           <span className="text-card-follower-count flex gap-1 items-center">
             <FaHeart />
-            <p className="font-light text-sm">{formattedFollowerCount}</p>
+            <p className="font-light text-sm">{formatFollowers(55000)}</p>
           </span>
         </div>
       </Link>
