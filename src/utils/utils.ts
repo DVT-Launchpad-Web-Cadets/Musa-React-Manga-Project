@@ -1,8 +1,11 @@
-export default function formatFollowers(num: number, precision: number = 1) {
+export default function formatFollowers(
+  num: number | undefined,
+  precision: number = 1
+) {
+  if (!num) return "Unknown";
   const map = [
     { suffix: "M", threshold: 1e6 },
     { suffix: "K", threshold: 1e3 },
-    { suffix: "", threshold: 1 },
   ];
 
   const found = map.find((x) => Math.abs(num) >= x.threshold);

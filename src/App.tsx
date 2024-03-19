@@ -2,6 +2,9 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./features/homeFeature/Home";
 import ErrorPage from "./sharedComponents/ErrorPage";
 import { Suspense, lazy } from "react";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const queryClient = new QueryClient();
 
 const router = createBrowserRouter([
   {
@@ -35,9 +38,11 @@ const router = createBrowserRouter([
 
 const App = () => {
   return (
-    <Suspense fallback={<>Loading...</>}>
-      <RouterProvider router={router} />
-    </Suspense>
+    <QueryClientProvider client={queryClient}>
+      <Suspense fallback={<>Loading...</>}>
+        <RouterProvider router={router} />
+      </Suspense>
+    </QueryClientProvider>
   );
 };
 

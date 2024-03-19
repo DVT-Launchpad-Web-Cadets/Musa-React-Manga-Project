@@ -1,24 +1,26 @@
 import { FaHeart } from "react-icons/fa";
-import { MangaSummary } from "../../../models/topManga";
 import formatFollowers from "../../../utils/utils";
 import { Link } from "react-router-dom";
+import { MangaDetails } from "../../../models/mangaDetails";
 
-const MangaCard = ({ cardInfo }: { cardInfo: MangaSummary }) => {
+const MangaCard = ({ cardInfo }: { cardInfo: MangaDetails | undefined }) => {
   return (
     <div className="carousel-item flex flex-col h-full w-40">
       <Link to="/manga">
         <img
-          src={`https://meo3.comick.pictures/${cardInfo?.md_covers?.[0]?.b2key}`}
+          src={`https://meo3.comick.pictures/${cardInfo?.comic.md_covers?.[0]?.b2key}`}
           className="w-full h-64 object-cover object-top rounded-2xl"
-          alt={cardInfo?.title}
+          alt={cardInfo?.comic.title}
         />
         <div className="py-1">
           <p className="line-clamp-1 hover:line-clamp-none">
-            {cardInfo.title ?? "Unknown Title"}
+            {cardInfo?.comic?.title ?? "Unknown Title"}
           </p>
           <span className="text-card-follower-count flex gap-1 items-center">
             <FaHeart />
-            <p className="font-light text-sm">{formatFollowers(55000)}</p>
+            <p className="font-light text-sm">
+              {formatFollowers(cardInfo?.comic.user_follow_count)}
+            </p>
           </span>
         </div>
       </Link>
