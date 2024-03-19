@@ -1,7 +1,14 @@
 import { MangaDetails } from "../../../models/mangaDetails";
+import { useComicStore } from "../../../state/store";
 import TopSliderItem from "./TopSliderItem";
 
-const TopSlider = ({ topSliderManga }: { topSliderManga: (MangaDetails | undefined)[] }) => {
+const TopSlider = ({
+  topSliderManga,
+}: {
+  topSliderManga: (MangaDetails | undefined)[];
+}) => {
+  const setTrendingManga = useComicStore((state) => state.setTrendingManga);
+  setTrendingManga(topSliderManga);
   return (
     <div className="w-full h-[46%] carousel carousel-center relative bg-primary-text-color">
       {topSliderManga ? (

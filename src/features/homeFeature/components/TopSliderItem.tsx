@@ -1,15 +1,17 @@
 import { Link } from "react-router-dom";
 import TopSliderDetails from "./TopSliderDetails";
 import { MangaDetails } from "../../../models/mangaDetails";
+import { useComicStore } from "../../../state/store";
 
 const TopSliderItem = ({
   mangaInfo,
 }: {
   mangaInfo: MangaDetails | undefined;
 }) => {
+  const setCurrentComic = useComicStore((state) => state.setCurrentComic);
   return (
     <div className="carousel-item w-full">
-      <Link to="/manga">
+      <Link onClick={() => setCurrentComic(mangaInfo)} to="/manga">
         <div className="absolute shadow-slider w-full h-full z-20"></div>
         <img
           src={`https://meo3.comick.pictures/${mangaInfo?.comic.md_covers[0]?.b2key}`}

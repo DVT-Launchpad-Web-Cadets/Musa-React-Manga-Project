@@ -10,7 +10,7 @@ export interface ComicState {
   currentChapter: Comic | null;
   setTrendingManga: (manga: (MangaDetails | undefined)[]) => void;
   setTopManga: (manga: (MangaDetails | undefined)[]) => void;
-  setCurrentComic: (comic: MangaDetails) => void;
+  setCurrentComic: (comic: MangaDetails | undefind) => void;
   setCurrentChapters: (chapters: Chapters) => void;
   setCurrentChapter: (chapter: Comic) => void;
 }
