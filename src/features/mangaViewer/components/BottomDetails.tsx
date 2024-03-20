@@ -36,7 +36,7 @@ const BottomDetails = ({ mangaInfo }: { mangaInfo: MangaDetails }) => {
           <p className="text-sm h-20 text-nowrap">Similar</p>
         </a>
       </div>
-      {selectedTab === 1 && <ChaptersTab />}
+      {selectedTab === 1 && <ChaptersTab mangaDetails={mangaInfo} />}
       {selectedTab === 2 && <DetailsTab mangaDetails={mangaInfo} />}
       {selectedTab === 3 && (
         <SimilarTab recommendations={mangaInfo?.comic?.recommendations} />

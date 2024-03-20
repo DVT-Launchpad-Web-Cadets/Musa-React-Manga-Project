@@ -15,8 +15,8 @@ const MangaViewer = () => {
           className="w-full h-full object-cover object-top brightness-50 "
           src={`https://meo3.comick.pictures/${
             details?.comic?.md_covers?.length > 1
-              ? details?.comic.md_covers[1]?.b2key
-              : details?.comic.md_covers[0]?.b2key
+              ? details?.comic?.md_covers[1]?.b2key
+              : details?.comic?.md_covers[0]?.b2key
           }`}
           alt=""
         />

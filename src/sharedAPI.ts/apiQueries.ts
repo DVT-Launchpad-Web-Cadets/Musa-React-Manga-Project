@@ -1,5 +1,6 @@
+import { Comic } from "../models/chapterComic";
 import { Chapters } from "../models/chapters";
-import { Comic, MangaDetails } from "../models/mangaDetails";
+import { MangaDetails } from "../models/mangaDetails";
 import { TopManga } from "../models/topManga";
 import apiBasieURL from "./apiBasieURL";
 
@@ -11,7 +12,6 @@ export const getTopComics = async (): Promise<TopManga> => {
 };
 
 export const getComicBySlug = async (slug: string): Promise<MangaDetails> => {
-  console.log(slug);
   const comic = await fetch(`${apiBasieURL}/comic/${slug}/`);
 
   return await comic.json();
@@ -23,7 +23,7 @@ export const getComicChapters = async (hid: string): Promise<Chapters> => {
   return await chapters.json();
 };
 
-export const getChapterInfo = async (hid: string): Promise<Comic> => {
+export const getChapterInfo = async (hid: string | undefined): Promise<Comic> => {
   const chapter = await fetch(`${apiBasieURL}/chapter/${hid}/`);
 
   return await chapter.json();

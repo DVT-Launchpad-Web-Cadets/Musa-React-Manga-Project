@@ -6,11 +6,11 @@ export interface ComicState {
   trendingManga: (MangaDetails | undefined)[] | null;
   topManga: (MangaDetails | undefined)[] | null;
   currentComic: MangaDetails | null;
-  currentChapters: Chapters | null;
-  currentChapter: Comic | null;
+  currentChapters: Chapters | undefined | null;
+  currentChapter: Chapter | undefined | null;
   setTrendingManga: (manga: (MangaDetails | undefined)[]) => void;
   setTopManga: (manga: (MangaDetails | undefined)[]) => void;
   setCurrentComic: (comic: MangaDetails | undefind) => void;
-  setCurrentChapters: (chapters: Chapters) => void;
-  setCurrentChapter: (chapter: Comic) => void;
+  setCurrentChapters: (chapters: Chapters | undefined) => void;
+  setCurrentChapter: (chapter: Chapter) => void;
 }

@@ -2,8 +2,7 @@ import { create } from "zustand";
 import { ComicState } from "./comicState";
 import { devtools, persist } from "zustand/middleware";
 import { MangaDetails } from "../models/mangaDetails";
-import { Comic } from "../models/chapterComic";
-import { Chapters } from "../models/chapters";
+import { Chapter, Chapters } from "../models/chapters";
 
 export const useComicStore = create<ComicState>()(
   devtools(
@@ -20,9 +19,9 @@ export const useComicStore = create<ComicState>()(
           set(() => ({ topManga: manga })),
         setCurrentComic: (comic: MangaDetails) =>
           set(() => ({ currentComic: comic })),
-        setCurrentChapters: (chapters: Chapters) =>
+        setCurrentChapters: (chapters: Chapters | undefined) =>
           set(() => ({ currentChapters: chapters })),
-        setCurrentChapter: (chapter: Comic) =>
+        setCurrentChapter: (chapter: Chapter) =>
           set(() => ({ currentChapter: chapter })),
       }),
       {

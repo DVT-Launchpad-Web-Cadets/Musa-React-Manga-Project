@@ -7,7 +7,7 @@ const GenreList = ({ mangaDetails }: { mangaDetails: MangaDetails }) => {
       <h1>Genres</h1>
       <div className="flex gap-6">
         {mangaDetails?.comic.md_comic_md_genres?.slice(0, 3).map((genre) => (
-          <Chip genre={genre?.md_genres.name} />
+          <Chip key={genre?.md_genres.slug} genre={genre?.md_genres.name} />
         ))}
       </div>
     </div>

@@ -1,7 +1,10 @@
-import chapters from "../../../mockData/chapters.json";
+import { Chapters } from "../../../models/chapters";
+import { useComicStore } from "../../../state/store";
 import ChapterCard from "./ChapterCard";
 
-const ChapterList = () => {
+const ChapterList = ({ chapters }: { chapters: Chapters | undefined }) => {
+  const setCurrentChapters = useComicStore((state) => state.setCurrentChapters);
+  setCurrentChapters(chapters);
   return (
     <div className="py-4 px-4 flex flex-col gap-3">
       {chapters?.chapters?.map((chapter) => (

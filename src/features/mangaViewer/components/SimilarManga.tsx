@@ -2,11 +2,13 @@ import { FaHeart } from "react-icons/fa";
 import formatFollowers from "../../../utils/utils";
 import { Recommendation } from "../../../models/mangaDetails";
 import { Link } from "react-router-dom";
+import { useComicStore } from "../../../state/store";
 
 const SimilarManga = ({ cardInfo }: { cardInfo: Recommendation }) => {
+  const setCurrentComic = useComicStore((state) => state.setCurrentComic);
   return (
     <div className="carousel-item flex flex-col h-full w-40">
-      <Link to="/manga">
+      <Link onClick={() => setCurrentComic(cardInfo)} to="/manga">
         <img
           src={`https://meo3.comick.pictures/${cardInfo?.relates.md_covers?.[0]?.b2key}`}
           className="w-full h-5/6 object-cover object-top rounded-2xl"

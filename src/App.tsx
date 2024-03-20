@@ -23,7 +23,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/comic",
+    path: "/reader/:chapterHID",
     Component: lazy(() => import("./features/comicReader/Reader")),
     errorElement: <ErrorPage />,
   },
