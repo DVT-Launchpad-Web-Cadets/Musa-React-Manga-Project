@@ -5,6 +5,8 @@ import { useNavigate, useParams } from "react-router-dom";
 import PrevButton from "./components/PrevButton";
 import NextButton from "./components/NextButton";
 import { useComicStore } from "../../state/store";
+import DisabledPrev from "./components/DisabledPrev";
+import DisabledNext from "./components/DisabledNext";
 
 const Reader = () => {
   const chapters = useComicStore((state) => state.currentChapters);
@@ -59,8 +61,10 @@ const Reader = () => {
         />
       ))}
       <div className="fixed bottom-0 h-24 bg-primary-color w-full flex justify-center items-center gap-20">
-        <PrevButton prevChapter={data?.prev} />
-        <NextButton nextChapter={data?.next} />
+        { data?.prev ? <PrevButton prevChapter={data?.prev} />: <DisabledPrev/> }
+        { data?.next ? <NextButton nextChapter={data?.next} />: <DisabledNext/>}
+        
+        
       </div>
     </div>
   );
