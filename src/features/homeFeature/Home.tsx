@@ -30,7 +30,8 @@ const Home = () => {
       : [],
   });
 
-  const loadingQuery = queries.find((query) => query.isPending);
+  const loadingQuery = queries?.find((query) => query.isPending);
+  const errorQuery = queries?.find((query) => query.isError);
 
   if (isPending || loadingQuery?.isPending)
     return (
@@ -39,6 +40,18 @@ const Home = () => {
         <BottomContainerSkeleton />
       </>
     );
+
+  if (!isPending && !data) {
+    return (
+      <div className="h-full flex items-center justify-center"> NO manga</div>
+    );
+  }
+
+  if (!isPending && data && errorQuery) {
+    return (
+      <div className="h-full flex items-center justify-center"> NO manga</div>
+    );
+  }
 
   const trendingManga = queries.slice(0, 10).map((query) => query.data);
   const topManga = queries.slice(11, 20).map((query) => query.data);

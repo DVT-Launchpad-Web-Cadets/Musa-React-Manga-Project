@@ -1,11 +1,15 @@
 import { useQuery } from "@tanstack/react-query";
 import BackButton from "../../sharedComponents/BackButton";
 import { getChapterInfo } from "../../sharedAPI.ts/apiQueries";
-import {  useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import PrevButton from "./components/PrevButton";
+import NextButton from "./components/NextButton";
+import { useComicStore } from "../../state/store";
 
 const Reader = () => {
+  const chapters = useComicStore((state) => state.currentChapters);
   const { chapterHID } = useParams();
-  console.log(chapterHID);
+  const navigate = useNavigate();
 
   const { isPending, data, isError } = useQuery({
     queryKey: ["reader", chapterHID],
@@ -20,10 +24,31 @@ const Reader = () => {
     );
   }
 
+  if(isError) {
+    return <div className="h-full flex items-center justify-center"> Nothing to read</div>
+  }
+
   return (
     <div className="h-full w-full flex flex-col bg-primary-color grow">
-      <div className="fixed w-full h-14 flex pl-4 items-center top-0 left-0 bg-header-background">
+      <div className="fixed w-full h-14 flex gap-6 pl-4 items-center top-0 left-0 bg-primary-color ">
         <BackButton />
+        <select
+          onChange={(event) =>
+            navigate(`/reader/${event.target.value}`, { replace: true })
+          }
+          value={chapterHID}
+          className="select select-ghost select-sm w-4/6 max-w-xs self-center text-xl"
+        >
+          {chapters?.chapters
+            .filter((chapter) => chapter?.hid)
+            .map((chapter) => (
+              <option value={chapter?.hid} className="text-2xl">
+                {`${chapter?.chap} ${
+                  chapter?.title?.slice(0, 30) ?? "Unknown Title"
+                }`}
+              </option>
+            ))}
+        </select>
       </div>
       {data?.chapter?.md_images?.map((comic) => (
         <img
@@ -33,6 +58,10 @@ const Reader = () => {
           alt="missing page"
         />
       ))}
+      <div className="fixed bottom-0 h-24 bg-primary-color w-full flex justify-center items-center gap-20">
+        <PrevButton prevChapter={data?.prev} />
+        <NextButton nextChapter={data?.next} />
+      </div>
     </div>
   );
 };

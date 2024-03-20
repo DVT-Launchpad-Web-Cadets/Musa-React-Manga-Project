@@ -17,6 +17,10 @@ const ChaptersTab = ({ mangaDetails }: { mangaDetails: MangaDetails }) => {
     );
   }
 
+  if(isError){
+    return <div className="h-full flex items-center justify-center"> NO manga</div>
+  }
+
   return (
     <div className="grow-0 overflow-auto">
       <ChapterList chapters={data}  />
