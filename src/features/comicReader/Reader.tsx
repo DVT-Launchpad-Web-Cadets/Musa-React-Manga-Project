@@ -5,7 +5,6 @@ import BackButton from "../../sharedComponents/BackButton";
 import { getChapterInfo } from "../../sharedAPI.ts/apiQueries";
 import { useLoaderData, useParams } from "react-router-dom";
 
-// TODO : Fix this
 const Reader = () => {
   const { chapterHID } = useParams();
   console.log(chapterHID);
