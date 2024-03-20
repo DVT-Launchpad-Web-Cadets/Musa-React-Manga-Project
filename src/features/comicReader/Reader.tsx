@@ -1,9 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
-import comic from "../../mockData/chapter.json";
-import { Comic } from "../../models/chapterComic";
 import BackButton from "../../sharedComponents/BackButton";
 import { getChapterInfo } from "../../sharedAPI.ts/apiQueries";
-import { useLoaderData, useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 
 const Reader = () => {
   const { chapterHID } = useParams();
@@ -23,7 +21,7 @@ const Reader = () => {
   }
 
   return (
-    <div className="h-full w-full flex flex-col bg-primary-color">
+    <div className="h-full w-full flex flex-col bg-primary-color grow">
       <div className="fixed w-full h-14 flex pl-4 items-center top-0 left-0 bg-header-background">
         <BackButton />
       </div>

@@ -8,6 +8,12 @@ const SimilarTab = ({
 }: {
   recommendations: Recommendation[];
 }) => {
+  console.log(recommendations, recommendations.length);
+  if (recommendations?.length == 0) {
+    return (
+      <div className="h-full flex items-center justify-center"> NO manga</div>
+    );
+  }
   const queries = useQueries({
     queries: recommendations
       ? recommendations.map((comic) => {
@@ -20,12 +26,19 @@ const SimilarTab = ({
   });
 
   const loadingQuery = queries.find((query) => query.isPending);
+  const errorQuery = queries.find((query) => query.isError);
 
   if (loadingQuery) {
     return (
       <div className="flex justify-center items-center grow">
         <span className=" loading loading-dots loading-lg text-secondary-color"></span>
       </div>
+    );
+  }
+
+  if (errorQuery) {
+    return (
+      <div className="h-full flex items-center justify-center"> NO manga</div>
     );
   }
 

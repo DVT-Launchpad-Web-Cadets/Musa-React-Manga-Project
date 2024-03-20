@@ -21,7 +21,7 @@ const Home = () => {
 
   const queries = useQueries({
     queries: data
-      ? data["7"].map((comic) => {
+      ? data["7"].slice(0, 20).map((comic) => {
           return {
             queryKey: ["comic", comic.slug],
             queryFn: () => getComicBySlug(comic.slug),

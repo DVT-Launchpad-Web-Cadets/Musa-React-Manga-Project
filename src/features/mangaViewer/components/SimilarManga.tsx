@@ -11,7 +11,7 @@ const SimilarManga = ({ cardInfo }: { cardInfo: MangaDetails | undefined }) => {
       <Link onClick={() => setCurrentComic(cardInfo)} to="/manga">
         <img
           src={`https://meo3.comick.pictures/${cardInfo?.comic?.md_covers?.[0]?.b2key}`}
-          className="w-full h-5/6 object-cover object-top rounded-2xl"
+          className="w-full h-54 object-cover object-top rounded-2xl"
           alt={cardInfo?.comic?.title}
         />
         <div className="py-1">
