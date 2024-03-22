@@ -1,4 +1,4 @@
-import MangaCard from "./MangaCard";
+import MangaCard from "../../../sharedComponents/MangaCard";
 import ListHeader from "./ListHeader";
 import { useComicStore } from "../../../state/store";
 

@@ -8,7 +8,7 @@ const NextButton = ({
   nextChapter: NeighborChapter | undefined;
 }) => {
   return (
-    <Link to={`/reader/${nextChapter?.hid}`}>
+    <Link to={`/reader/${nextChapter?.hid}`} replace>
       <button className="btn w-16 h-16 btn-circle bg-secondary-color text-3xl">
         <IoIosSkipForward />
       </button>

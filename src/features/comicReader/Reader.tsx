@@ -26,8 +26,13 @@ const Reader = () => {
     );
   }
 
-  if(isError) {
-    return <div className="h-full flex items-center justify-center"> Nothing to read</div>
+  if (isError) {
+    return (
+      <div className="h-full flex items-center justify-center">
+        {" "}
+        Nothing to read
+      </div>
+    );
   }
 
   return (
@@ -44,7 +49,11 @@ const Reader = () => {
           {chapters?.chapters
             .filter((chapter) => chapter?.hid)
             .map((chapter) => (
-              <option value={chapter?.hid} className="text-2xl">
+              <option
+                key={chapter?.hid}
+                value={chapter?.hid}
+                className="text-2xl"
+              >
                 {`${chapter?.chap} ${
                   chapter?.title?.slice(0, 30) ?? "Unknown Title"
                 }`}
@@ -61,10 +70,16 @@ const Reader = () => {
         />
       ))}
       <div className="fixed bottom-0 h-24 bg-primary-color w-full flex justify-center items-center gap-20">
-        { data?.prev ? <PrevButton prevChapter={data?.prev} />: <DisabledPrev/> }
-        { data?.next ? <NextButton nextChapter={data?.next} />: <DisabledNext/>}
-        
-        
+        {data?.prev ? (
+          <PrevButton prevChapter={data?.prev} />
+        ) : (
+          <DisabledPrev />
+        )}
+        {data?.next ? (
+          <NextButton nextChapter={data?.next} />
+        ) : (
+          <DisabledNext />
+        )}
       </div>
     </div>
   );

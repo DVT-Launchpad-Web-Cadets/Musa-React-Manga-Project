@@ -1,5 +1,5 @@
 import { useComicStore } from "../../../state/store";
-import MangaCard from "./MangaCard";
+import MangaCard from "../../../sharedComponents/MangaCard";
 
 const CardsCarousel = () => {
   const topMangaList = useComicStore((state) => state.topManga);
