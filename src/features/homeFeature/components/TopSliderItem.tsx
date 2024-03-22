@@ -10,7 +10,7 @@ const TopSliderItem = ({
 }) => {
   const setCurrentComic = useComicStore((state) => state.setCurrentComic);
   return (
-    <div className="carousel-item w-full relative">
+    <div className="carousel-item w-full relative overflow-hidden">
       <Link onClick={() => setCurrentComic(mangaInfo)} to="/manga">
         <div className="absolute shadow-slider w-full h-full z-20"></div>
         <img
