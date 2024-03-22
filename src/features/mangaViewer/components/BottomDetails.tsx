@@ -5,7 +5,7 @@ import DetailsTab from "./DetailsTab";
 import SimilarTab from "./SimilarTab";
 
 const BottomDetails = ({ mangaInfo }: { mangaInfo: MangaDetails }) => {
-  const [selectedTab, setSelectedTab] = useState(1);
+  const [selectedTab, setSelectedTab] = useState(2);
   return (
     <div
       className="

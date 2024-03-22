@@ -6,7 +6,7 @@ const BackButton = () => {
   return (
     <div
       onClick={() => naviagte(-1)}
-      className="rounded-full w-fit p-2 bg-button-background brightness-150 text-lg"
+      className="rounded-full w-fit p-2 bg-button-background brightness-150 text-lg  "
     >
       <IoIosArrowBack />
     </div>
