@@ -9,7 +9,7 @@ const TopMangas = ({
   type: string;
 }) => {
   return (
-    <div className="pt-12">
+    <div className="pt-9">
       <MangaListHeader headerTitle={headerTitle} />
       <CardsCarousel comicType={type} />
     </div>

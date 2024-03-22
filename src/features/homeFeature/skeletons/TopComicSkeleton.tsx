@@ -1,10 +1,10 @@
 import MangaListHeader from "../components/MangaListHeader";
 import CarouselSkeleton from "./CarouselSkeleton";
 
-const TopComicSkeleton = () => {
+const TopComicSkeleton = ({headerTitle} : {headerTitle: string}) => {
   return (
-    <div className="py-8 h-80">
-      <MangaListHeader headerTitle="Top mangas" />
+    <div className="pt-9">
+      <MangaListHeader headerTitle={headerTitle} />
       <CarouselSkeleton />
     </div>
   );

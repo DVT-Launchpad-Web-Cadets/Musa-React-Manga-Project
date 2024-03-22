@@ -2,8 +2,10 @@ import TopComicSkeleton from "./TopComicSkeleton";
 
 const BottomContainerSkeleton = () => {
   return (
-    <div className="h-[57%] w-full absolute z-40 bottom-0 rounded-t-lg bg-gradient-to-tl from-primary-color via-gradient-color to-primary-color">
-      <TopComicSkeleton />
+    <div className="w-full absolute z-40 top-96 rounded-t-2xl bg-gradient-to-tl from-primary-color via-gradient-color to-primary-color flex flex-col grow pb-5">
+      <TopComicSkeleton headerTitle="Top Manga" />
+      <TopComicSkeleton headerTitle="Top Manhwa" />
+      <TopComicSkeleton headerTitle="Top Manhua" />
     </div>
   );
 };

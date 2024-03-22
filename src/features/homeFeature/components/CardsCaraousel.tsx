@@ -15,7 +15,7 @@ const CardsCarousel = ({ comicType }: { comicType: string }) => {
     topMangaList = useComicStore((state) => state.topManhua);
 
   return (
-    <div className="carousel carousel-center max-w-md p-4 space-x-4 h-80 flex gap-2">
+    <div className="carousel carousel-center p-4 space-x-4 h-[340px] flex gap-2">
       {topMangaList?.slice(0, 6).map((manga) => (
         <MangaCard key={manga?.comic?.slug} cardInfo={manga} />
       ))}
