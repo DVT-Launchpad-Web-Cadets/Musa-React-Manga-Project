@@ -4,7 +4,7 @@ import GenreList from "./GenreList";
 
 const DetailsTab = ({ mangaDetails }: { mangaDetails: MangaDetails }) => {
   return (
-    <div className="pt-12 h-full px-6 text-lg font-semibold flex flex-col gap-5 grow-0 overflow-auto">
+    <div className="pt-12 pb-5 h-full px-6 text-lg font-semibold flex flex-col gap-5 grow-0 overflow-auto">
       <GenreList mangaDetails={mangaDetails} />
       <Description mangaDetails={mangaDetails} />
     </div>

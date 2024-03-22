@@ -1,14 +1,24 @@
 import MangaCard from "../../../sharedComponents/MangaCard";
 import ListHeader from "./ListHeader";
-import { useComicStore } from "../../../state/store";
+import { useLocation } from "react-router-dom";
+import { MangaDetails } from "../../../models/mangaDetails";
 
 const MangaListView = () => {
-  const mangaList = useComicStore((state) => state.topManga);
+  const { state } = useLocation();
+
+  const {
+    topMangaList,
+    headerTitle,
+  }: {
+    topMangaList: (MangaDetails[] | undefined) | null;
+    headerTitle: string;
+  } = state;
+
   return (
     <div className="flex flex-col">
-      <ListHeader />
+      <ListHeader title={headerTitle} />
       <div className="py-32 px-4 grid grid-cols-2 gap-y-8 place-items-center grow-0 overflow-auto bg-gradient-to-t from-primary-color to-gradient-color">
-        {mangaList?.map((manga) => (
+        {topMangaList?.map((manga) => (
           <MangaCard key={manga?.comic?.slug} cardInfo={manga} />
         ))}
       </div>

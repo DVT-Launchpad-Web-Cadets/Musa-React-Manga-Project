@@ -7,21 +7,45 @@ import TopSliderSkeleton from "./skeletons/TopSliderSkeletom";
 import BottomContainerSkeleton from "./skeletons/BottomContainerSkeleton";
 
 const Home = () => {
-  const { isPending, data, isError } = useQuery({
-    queryKey: ["comics"],
-    queryFn: getTopComics,
+  const mangaQuery = useQuery({
+    queryKey: ["manga"],
+    queryFn: () => getTopComics("manga"),
   });
 
-  if (isError)
+  const manhwaQuery = useQuery({
+    queryKey: ["manhwa"],
+    queryFn: () => getTopComics("manhwa"),
+  });
+
+  const manhuaQuery = useQuery({
+    queryKey: ["manhua"],
+    queryFn: () => getTopComics("manhua"),
+  });
+
+  if (mangaQuery.isError)
     return (
       <>
         <LoadFail />
       </>
     );
 
-  const queries = useQueries({
-    queries: data
-      ? data["7"].slice(0, 20).map((comic) => {
+  if (manhwaQuery.isError)
+    return (
+      <>
+        <LoadFail />
+      </>
+    );
+
+  if (manhuaQuery.isError)
+    return (
+      <>
+        <LoadFail />
+      </>
+    );
+
+  const mangaQueries = useQueries({
+    queries: mangaQuery.data
+      ? mangaQuery.data["7"].slice(0, 25).map((comic) => {
           return {
             queryKey: ["comic", comic.slug],
             queryFn: () => getComicBySlug(comic.slug),
@@ -30,10 +54,45 @@ const Home = () => {
       : [],
   });
 
-  const loadingQuery = queries?.find((query) => query.isPending);
-  const errorQuery = queries?.find((query) => query.isError);
+  const manhwaQueries = useQueries({
+    queries: manhwaQuery.data
+      ? manhwaQuery.data["7"].slice(0, 15).map((comic) => {
+          return {
+            queryKey: ["comic", comic.slug],
+            queryFn: () => getComicBySlug(comic.slug),
+          };
+        })
+      : [],
+  });
 
-  if (isPending || loadingQuery?.isPending)
+  const manhuaQueries = useQueries({
+    queries: manhuaQuery.data
+      ? manhuaQuery.data["7"].slice(0, 15).map((comic) => {
+          return {
+            queryKey: ["comic", comic.slug],
+            queryFn: () => getComicBySlug(comic.slug),
+          };
+        })
+      : [],
+  });
+
+  const mangaLoadingQuery = mangaQueries?.find((query) => query.isPending);
+  const mangaErrorQuery = mangaQueries?.find((query) => query.isError);
+
+  const manhwaLoadingQuery = manhwaQueries?.find((query) => query.isPending);
+  const manhwaErrorQuery = manhwaQueries?.find((query) => query.isError);
+
+  const manhuaLoadingQuery = manhuaQueries?.find((query) => query.isPending);
+  const manhuaErrorQuery = manhuaQueries?.find((query) => query.isError);
+
+  if (
+    mangaQuery.isPending ||
+    mangaLoadingQuery?.isPending ||
+    manhwaQuery.isPending ||
+    manhwaLoadingQuery?.isPending ||
+    manhuaQuery.isPending ||
+    manhuaLoadingQuery?.isPending
+  )
     return (
       <>
         <TopSliderSkeleton />
@@ -41,25 +100,50 @@ const Home = () => {
       </>
     );
 
-  if (!isPending && !data) {
+  if (
+    !mangaQuery.isPending &&
+    !mangaQuery.data &&
+    !manhwaQuery.isPending &&
+    !manhwaQuery.data &&
+    !manhuaQuery.isPending &&
+    !manhuaQuery.data
+  ) {
     return (
-      <div className="h-full flex items-center justify-center"> NO manga</div>
+      <div className="h-full flex items-center justify-center"> No manga</div>
     );
   }
 
-  if (!isPending && data && errorQuery) {
+  if (
+    !mangaQuery.isPending &&
+    mangaQuery.data &&
+    mangaErrorQuery &&
+    !manhwaQuery.isPending &&
+    mangaQuery.data &&
+    manhwaErrorQuery &&
+    !manhuaQuery.isPending &&
+    mangaQuery.data &&
+    manhuaErrorQuery
+  ) {
     return (
-      <div className="h-full flex items-center justify-center"> NO manga</div>
+      <div className="h-full flex items-center justify-center"> No manga</div>
     );
   }
 
-  const trendingManga = queries.slice(0, 10).map((query) => query.data);
-  const topManga = queries.slice(11, 20).map((query) => query.data);
+  const trendingManga = mangaQueries.slice(0, 10).map((query) => query.data);
+  const topManga = mangaQueries.slice(11, 20).map((query) => query.data);
+
+  const topManhwa = manhwaQueries.map((query) => query.data);
+
+  const topManua = manhuaQueries.map((query) => query.data);
 
   return (
     <>
       <TopSlider topSliderManga={trendingManga} />
-      <BottomContainer topManga={topManga} />
+      <BottomContainer
+        topManga={topManga}
+        topManhwa={topManhwa}
+        topManhua={topManua}
+      />
     </>
   );
 };

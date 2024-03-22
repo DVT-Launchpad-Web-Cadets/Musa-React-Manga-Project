@@ -10,7 +10,7 @@ const TopSlider = ({
   const setTrendingManga = useComicStore((state) => state.setTrendingManga);
   setTrendingManga(topSliderManga);
   return (
-    <div className="w-full h-[46%] carousel carousel-center bg-primary-text-color">
+    <div className="w-full h-[400px] carousel carousel-center bg-primary-text-color">
       {topSliderManga ? (
         <>
           {topSliderManga?.slice(0, 10).map((manga) => (

@@ -37,7 +37,7 @@ const Reader = () => {
 
   return (
     <div className="h-full w-full flex flex-col bg-primary-color grow">
-      <div className="fixed w-full h-14 flex gap-6 pl-4 items-center top-0 left-0 bg-primary-color ">
+      <div className="fixed w-full h-14 flex gap-6 pl-4 items-center top-0 left-0 bg-primary-color z-10">
         <BackButton />
         <select
           onChange={(event) =>
@@ -61,6 +61,7 @@ const Reader = () => {
             ))}
         </select>
       </div>
+      <div className="absolute top-[56px]">
       {data?.chapter?.md_images?.map((comic) => (
         <img
           key={comic.b2key}
@@ -69,6 +70,7 @@ const Reader = () => {
           alt="missing page"
         />
       ))}
+      </div>
       <div className="fixed bottom-0 h-24 bg-primary-color w-full flex justify-center items-center gap-20">
         {data?.prev ? (
           <PrevButton prevChapter={data?.prev} />

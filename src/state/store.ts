@@ -10,6 +10,8 @@ export const useComicStore = create<ComicState>()(
       (set) => ({
         trendingManga: null,
         topManga: null,
+        topManhwa: null,
+        topManhua: null,
         currentComic: null,
         currentChapter: null,
         currentChapters: null,
@@ -17,6 +19,10 @@ export const useComicStore = create<ComicState>()(
           set(() => ({ trendingManga: manga })),
         setTopManga: (manga: (MangaDetails | undefined)[]) =>
           set(() => ({ topManga: manga })),
+        setTopManhwa: (manhwa: (MangaDetails | undefined)[]) =>
+          set(() => ({ topManhwa: manhwa })),
+        setTopManhua: (manhua: (MangaDetails | undefined)[]) =>
+          set(() => ({ topManhua: manhua })),
         setCurrentComic: (comic: MangaDetails) =>
           set(() => ({ currentComic: comic })),
         setCurrentChapters: (chapters: Chapters | undefined) =>

@@ -4,9 +4,9 @@ import { MangaDetails } from "../models/mangaDetails";
 import { TopManga } from "../models/topManga";
 import apiBasieURL from "./apiBasieURL";
 
-export const getTopComics = async (): Promise<TopManga> => {
+export const getTopComics = async (type: string): Promise<TopManga> => {
   const comics = await fetch(
-    `${apiBasieURL}/top?day=180&type=trending&comic_types=manga&accept_mature_content=false`
+    `${apiBasieURL}/top?day=180&type=trending&comic_types=${type}&accept_mature_content=false`
   );
   return await comics.json();
 };
@@ -23,7 +23,9 @@ export const getComicChapters = async (hid: string): Promise<Chapters> => {
   return await chapters.json();
 };
 
-export const getChapterInfo = async (hid: string | undefined): Promise<Comic> => {
+export const getChapterInfo = async (
+  hid: string | undefined
+): Promise<Comic> => {
   const chapter = await fetch(`${apiBasieURL}/chapter/${hid}/`);
 
   return await chapter.json();
