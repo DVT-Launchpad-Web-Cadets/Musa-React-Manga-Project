@@ -1,6 +1,6 @@
 import { MangaDetails } from "../../../models/mangaDetails";
-import { useComicStore } from "../../../state/store";
 import TopMangas from "./TopMangas";
+import { useMangaListSetters } from "../customHooks/useMangaListSetters";
 
 const BottomContainer = ({
   topManga,
@@ -11,18 +11,7 @@ const BottomContainer = ({
   topManhwa: (MangaDetails | undefined)[];
   topManhua: (MangaDetails | undefined)[];
 }) => {
-  console.log("manga", topManga);
-  console.log("manhwa", topManhwa);
-  console.log("manhua", topManhua);
-
-  const setTopManga = useComicStore((state) => state.setTopManga);
-  setTopManga(topManga);
-
-  const setTopManhwa = useComicStore((state) => state.setTopManhwa);
-  setTopManhwa(topManhwa);
-
-  const setTopManhua = useComicStore((state) => state.setTopManhua);
-  setTopManhua(topManhua);
+  useMangaListSetters({ topManga, topManhwa, topManhua });
 
   return (
     <div className="w-full absolute z-40 top-96 rounded-t-2xl bg-gradient-to-tl from-primary-color via-gradient-color to-primary-color flex flex-col grow pb-5">
