@@ -5,14 +5,19 @@ import { useComicStore } from "../../../state/store";
 const MangaListHeader = ({ headerTitle }: { headerTitle: string }) => {
   let topMangaList: (MangaDetails | undefined)[] | null = null;
 
-  if (headerTitle === "Top Manga")
-    topMangaList = useComicStore((state) => state.topManga);
-
-  if (headerTitle === "Top Manhwa")
-    topMangaList = useComicStore((state) => state.topManhwa);
-
-  if (headerTitle === "Top Manhua")
-    topMangaList = useComicStore((state) => state.topManhua);
+  switch (headerTitle) {
+    case "Top Manga":
+      topMangaList = useComicStore((state) => state.topManga);
+      break;
+    case "Top Manhwa":
+      topMangaList = useComicStore((state) => state.topManhwa);
+      break;
+    case "Top Manhua":
+      topMangaList = useComicStore((state) => state.topManhua);
+      break;
+    default:
+      return <h1 className="text-xl font-semibold">No Manga available</h1>;
+  }
 
   return (
     <div className="flex justify-between px-4 pb-1">

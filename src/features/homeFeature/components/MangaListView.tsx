@@ -6,6 +6,13 @@ import { MangaDetails } from "../../../models/mangaDetails";
 const MangaListView = () => {
   const { state } = useLocation();
 
+  if (!state)
+    return (
+      <div className="flex flex-col items-center justify-center">
+        No Manga to show
+      </div>
+    );
+
   const {
     topMangaList,
     headerTitle,

@@ -8,7 +8,7 @@ const SimilarTab = ({
 }: {
   recommendations: Recommendation[];
 }) => {
-  if (recommendations?.length == 0) {
+  if (recommendations?.length === 0) {
     return (
       <div className="h-full flex items-center justify-center"> NO manga</div>
     );
