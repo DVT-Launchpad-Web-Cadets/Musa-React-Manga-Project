@@ -1,6 +1,6 @@
 import BackButton from "../../../sharedComponents/BackButton";
 import TopHeaderInfo from "./TopHeaderInfo";
-import { useComicStore } from "../../../state/store";
+import { useComicStore } from "../../../state/comicStore";
 
 const TopHeader = () => {
   const mangaInfo = useComicStore((state) => state.currentComic);

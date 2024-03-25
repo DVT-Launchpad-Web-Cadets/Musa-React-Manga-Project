@@ -2,7 +2,7 @@ import { FaHeart } from "react-icons/fa";
 import formatFollowers from "../utils/utils";
 import { Link } from "react-router-dom";
 import { MangaDetails } from "../models/mangaDetails";
-import { useComicStore } from "../state/store";
+import { useComicStore } from "../state/comicStore";
 
 const MangaCard = ({ cardInfo }: { cardInfo: MangaDetails | undefined }) => {
   const setCurrentComic = useComicStore((state) => state.setCurrentComic);

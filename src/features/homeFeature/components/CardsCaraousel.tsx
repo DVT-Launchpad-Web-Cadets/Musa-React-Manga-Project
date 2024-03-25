@@ -1,4 +1,4 @@
-import { useComicStore } from "../../../state/store";
+import { useComicStore } from "../../../state/comicStore";
 import MangaCard from "../../../sharedComponents/MangaCard";
 import { MangaDetails } from "../../../models/mangaDetails";
 

@@ -1,6 +1,6 @@
 import { FaFlag, FaHeart, FaStar } from "react-icons/fa";
 import formatFollowers, { getMangaStatus } from "../../../utils/utils";
-import { useComicStore } from "../../../state/store";
+import { useComicStore } from "../../../state/comicStore";
 
 const TopHeaderInfo = () => {
   const mangaInfo = useComicStore((state) => state.currentComic);

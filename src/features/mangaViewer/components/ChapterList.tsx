@@ -1,5 +1,5 @@
 import { Chapters } from "../../../models/chapters";
-import { useComicStore } from "../../../state/store";
+import { useComicStore } from "../../../state/comicStore";
 import ChapterCard from "./ChapterCard";
 
 const ChapterList = ({ chapters }: { chapters: Chapters | undefined }) => {

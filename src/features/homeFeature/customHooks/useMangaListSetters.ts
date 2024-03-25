@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { MangaDetails } from "../../../models/mangaDetails";
-import { useComicStore } from "../../../state/store";
+import { useComicStore } from "../../../state/comicStore";
 
 export function useMangaListSetters({
   topManga,

@@ -1,5 +1,5 @@
 import { MangaDetails } from "../../../models/mangaDetails";
-import { useComicStore } from "../../../state/store";
+import { useComicStore } from "../../../state/comicStore";
 import TopSliderItem from "./TopSliderItem";
 
 const TopSlider = ({

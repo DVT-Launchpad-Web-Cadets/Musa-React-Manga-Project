@@ -5,6 +5,7 @@ import { useQueries, useQuery } from "@tanstack/react-query";
 import { getComicBySlug, getTopComics } from "../../sharedAPI.ts/apiQueries";
 import TopSliderSkeleton from "./skeletons/TopSliderSkeletom";
 import BottomContainerSkeleton from "./skeletons/BottomContainerSkeleton";
+import SearchButton from "./components/SearchButton";
 
 const Home = () => {
   const mangaQuery = useQuery({
@@ -123,6 +124,7 @@ const Home = () => {
 
   return (
     <>
+     <SearchButton/>
       <TopSlider topSliderManga={trendingManga} />
       <BottomContainer
         topManga={topManga}
