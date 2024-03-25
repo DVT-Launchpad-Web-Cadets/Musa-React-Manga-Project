@@ -18,7 +18,7 @@ const ChaptersTab = ({ mangaDetails }: { mangaDetails: MangaDetails }) => {
   }
 
   if(isError){
-    return <h1 className="h-full flex items-center justify-center"> No manga</h1>
+    return <h1 className="h-full flex items-center justify-center">No manga</h1>
   }
 
   return (

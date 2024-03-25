@@ -37,7 +37,7 @@ const SimilarTab = ({
 
   if (errorQuery) {
     return (
-      <div className="h-full flex items-center justify-center"> NO manga</div>
+      <div className="h-full flex items-center justify-center">No manga</div>
     );
   }
 
