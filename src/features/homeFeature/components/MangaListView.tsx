@@ -8,9 +8,9 @@ const MangaListView = () => {
 
   if (!state)
     return (
-      <div className="flex flex-col items-center justify-center">
+      <h1 className="flex flex-col items-center justify-center">
         No Manga to show
-      </div>
+      </h1>
     );
 
   const {

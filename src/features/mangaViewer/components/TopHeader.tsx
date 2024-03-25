@@ -12,7 +12,7 @@ const TopHeader = () => {
           <img
             src={`https://meo3.comick.pictures/${mangaInfo?.comic.md_covers[0]?.b2key}`}
             alt=""
-            className=" w-full h-full object-cover rounded-2xl shadow-2xl"
+            className="w-full h-full object-cover rounded-2xl shadow-2xl"
           />
         </div>
         <TopHeaderInfo />
