@@ -1,10 +1,23 @@
-import { MangaSummary } from "../../../models/topManga";
+import { MangaDetails } from "../../../models/mangaDetails";
 import TopMangas from "./TopMangas";
+import { useMangaListSetters } from "../customHooks/useMangaListSetters";
 
-const BottomContainer = ({ topManga }: { topManga: MangaSummary[] }) => {
+const BottomContainer = ({
+  topManga,
+  topManhwa,
+  topManhua,
+}: {
+  topManga: (MangaDetails | undefined)[];
+  topManhwa: (MangaDetails | undefined)[];
+  topManhua: (MangaDetails | undefined)[];
+}) => {
+  useMangaListSetters({ topManga, topManhwa, topManhua });
+
   return (
-    <div className="h-[57%] w-full absolute z-40 bottom-0 rounded-t-lg bg-gradient-to-tl from-primary-color via-gradient-color to-primary-color">
-      <TopMangas topManga={topManga} />
+    <div className="w-full absolute z-40 top-96 rounded-t-2xl bg-gradient-to-tl from-primary-color via-gradient-color to-primary-color flex flex-col grow pb-5">
+      <TopMangas headerTitle="Top Manga" type="manga" />
+      <TopMangas headerTitle="Top Manhwa" type="manhwa" />
+      <TopMangas headerTitle="Top Manhua" type="manhua" />
     </div>
   );
 };

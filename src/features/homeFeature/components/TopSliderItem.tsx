@@ -1,20 +1,26 @@
 import { Link } from "react-router-dom";
-import { MangaSummary } from "../../../models/topManga";
 import TopSliderDetails from "./TopSliderDetails";
+import { MangaDetails } from "../../../models/mangaDetails";
+import { useComicStore } from "../../../state/store";
 
-const TopSliderItem = ({ mangaInfo }: { mangaInfo: MangaSummary }) => {
+const TopSliderItem = ({
+  mangaInfo,
+}: {
+  mangaInfo: MangaDetails | undefined;
+}) => {
+  const setCurrentComic = useComicStore((state) => state.setCurrentComic);
   return (
-    <div className="carousel-item w-full">
-      <Link to="/manga">
+    <div className="carousel-item w-full relative overflow-hidden">
+      <Link onClick={() => setCurrentComic(mangaInfo)} to="/manga">
         <div className="absolute shadow-slider w-full h-full z-20"></div>
         <img
-          src={`https://meo3.comick.pictures/${mangaInfo?.md_covers[0]?.b2key}`}
-          className="w-full object-cover object-top brightness-50"
-          alt={mangaInfo?.title}
+          src={`https://meo3.comick.pictures/${mangaInfo?.comic.md_covers[0]?.b2key}`}
+          className="w-full object-cover object-top brightness-50 overflow-clip"
+          alt={mangaInfo?.comic?.title}
         />
         <TopSliderDetails
-          title={mangaInfo?.title}
-          followerCount={55500}
+          title={mangaInfo?.comic?.title}
+          followerCount={mangaInfo?.comic?.user_follow_count}
           artist="Naoya Tajimi"
         />
       </Link>

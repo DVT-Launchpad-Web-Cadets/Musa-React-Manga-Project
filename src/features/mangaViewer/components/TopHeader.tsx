@@ -1,8 +1,9 @@
 import BackButton from "../../../sharedComponents/BackButton";
-import { MangaDetails } from "../../../models/mangaDetails";
 import TopHeaderInfo from "./TopHeaderInfo";
+import { useComicStore } from "../../../state/store";
 
-const TopHeader = ({ mangaInfo }: { mangaInfo: MangaDetails }) => {
+const TopHeader = () => {
+  const mangaInfo = useComicStore((state) => state.currentComic);
   return (
     <div className="pt-10 pb-11 px-4 flex flex-col gap-4 w-full h-[45%]">
       <BackButton />
@@ -14,7 +15,7 @@ const TopHeader = ({ mangaInfo }: { mangaInfo: MangaDetails }) => {
             className=" w-full h-full object-cover rounded-2xl shadow-2xl"
           />
         </div>
-        <TopHeaderInfo mangaInfo={mangaInfo} />
+        <TopHeaderInfo />
       </div>
     </div>
   );

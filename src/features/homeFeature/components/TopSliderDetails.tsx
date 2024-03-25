@@ -6,8 +6,8 @@ const TopSliderDetails = ({
   followerCount,
   artist,
 }: {
-  title: string;
-  followerCount: number;
+  title: string | undefined;
+  followerCount: number | undefined;
   artist: string;
 }) => {
   return (

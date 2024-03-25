@@ -17,6 +17,7 @@ export default {
       "header-background": "rgba(0, 0, 0, 0.6)",
       "search-color": "#342d37",
       "search-header-color": "#120815",
+      grey: "grey",
     },
     extend: {
       fontFamily: {
@@ -24,6 +25,7 @@ export default {
       },
       boxShadow: {
         slider: "rgba(0, 0, 0, 0.45) 0px -200px 36px -28px inset",
+        showButton: "rgba(0, 0, 0, 0.45) 0px -50 36px -28px inset",
       },
     },
   },

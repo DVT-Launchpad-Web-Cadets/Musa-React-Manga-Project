@@ -1,12 +1,17 @@
-import { MangaSummary } from "../../../models/topManga";
 import CardsCarousel from "./CardsCaraousel";
 import MangaListHeader from "./MangaListHeader";
 
-const TopMangas = ({ topManga }: { topManga: MangaSummary[] }) => {
+const TopMangas = ({
+  headerTitle,
+  type,
+}: {
+  headerTitle: string;
+  type: string;
+}) => {
   return (
-    <div className="py-8">
-      <MangaListHeader headerTitle="Top mangas" />
-      <CardsCarousel topMangaList={topManga} />
+    <div className="pt-9">
+      <MangaListHeader headerTitle={headerTitle} />
+      <CardsCarousel comicType={type} />
     </div>
   );
 };
