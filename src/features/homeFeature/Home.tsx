@@ -22,26 +22,11 @@ const Home = () => {
     queryFn: () => getTopComics("manhua"),
   });
 
-  if (mangaQuery.isError)
-    return (
-      <>
-        <LoadFail />
-      </>
-    );
+  if (mangaQuery.isError) return <LoadFail />;
 
-  if (manhwaQuery.isError)
-    return (
-      <>
-        <LoadFail />
-      </>
-    );
+  if (manhwaQuery.isError) return <LoadFail />;
 
-  if (manhuaQuery.isError)
-    return (
-      <>
-        <LoadFail />
-      </>
-    );
+  if (manhuaQuery.isError) return <LoadFail />;
 
   const mangaQueries = useQueries({
     queries: mangaQuery.data

@@ -10,7 +10,7 @@ const SimilarTab = ({
 }) => {
   if (recommendations?.length === 0) {
     return (
-      <div className="h-full flex items-center justify-center"> NO manga</div>
+      <h1 className="h-full flex items-center justify-center"> NO manga</h1>
     );
   }
   const queries = useQueries({
@@ -30,14 +30,14 @@ const SimilarTab = ({
   if (loadingQuery) {
     return (
       <div className="flex justify-center items-center grow">
-        <span className=" loading loading-dots loading-lg text-secondary-color"></span>
+        <span className="loading loading-dots loading-lg text-secondary-color"></span>
       </div>
     );
   }
 
   if (errorQuery) {
     return (
-      <div className="h-full flex items-center justify-center"> NO manga</div>
+      <div className="h-full flex items-center justify-center">No manga</div>
     );
   }
 

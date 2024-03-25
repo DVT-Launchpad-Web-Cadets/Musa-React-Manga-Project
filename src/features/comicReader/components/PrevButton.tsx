@@ -9,7 +9,7 @@ const PrevButton = ({
 }) => {
   return (
     <Link to={`/reader/${prevChapter?.hid}`} replace>
-      <button className="btn w-16 h-16  btn-circle bg-secondary-color text-3xl">
+      <button className="btn w-16 h-16 btn-circle bg-secondary-color text-3xl">
         <IoIosSkipBackward />
       </button>
     </Link>

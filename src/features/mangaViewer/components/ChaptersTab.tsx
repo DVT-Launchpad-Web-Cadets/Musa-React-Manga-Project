@@ -12,13 +12,13 @@ const ChaptersTab = ({ mangaDetails }: { mangaDetails: MangaDetails }) => {
   if (isPending) {
     return (
       <div className="flex justify-center items-center grow">
-        <span className=" loading loading-dots loading-lg text-secondary-color"></span>
+        <span className="loading loading-dots loading-lg text-secondary-color"></span>
       </div>
     );
   }
 
   if(isError){
-    return <div className="h-full flex items-center justify-center"> NO manga</div>
+    return <h1 className="h-full flex items-center justify-center">No manga</h1>
   }
 
   return (
