@@ -3,7 +3,7 @@ import Home from "./features/homeFeature/Home";
 import ErrorPage from "./sharedComponents/ErrorPage";
 import { Suspense, lazy } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import SearchResults from "./features/search/components/SearchResults";
+import SearchResults from "./features/search/components/Results";
 
 const queryClient = new QueryClient();
 

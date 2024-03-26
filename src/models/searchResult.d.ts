@@ -1,5 +1,3 @@
-export type SearchResults = SearchResult[]
-
 export interface SearchResult {
   id: number
   hid: string

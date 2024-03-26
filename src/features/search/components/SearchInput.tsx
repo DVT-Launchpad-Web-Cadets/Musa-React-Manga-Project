@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import {
   EMPTY,
   debounceTime,
+  distinctUntilChanged,
   fromEvent,
   map,
   switchMap,
@@ -12,8 +13,8 @@ import {
 import { fromFetch } from "rxjs/fetch";
 import apiBasieURL from "../../../sharedAPI.ts/apiBasieURL";
 import { fromPromise } from "rxjs/internal/observable/innerFrom";
-import { SearchResults } from "../../../models/searchResult";
 import { useSearchStore } from "../../../state/searchStore";
+import { SearchResult } from "../../../models/searchResult";
 
 const SearchInput = () => {
   const navigate = useNavigate();
@@ -33,7 +34,8 @@ const SearchInput = () => {
           }
           return (event.target as HTMLInputElement).value;
         }),
-        debounceTime(1000),
+        debounceTime(600),
+        distinctUntilChanged(),
         switchMap((value) => {
           if (value !== "") {
             setisLoading(true);
@@ -44,7 +46,7 @@ const SearchInput = () => {
           return EMPTY;
         })
       )
-      .subscribe((val: SearchResults) => {
+      .subscribe((val: SearchResult[]) => {
         setResults(val);
         setisLoading(false);
       });
@@ -65,7 +67,7 @@ const SearchInput = () => {
   }
 
   return (
-    <div className="h-28 bg-search-header-color py-8 px-4 flex gap-3 items-center">
+    <div className="h-28 bg-search-header-color py-8 px-4 flex gap-3 items-center w-full fixed">
       <label className="input input-bordered rounded-full w-96 flex items-center gap-2 bg-search-color">
         <input
           id="searchInput"
