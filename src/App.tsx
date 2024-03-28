@@ -3,7 +3,6 @@ import Home from "./features/homeFeature/Home";
 import ErrorPage from "./sharedComponents/ErrorPage";
 import { Suspense, lazy } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import SearchResults from "./features/search/components/Results";
 import Results from "./features/search/components/Results";
 
 const queryClient = new QueryClient();
@@ -25,21 +24,21 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/search/quickSearch",
+        path: "/search/quick-search",
         Component: lazy(
           () => import("./features/search/components/QuickSearch")
         ),
         errorElement: <ErrorPage />,
       },
       {
-        path: "/search/searchResults",
+        path: "/search/search-results",
         element: <Results />,
         errorElement: <ErrorPage />,
       },
     ],
   },
   {
-    path: "/reader/:chapterHID",
+    path: "/reader/:chapter-hid",
     Component: lazy(() => import("./features/comicReader/Reader")),
     errorElement: <ErrorPage />,
   },

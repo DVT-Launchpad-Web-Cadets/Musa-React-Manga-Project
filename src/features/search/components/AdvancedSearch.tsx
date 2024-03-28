@@ -54,7 +54,7 @@ const AdvancedSearch = () => {
       else queryStatus.current = "2";
     }
 
-    navigate("/search/searchResults", {
+    navigate("/search/search-results", {
       state: {
         queryGenres: queryGenres.current,
         queryStatus: queryStatus.current,

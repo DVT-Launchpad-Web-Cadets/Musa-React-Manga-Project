@@ -15,7 +15,7 @@ const Results = () => {
 
   if (state) {
     const { isPending, data } = useQuery({
-      queryKey: ["search"],
+      queryKey: ["search", state.queryGenres, state.queryStatus],
       queryFn: () => searchQuery(state.queryGenres, state.queryStatus),
     });
     results = data;

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import { IoIosSearch } from "react-icons/io";
+import { IoIosSearch, IoMdArrowBack } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import {
   EMPTY,
   debounceTime,
@@ -18,6 +18,7 @@ import { SearchResult } from "../../../models/searchResult";
 
 const SearchInput = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [searchValue, setSearchValue] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
   const setResults = useSearchStore((state) => state.setResults);
@@ -58,17 +59,31 @@ const SearchInput = () => {
 
   function handleInputChange(value: string) {
     if (value.trim() === "") {
-      navigate("/search/quickSearch");
+      navigate("/search/quick-search", { replace: true });
       setSearchValue(value);
-    } else {
-      navigate("/search/searchResults");
-      setSearchValue(value);
+      return;
     }
+
+    if (location?.pathname && location.pathname === "/search/search-results") {
+      navigate("/search/search-results", { replace: true });
+    } else {
+      navigate("/search/search-results");
+    }
+    setSearchValue(value);
   }
 
   return (
     <div className="h-28 bg-search-header-color py-8 px-4 flex gap-3 items-center w-full fixed">
-      <label className="input input-bordered rounded-full w-96 flex items-center gap-2 bg-search-color">
+      <div
+        onClick={() => {
+          setSearchValue("");
+          navigate("/", { replace: true });
+        }}
+        className="rounded-full w-12 h-12 p-2 bg-search-color brightness-150 text-xl flex justify-center items-center "
+      >
+        <IoMdArrowBack />
+      </div>
+      <label className="input input-bordered rounded-full w-full flex items-center gap-2 bg-search-color">
         <input
           id="searchInput"
           ref={inputRef}
@@ -80,18 +95,19 @@ const SearchInput = () => {
             handleInputChange(event.target.value);
           }}
         />
-        <IoIosSearch />
+        {searchValue.length ? (
+          <div
+            onClick={() => {
+              navigate("/search/quick-search", { replace: true });
+              setSearchValue("");
+            }}
+          >
+            <RxCross2 />
+          </div>
+        ) : (
+          <IoIosSearch />
+        )}
       </label>
-
-      <div
-        onClick={() => {
-          setSearchValue("");
-          navigate("/search/quickSearch", { replace: true });
-        }}
-        className="rounded-full w-fit p-2 bg-search-color brightness-150 text-lg"
-      >
-        <RxCross2 />
-      </div>
     </div>
   );
 };
