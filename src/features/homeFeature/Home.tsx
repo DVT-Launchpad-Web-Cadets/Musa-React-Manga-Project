@@ -31,34 +31,43 @@ const Home = () => {
 
   const mangaQueries = useQueries({
     queries: mangaQuery.data
-      ? mangaQuery.data["7"].slice(0, 25).map((comic) => {
-          return {
-            queryKey: ["comic", comic.slug],
-            queryFn: () => getComicBySlug(comic.slug),
-          };
-        })
+      ? mangaQuery.data["7"]
+          .filter((comic) => comic.content_rating === "safe")
+          .slice(0, 25)
+          .map((comic) => {
+            return {
+              queryKey: ["comic", comic.slug],
+              queryFn: () => getComicBySlug(comic.slug),
+            };
+          })
       : [],
   });
 
   const manhwaQueries = useQueries({
     queries: manhwaQuery.data
-      ? manhwaQuery.data["7"].slice(0, 15).map((comic) => {
-          return {
-            queryKey: ["comic", comic.slug],
-            queryFn: () => getComicBySlug(comic.slug),
-          };
-        })
+      ? manhwaQuery.data["7"]
+          .filter((comic) => comic.content_rating === "safe")
+          .slice(0, 15)
+          .map((comic) => {
+            return {
+              queryKey: ["comic", comic.slug],
+              queryFn: () => getComicBySlug(comic.slug),
+            };
+          })
       : [],
   });
 
   const manhuaQueries = useQueries({
     queries: manhuaQuery.data
-      ? manhuaQuery.data["7"].slice(0, 15).map((comic) => {
-          return {
-            queryKey: ["comic", comic.slug],
-            queryFn: () => getComicBySlug(comic.slug),
-          };
-        })
+      ? manhuaQuery.data["7"]
+          .filter((comic) => comic.content_rating === "safe")
+          .slice(0, 15)
+          .map((comic) => {
+            return {
+              queryKey: ["comic", comic.slug],
+              queryFn: () => getComicBySlug(comic.slug),
+            };
+          })
       : [],
   });
 
@@ -124,7 +133,7 @@ const Home = () => {
 
   return (
     <>
-     <SearchButton/>
+      <SearchButton />
       <TopSlider topSliderManga={trendingManga} />
       <BottomContainer
         topManga={topManga}

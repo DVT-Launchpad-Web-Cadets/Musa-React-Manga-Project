@@ -1,95 +1,17 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import GenreChip from "./GenreChip";
 import StatusChip from "./StatusChip";
-import { useQuery } from "@tanstack/react-query";
-import { searchQuery } from "../../../sharedAPI.ts/apiQueries";
 import SearchButton from "./SearchButton";
-import { useSearchStore } from "../../../state/searchStore";
 import { useNavigate } from "react-router-dom";
-import {
-  fromEvent,
-  map,
-  debounceTime,
-  distinctUntilChanged,
-  switchMap,
-  EMPTY,
-} from "rxjs";
-import { fromFetch } from "rxjs/fetch";
-import { fromPromise } from "rxjs/internal/observable/innerFrom";
-import { SearchResult } from "../../../models/searchResult";
-import apiBasieURL from "../../../sharedAPI.ts/apiBasieURL";
+import { genreChips, statusChips } from "../utilData/data";
 
 const AdvancedSearch = () => {
-  const genreChips = [
-    { id: 1, genre: "Action", isChecked: false },
-    { id: 2, genre: "Comedy", isChecked: false },
-    { id: 3, genre: "Adventure", isChecked: false },
-    { id: 4, genre: "Drama", isChecked: false },
-    { id: 5, genre: "Martial arts", isChecked: false },
-    { id: 6, genre: "Music", isChecked: false },
-  ];
-
-  const statusChips = [
-    { id: 1, status: "Ongoing", isChecked: false, icon: "ongoing" },
-    { id: 2, status: "Completed", isChecked: false, icon: "completed" },
-  ];
-
   const navigate = useNavigate();
   const [genres, setGenres] = useState(genreChips);
   const [statuses, setStatuses] = useState(statusChips);
   const queryGenres = useRef("");
   const queryStatus = useRef("");
   const buttonRef = useRef<HTMLButtonElement>(null);
-
-  // const { isPending, data, isError, refetch } = useQuery({
-  //   queryKey: ["search"],
-  //   queryFn: () => searchQuery(queryGenres.current, queryStatus.current),
-  //   enabled: false,
-  // });
-
-  const setIsLoading = useSearchStore((state) => state.setIsLoading);
-  const setResults = useSearchStore((state) => state.setResults);
-
-  useEffect(() => {
-    if (!buttonRef?.current) return;
-    setIsLoading(true);
-    const searchAction$ = fromEvent(buttonRef.current, "click")
-      .pipe(
-        switchMap(() =>
-          fromFetch(
-            `${apiBasieURL}/v1.0/search/?${
-              queryGenres.current?.length &&
-              "genre=" + queryGenres.current.toLowerCase()
-            }&page=1&limit=15&${
-              queryStatus.current?.length && "status=" + queryStatus.current
-            }&showall=false&t=false`
-          ).pipe(switchMap((res) => fromPromise(res.json())))
-        )
-      )
-      .subscribe((val: SearchResult[]) => {
-        for (let index = 0; index < genres.length; index++) {
-          if (genres[index].isChecked) {
-            queryGenres.current += genres[index].genre + ",";
-          }
-        }
-
-        queryGenres.current = queryGenres.current.replace(/,\s*$/, "");
-
-        for (let status of statuses) {
-          if (!status.isChecked) continue;
-
-          if (status.status === "Ongoing") queryStatus.current = "1";
-          else queryStatus.current = "2";
-        }
-        setResults(val);
-        setIsLoading(false);
-        navigate("/search/searchResults");
-      });
-
-    return () => {
-      searchAction$.unsubscribe();
-    };
-  }, []);
 
   function handleGenreClick(genre: {
     id: number;
@@ -123,13 +45,15 @@ const AdvancedSearch = () => {
   }
 
   async function handleSearch() {
-    for (let index = 0; index < genres.length; index++) {
-      if (genres[index].isChecked) {
-        queryGenres.current += genres[index].genre + ",";
-      }
-    }
+    // for (let index = 0; index < genres.length; index++) {
+    //   if (genres[index].isChecked) {
+    //     queryGenres.current += genres[index].genre + ",";
+    //   }
+    // }
 
-    queryGenres.current = queryGenres.current.replace(/,\s*$/, "");
+    queryGenres.current = genres.filter((genre) => genre.isChecked).join(",");
+
+    console.log(queryGenres.current);
 
     for (let status of statuses) {
       if (!status.isChecked) continue;
@@ -138,8 +62,13 @@ const AdvancedSearch = () => {
       else queryStatus.current = "2";
     }
 
-    navigate("/search/searchResults");
-    // refetch();
+    navigate("/search/searchResults", {
+      state: {
+        queryGenres: queryGenres.current,
+        queryStatus: queryStatus.current,
+      },
+      replace: true,
+    });
   }
 
   return (
@@ -168,7 +97,7 @@ const AdvancedSearch = () => {
           ))}
         </div>
       </div>
-      <SearchButton buttonRef={buttonRef} />
+      <SearchButton handleSearch={handleSearch} buttonRef={buttonRef} />
     </div>
   );
 };

@@ -1,13 +1,29 @@
 import { useEffect } from "react";
 import { useSearchStore } from "../../../state/searchStore";
-import { useQueries } from "@tanstack/react-query";
-import { getComicBySlug } from "../../../sharedAPI.ts/apiQueries";
+import { useQueries, useQuery } from "@tanstack/react-query";
+import { getComicBySlug, searchQuery } from "../../../sharedAPI.ts/apiQueries";
 import MangaCard from "../../../sharedComponents/MangaCard";
+import { useLocation } from "react-router-dom";
+import ResultSkeleton from "../skeleton/ResultSkeleton";
 
 const Results = () => {
-  const isLoading = useSearchStore((state) => state.isLoading);
-  const results = useSearchStore((state) => state.results);
+  let isLoading = useSearchStore((state) => state.isLoading);
+  let results = useSearchStore((state) => state.results);
   const setResults = useSearchStore((state) => state.setResults);
+
+  const { state } = useLocation();
+
+  if (state) {
+    const { isPending, data } = useQuery({
+      queryKey: ["search"],
+      queryFn: () => searchQuery(state.queryGenres, state.queryStatus),
+    });
+    results = data;
+    isLoading = isPending;
+  } else {
+    isLoading = useSearchStore((state) => state.isLoading);
+    results = useSearchStore((state) => state.results);
+  }
 
   useEffect(() => {
     return () => {
@@ -15,7 +31,6 @@ const Results = () => {
     };
   }, []);
 
-  console.log(results);
   const comicQueries = useQueries({
     queries: results
       ? results
@@ -33,11 +48,7 @@ const Results = () => {
   const errorQuery = comicQueries?.find((query) => query.isError);
 
   if (isLoading || loadingQuery) {
-    return (
-      <div className="flex justify-center items-center grow">
-        <span className="loading loading-dots loading-lg text-secondary-color"></span>
-      </div>
-    );
+    return <ResultSkeleton />;
   }
 
   if (errorQuery) {
@@ -47,7 +58,6 @@ const Results = () => {
   }
 
   const comics = comicQueries.map((query) => query.data);
-  console.log("comics", comics);
 
   return (
     <>

@@ -4,6 +4,7 @@ import ErrorPage from "./sharedComponents/ErrorPage";
 import { Suspense, lazy } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import SearchResults from "./features/search/components/Results";
+import Results from "./features/search/components/Results";
 
 const queryClient = new QueryClient();
 
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/search/searchResults",
-        element: <SearchResults />,
+        element: <Results />,
         errorElement: <ErrorPage />,
       },
     ],

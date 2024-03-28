@@ -84,7 +84,10 @@ const SearchInput = () => {
       </label>
 
       <div
-        onClick={() => navigate("/", { replace: true })}
+        onClick={() => {
+          setSearchValue("");
+          navigate("/search/quickSearch", { replace: true });
+        }}
         className="rounded-full w-fit p-2 bg-search-color brightness-150 text-lg"
       >
         <RxCross2 />

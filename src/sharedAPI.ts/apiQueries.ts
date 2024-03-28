@@ -19,7 +19,9 @@ export const getComicBySlug = async (slug: string): Promise<MangaDetails> => {
 };
 
 export const getComicChapters = async (hid: string): Promise<Chapters> => {
-  const chapters = await fetch(`${apiBasieURL}/comic/${hid}/chapters?limit=80`);
+  const chapters = await fetch(
+    `${apiBasieURL}/comic/${hid}/chapters?limit=20000&chap-order=1`
+  );
 
   return await chapters.json();
 };
@@ -36,9 +38,10 @@ export const searchQuery = async (
   genres?: string,
   status?: string
 ): Promise<SearchResult[]> => {
+  console.log();
   const results = await fetch(
     `${apiBasieURL}/v1.0/search/?${
-      genres?.length && "genre=" + genres.toLowerCase()
+      genres?.length && "genres=" + genres.toLowerCase()
     }&page=1&limit=15&${
       status?.length && "status=" + status
     }&showall=false&t=false`
