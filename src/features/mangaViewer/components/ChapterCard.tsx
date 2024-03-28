@@ -3,6 +3,7 @@ import { Chapter } from "../../../models/chapters";
 import { FaBook } from "react-icons/fa";
 
 const ChapterCard = ({ chapter }: { chapter: Chapter }) => {
+  console.log(chapter.hid);
   return (
     <Link to={`/reader/${chapter?.hid}`}>
       <div className="w-full h-20 flex justify-between py-2 px-4">

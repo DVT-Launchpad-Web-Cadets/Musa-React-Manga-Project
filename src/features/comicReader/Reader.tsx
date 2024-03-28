@@ -10,12 +10,12 @@ import DisabledNext from "./components/DisabledNext";
 
 const Reader = () => {
   const chapters = useComicStore((state) => state.currentChapters);
-  const { chapterHID } = useParams();
+  const { chapterhid } = useParams();
   const navigate = useNavigate();
 
   const { isPending, data, isError } = useQuery({
-    queryKey: ["reader", chapterHID],
-    queryFn: () => getChapterInfo(chapterHID),
+    queryKey: ["reader", chapterhid],
+    queryFn: () => getChapterInfo(chapterhid),
   });
 
   if (isPending) {
@@ -43,7 +43,7 @@ const Reader = () => {
           onChange={(event) =>
             navigate(`/reader/${event.target.value}`, { replace: true })
           }
-          value={chapterHID}
+          value={chapterhid}
           className="select select-ghost select-sm w-4/6 max-w-xs self-center text-xl"
         >
           {chapters?.chapters

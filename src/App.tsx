@@ -38,7 +38,7 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/reader/:chapter-hid",
+    path: "/reader/:chapterhid",
     Component: lazy(() => import("./features/comicReader/Reader")),
     errorElement: <ErrorPage />,
   },
