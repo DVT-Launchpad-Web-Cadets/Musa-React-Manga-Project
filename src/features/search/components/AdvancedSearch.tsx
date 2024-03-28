@@ -53,8 +53,6 @@ const AdvancedSearch = () => {
 
     queryGenres.current = genres.filter((genre) => genre.isChecked).join(",");
 
-    console.log(queryGenres.current);
-
     for (let status of statuses) {
       if (!status.isChecked) continue;
 

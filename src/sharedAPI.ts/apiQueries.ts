@@ -38,7 +38,6 @@ export const searchQuery = async (
   genres?: string,
   status?: string
 ): Promise<SearchResult[]> => {
-  console.log();
   const results = await fetch(
     `${apiBasieURL}/v1.0/search/?${
       genres?.length && "genres=" + genres.toLowerCase()
