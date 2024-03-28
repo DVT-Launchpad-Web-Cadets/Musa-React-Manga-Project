@@ -45,12 +45,6 @@ const AdvancedSearch = () => {
   }
 
   async function handleSearch() {
-    // for (let index = 0; index < genres.length; index++) {
-    //   if (genres[index].isChecked) {
-    //     queryGenres.current += genres[index].genre + ",";
-    //   }
-    // }
-
     queryGenres.current = genres.filter((genre) => genre.isChecked).join(",");
 
     for (let status of statuses) {
