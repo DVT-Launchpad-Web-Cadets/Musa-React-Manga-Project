@@ -5,7 +5,7 @@ import SearchButton from "./SearchButton";
 import { useNavigate } from "react-router-dom";
 import { genreChips, statusChips } from "../utilData/data";
 
-const AdvancedSearch = () => {
+const SearchFilters = () => {
   const navigate = useNavigate();
   const [genres, setGenres] = useState(genreChips);
   const [statuses, setStatuses] = useState(statusChips);
@@ -47,7 +47,7 @@ const AdvancedSearch = () => {
   async function handleSearch() {
     queryGenres.current = genres.filter((genre) => genre.isChecked).join(",");
 
-    for (let status of statuses) {
+    for (const status of statuses) {
       if (!status.isChecked) continue;
 
       if (status.status === "Ongoing") queryStatus.current = "1";
@@ -94,4 +94,4 @@ const AdvancedSearch = () => {
   );
 };
 
-export default AdvancedSearch;
+export default SearchFilters;

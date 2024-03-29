@@ -70,7 +70,7 @@ const Results = () => {
           </div>
         </div>
       ) : (
-        <h1>Nothing</h1>
+        <h1>No Results found for the search</h1>
       )}
     </>
   );
