@@ -38,8 +38,6 @@ const LanguageModal = ({ mangaInfo }: { mangaInfo: MangaDetails | null }) => {
   });
 
   function setLangData(data: { [key: string]: string }) {
-    console.log(data);
-
     setCurrentComicLanguage(data.lang);
 
     const modal = document.getElementById("lang_modal") as HTMLDialogElement;
