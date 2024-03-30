@@ -6,8 +6,11 @@ export const useReadStore = create<ReadState>()(
     persist(
       (set) => ({
         currentComicScans: [],
+        currentComicLanguage: "",
         setCurrentComicScans: (scans: string[]) =>
           set(() => ({ currentComicScans: scans })),
+        setCurrentComicLanguage: (lang: string) =>
+          set(() => ({ currentComicLanguage: lang })),
       }),
       {
         name: "search-storage",

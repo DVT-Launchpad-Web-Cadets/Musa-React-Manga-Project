@@ -62,7 +62,7 @@ const ScanModal = ({ mangaInfo }: { mangaInfo: MangaDetails | null }) => {
 
     setCurrentComicScans(selectedScans);
 
-    const modal = document.getElementById("my_modal_4") as HTMLDialogElement;
+    const modal = document.getElementById("scan_modal") as HTMLDialogElement;
 
     if (modal) modal.close();
   }
@@ -72,8 +72,8 @@ const ScanModal = ({ mangaInfo }: { mangaInfo: MangaDetails | null }) => {
   }
 
   return (
-    <dialog id="my_modal_4" className="modal">
-      <div className="modal-box w-11/12 max-w-5xl">
+    <dialog id="scan_modal" className="modal">
+      <div className="modal-box w-11/12 max-w-5xl bg-primary-color">
         <form method="dialog" onSubmit={handleSubmit(setScanData)}>
           {errors && errors["field name"] && (
             <p className="text-sm text-error-color">
@@ -117,6 +117,19 @@ const ScanModal = ({ mangaInfo }: { mangaInfo: MangaDetails | null }) => {
             <h1>There are no scans</h1>
           )}
           <div id="btns" className="modal-action flex gap-5 justify-end">
+            <button
+              type="reset"
+              className="btn"
+              onClick={() => {
+                const modal = document.getElementById(
+                  "scan_modal"
+                ) as HTMLDialogElement;
+
+                if (modal) modal.close();
+              }}
+            >
+              Close
+            </button>
             {scans.length ? (
               <input type="submit" className="btn bg-secondary-color"></input>
             ) : (

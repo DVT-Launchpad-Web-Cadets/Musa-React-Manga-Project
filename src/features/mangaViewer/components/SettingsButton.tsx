@@ -18,7 +18,7 @@ const SettingsButton = () => {
         <li
           onClick={() => {
             const model = document.getElementById(
-              "my_modal_4"
+              "scan_modal"
             ) as HTMLDialogElement;
             if (model) model.showModal();
           }}
@@ -31,7 +31,14 @@ const SettingsButton = () => {
             Scans
           </a>
         </li>
-        <li onClick={() => console}>
+        <li
+          onClick={() => {
+            const model = document.getElementById(
+              "lang_modal"
+            ) as HTMLDialogElement;
+            if (model) model.showModal();
+          }}
+        >
           <a>
             <span className="text-icon-color">
               <IoLanguage />{" "}

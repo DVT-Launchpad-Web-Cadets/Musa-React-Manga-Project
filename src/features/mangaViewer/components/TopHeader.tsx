@@ -3,11 +3,10 @@ import TopHeaderInfo from "./TopHeaderInfo";
 import { useComicStore } from "../../../state/comicStore";
 import SettingsButton from "./SettingsButton";
 import ScanModal from "./ScanModal";
+import LanguageModal from "./LanguageModel";
 
 const TopHeader = () => {
   const mangaInfo = useComicStore((state) => state.currentComic);
-
-
 
   return (
     <div className="pt-10 pb-11 px-4 flex flex-col gap-4 w-full h-[45%]">
@@ -26,6 +25,7 @@ const TopHeader = () => {
         <TopHeaderInfo />
       </div>
       <ScanModal mangaInfo={mangaInfo} />
+      <LanguageModal mangaInfo={mangaInfo} />
     </div>
   );
 };

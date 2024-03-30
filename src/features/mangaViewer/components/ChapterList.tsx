@@ -7,6 +7,9 @@ const ChapterList = ({ chapters }: { chapters: Chapters | undefined }) => {
   const setCurrentChapters = useComicStore((state) => state.setCurrentChapters);
   setCurrentChapters(chapters);
   const currentComicScans = useReadStore((state) => state.currentComicScans);
+  const currentComicLanguage = useReadStore(
+    (state) => state.currentComicLanguage
+  );
   return (
     <div className="py-4 px-4 flex flex-col gap-3">
       {chapters?.chapters
@@ -19,6 +22,7 @@ const ChapterList = ({ chapters }: { chapters: Chapters | undefined }) => {
             chapter.md_chapters_groups?.[0]?.md_groups?.slug
           );
         })
+        .filter((chapter) => chapter.lang === currentComicLanguage)
         .map((chapter) => (
           <ChapterCard key={chapter.hid} chapter={chapter} />
         ))}

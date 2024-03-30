@@ -6,9 +6,9 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { Resolver, useForm } from "react-hook-form";
 import { useReadStore } from "../../../state/readStore";
 
-const ScanModal = ({ mangaInfo }: { mangaInfo: MangaDetails | null }) => {
-  const setCurrentComicScans = useReadStore(
-    (state) => state.setCurrentComicScans
+const LanguageModal = ({ mangaInfo }: { mangaInfo: MangaDetails | null }) => {
+  const setCurrentComicLanguage = useReadStore(
+    (state) => state.setCurrentComicLanguage
   );
 
   const { isPending, data } = useQuery({
@@ -16,53 +16,33 @@ const ScanModal = ({ mangaInfo }: { mangaInfo: MangaDetails | null }) => {
     queryFn: () => getComicChapters(mangaInfo?.comic?.hid),
   });
 
-  const scans = [
+  const lang = new Intl.DisplayNames(["en"], { type: "language" });
+
+  const languages = [
     ...new Map(
-      data?.chapters.map((chapter) => [
-        chapter?.md_chapters_groups?.[0]?.md_groups?.title,
-        chapter,
-      ])
+      data?.chapters.map((chapter) => [lang.of(chapter.lang), chapter])
     ).values(),
   ];
-  const schemaObject = Object.fromEntries(
-    scans.map((field) => [
-      field.md_chapters_groups?.[0]?.md_groups?.slug,
-      yup.boolean(),
-    ])
+  let schemaObject = Object.fromEntries(
+    languages.map((field) => [field.lang, yup.string()])
   );
 
-  const schema = yup
-    .object()
-    .shape(schemaObject)
-    .test("customTest", (obj) => {
-      const someTruthy = Object.values(obj).some((field) => field === true);
-      if (someTruthy) {
-        return true;
-      }
-
-      return new yup.ValidationError(
-        "Please select at least one scan",
-        null,
-        "field name"
-      );
-    });
+  const schema = yup.object().shape(schemaObject);
 
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<{ [key: string]: boolean }>({
-    resolver: yupResolver(schema) as Resolver<{ [key: string]: boolean }>,
+  } = useForm<{ [key: string]: string }>({
+    resolver: yupResolver(schema) as Resolver<{ [key: string]: string }>,
   });
 
-  function setScanData(data: { [key: string]: boolean }) {
-    const selectedScans = Object.keys(data)
-      .filter((slug: string) => data[slug] === true)
-      .map((slug) => slug);
+  function setLangData(data: { [key: string]: string }) {
+    console.log(data);
 
-    setCurrentComicScans(selectedScans);
+    setCurrentComicLanguage(data.lang);
 
-    const modal = document.getElementById("my_modal_4") as HTMLDialogElement;
+    const modal = document.getElementById("lang_modal") as HTMLDialogElement;
 
     if (modal) modal.close();
   }
@@ -72,9 +52,9 @@ const ScanModal = ({ mangaInfo }: { mangaInfo: MangaDetails | null }) => {
   }
 
   return (
-    <dialog id="my_modal_4" className="modal">
-      <div className="modal-box w-11/12 max-w-5xl">
-        <form method="dialog" onSubmit={handleSubmit(setScanData)}>
+    <dialog id="lang_modal" className="modal">
+      <div className="modal-box w-11/12 max-w-5xl bg-primary-color">
+        <form method="dialog" onSubmit={handleSubmit(setLangData)}>
           {errors && errors["field name"] && (
             <p className="text-sm text-error-color">
               ❗️
@@ -85,30 +65,34 @@ const ScanModal = ({ mangaInfo }: { mangaInfo: MangaDetails | null }) => {
             <div className="flex justify-center items-center grow">
               <span className="loading loading-dots loading-lg text-secondary-color"></span>
             </div>
-          ) : scans.length ? (
-            scans
-              .filter(
-                (chapter) => chapter?.md_chapters_groups?.[0]?.md_groups?.slug
-              )
+          ) : languages.length ? (
+            languages
+              .filter((chapter) => chapter?.lang)
               .map((chapter) => (
                 <div
                   key={chapter.hid}
-                  id="checkboxes"
+                  id="radios"
                   className="flex flex-col items-start"
                 >
                   <label className="label cursor-pointer flex gap-4">
-                    <input
-                      type="checkbox"
-                      defaultChecked
-                      className="checkbox checkbox-primary"
-                      {...register(
-                        chapter?.md_chapters_groups?.[0]?.md_groups
-                          ?.slug as string
-                      )}
-                    />
+                    {chapter.lang === "en" ? (
+                      <input
+                        type="radio"
+                        className="radio radio-primary"
+                        defaultChecked
+                        value={chapter.lang}
+                        {...register("lang")}
+                      />
+                    ) : (
+                      <input
+                        type="radio"
+                        className="radio radio-primary"
+                        value={chapter.lang}
+                        {...register("lang")}
+                      />
+                    )}
                     <span className="label-text">
-                      {chapter?.md_chapters_groups?.[0]?.md_groups?.title ??
-                        "Unknown Scan"}
+                      {lang.of(chapter?.lang) ?? "en"}
                     </span>
                   </label>
                 </div>
@@ -117,7 +101,20 @@ const ScanModal = ({ mangaInfo }: { mangaInfo: MangaDetails | null }) => {
             <h1>There are no scans</h1>
           )}
           <div id="btns" className="modal-action flex gap-5 justify-end">
-            {scans.length ? (
+            <button
+              type="reset"
+              className="btn"
+              onClick={() => {
+                const modal = document.getElementById(
+                  "lang_modal"
+                ) as HTMLDialogElement;
+
+                if (modal) modal.close();
+              }}
+            >
+              Close
+            </button>
+            {languages.length ? (
               <input type="submit" className="btn bg-secondary-color"></input>
             ) : (
               <input type="submit" disabled className="btn"></input>
@@ -129,4 +126,4 @@ const ScanModal = ({ mangaInfo }: { mangaInfo: MangaDetails | null }) => {
   );
 };
 
-export default ScanModal;
+export default LanguageModal;
