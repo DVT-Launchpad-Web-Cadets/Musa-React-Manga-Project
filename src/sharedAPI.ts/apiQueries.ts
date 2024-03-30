@@ -1,6 +1,7 @@
 import { Comic } from "../models/chapterComic";
 import { Chapters } from "../models/chapters";
 import { MangaDetails } from "../models/mangaDetails";
+import { SearchResult } from "../models/searchResult";
 import { TopManga } from "../models/topManga";
 import apiBasieURL from "./apiBasieURL";
 
@@ -18,7 +19,9 @@ export const getComicBySlug = async (slug: string): Promise<MangaDetails> => {
 };
 
 export const getComicChapters = async (hid: string): Promise<Chapters> => {
-  const chapters = await fetch(`${apiBasieURL}/comic/${hid}/chapters?limit=80`);
+  const chapters = await fetch(
+    `${apiBasieURL}/comic/${hid}/chapters?limit=20000&chap-order=1`
+  );
 
   return await chapters.json();
 };
@@ -29,4 +32,19 @@ export const getChapterInfo = async (
   const chapter = await fetch(`${apiBasieURL}/chapter/${hid}/`);
 
   return await chapter.json();
+};
+
+export const searchQuery = async (
+  genres?: string,
+  status?: string
+): Promise<SearchResult[]> => {
+  const results = await fetch(
+    `${apiBasieURL}/v1.0/search/?${
+      genres?.length && "genres=" + genres.toLowerCase()
+    }&page=1&limit=15&${
+      status?.length && "status=" + status
+    }&showall=false&t=false`
+  );
+
+  return await results.json();
 };

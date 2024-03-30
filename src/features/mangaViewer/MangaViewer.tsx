@@ -1,7 +1,7 @@
 import TopHeader from "./components/TopHeader";
 import BottomDetails from "./components/BottomDetails";
 import LoadFail from "../../sharedComponents/LoadFail";
-import { useComicStore } from "../../state/store";
+import { useComicStore } from "../../state/comicStore";
 
 const MangaViewer = () => {
   const details = useComicStore((state) => state.currentComic);

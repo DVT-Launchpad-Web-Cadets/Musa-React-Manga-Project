@@ -13,7 +13,7 @@ export default {
       "icon-color": "yellow",
       "chip-color": "#2b161d",
       "gradient-color": "#28102b",
-      "button-background": "rgba(255, 255, 255, 0.6)",
+      "button-background": "rgba(0, 0, 0, 0.6)",
       "header-background": "rgba(0, 0, 0, 0.6)",
       "search-color": "#342d37",
       "search-header-color": "#120815",

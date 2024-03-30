@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import TopSliderDetails from "./TopSliderDetails";
 import { MangaDetails } from "../../../models/mangaDetails";
-import { useComicStore } from "../../../state/store";
+import { useComicStore } from "../../../state/comicStore";
 
 const TopSliderItem = ({
   mangaInfo,

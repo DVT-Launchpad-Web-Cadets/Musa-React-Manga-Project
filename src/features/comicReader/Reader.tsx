@@ -4,18 +4,18 @@ import { getChapterInfo } from "../../sharedAPI.ts/apiQueries";
 import { useNavigate, useParams } from "react-router-dom";
 import PrevButton from "./components/PrevButton";
 import NextButton from "./components/NextButton";
-import { useComicStore } from "../../state/store";
+import { useComicStore } from "../../state/comicStore";
 import DisabledPrev from "./components/DisabledPrev";
 import DisabledNext from "./components/DisabledNext";
 
 const Reader = () => {
   const chapters = useComicStore((state) => state.currentChapters);
-  const { chapterHID } = useParams();
+  const { chapterhid } = useParams();
   const navigate = useNavigate();
 
   const { isPending, data, isError } = useQuery({
-    queryKey: ["reader", chapterHID],
-    queryFn: () => getChapterInfo(chapterHID),
+    queryKey: ["reader", chapterhid],
+    queryFn: () => getChapterInfo(chapterhid),
   });
 
   if (isPending) {
@@ -43,7 +43,7 @@ const Reader = () => {
           onChange={(event) =>
             navigate(`/reader/${event.target.value}`, { replace: true })
           }
-          value={chapterHID}
+          value={chapterhid}
           className="select select-ghost select-sm w-4/6 max-w-xs self-center text-xl"
         >
           {chapters?.chapters
@@ -62,14 +62,14 @@ const Reader = () => {
         </select>
       </div>
       <div className="absolute top-[56px]">
-      {data?.chapter?.md_images?.map((comic) => (
-        <img
-          key={comic.b2key}
-          src={`https://meo3.comick.pictures/${comic?.b2key}`}
-          className="w-full"
-          alt="missing page"
-        />
-      ))}
+        {data?.chapter?.md_images?.map((comic) => (
+          <img
+            key={comic.b2key}
+            src={`https://meo3.comick.pictures/${comic?.b2key}`}
+            className="w-full"
+            alt="missing page"
+          />
+        ))}
       </div>
       <div className="fixed bottom-0 h-24 bg-primary-color w-full flex justify-center items-center gap-20">
         {data?.prev ? (

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { MangaDetails } from "../../../models/mangaDetails";
-import { useComicStore } from "../../../state/store";
+import { useComicStore } from "../../../state/comicStore";
 
 const MangaListHeader = ({ headerTitle }: { headerTitle: string }) => {
   let topMangaList: (MangaDetails | undefined)[] | null = null;
