@@ -22,7 +22,12 @@ const ChapterList = ({ chapters }: { chapters: Chapters | undefined }) => {
             chapter.md_chapters_groups?.[0]?.md_groups?.slug
           );
         })
-        .filter((chapter) => chapter.lang === currentComicLanguage)
+        .filter((chapter) => {
+          if (currentComicLanguage === "") {
+            return true;
+          }
+          return chapter.lang === currentComicLanguage;
+        })
         .map((chapter) => (
           <ChapterCard key={chapter.hid} chapter={chapter} />
         ))}
