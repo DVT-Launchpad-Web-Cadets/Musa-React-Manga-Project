@@ -16,7 +16,7 @@ const TopSlider = ({
         showControls
         showIndicators
         ride="carousel"
-        className="h-[400px]"
+        className="h-[400px] md:h-[670px] md:my-20 md:mx-6 md:shadow-4xl md:rounded-lg"
       >
         <div className="relative w-full h-full overflow-hidden after:clear-both after:block after:content-['']">
           {topSliderManga ? (

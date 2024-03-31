@@ -6,6 +6,7 @@ import { getComicBySlug, getTopComics } from "../../sharedAPI.ts/apiQueries";
 import TopSliderSkeleton from "./skeletons/TopSliderSkeletom";
 import BottomContainerSkeleton from "./skeletons/BottomContainerSkeleton";
 import SearchButton from "./components/SearchButton";
+import Logo from "./components/Logo";
 
 const Home = () => {
   const mangaQuery = useQuery({
@@ -133,6 +134,7 @@ const Home = () => {
 
   return (
     <>
+      <Logo />
       <SearchButton />
       <TopSlider topSliderManga={trendingManga} />
       <BottomContainer
