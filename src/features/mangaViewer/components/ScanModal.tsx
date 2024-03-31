@@ -6,7 +6,13 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { Resolver, useForm } from "react-hook-form";
 import { useReadStore } from "../../../state/readStore";
 
-const ScanModal = ({ mangaInfo }: { mangaInfo: MangaDetails | null }) => {
+const ScanModal = ({
+  mangaInfo,
+  scanRef,
+}: {
+  mangaInfo: MangaDetails | null;
+  scanRef: React.RefObject<HTMLDialogElement>;
+}) => {
   const setCurrentComicScans = useReadStore(
     (state) => state.setCurrentComicScans
   );
@@ -62,9 +68,7 @@ const ScanModal = ({ mangaInfo }: { mangaInfo: MangaDetails | null }) => {
 
     setCurrentComicScans(selectedScans);
 
-    const modal = document.getElementById("scan_modal") as HTMLDialogElement;
-
-    if (modal) modal.close();
+    scanRef.current?.close();
   }
 
   if (!data) {
@@ -72,7 +76,7 @@ const ScanModal = ({ mangaInfo }: { mangaInfo: MangaDetails | null }) => {
   }
 
   return (
-    <dialog id="scan_modal" className="modal">
+    <dialog id="scan_modal" className="modal" ref={scanRef}>
       <div className="modal-box w-11/12 max-w-5xl bg-primary-color">
         <form method="dialog" onSubmit={handleSubmit(setScanData)}>
           {errors && errors["field name"] && (
@@ -121,11 +125,7 @@ const ScanModal = ({ mangaInfo }: { mangaInfo: MangaDetails | null }) => {
               type="reset"
               className="btn"
               onClick={() => {
-                const modal = document.getElementById(
-                  "scan_modal"
-                ) as HTMLDialogElement;
-
-                if (modal) modal.close();
+                scanRef.current?.close();
               }}
             >
               Close

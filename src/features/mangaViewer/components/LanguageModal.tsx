@@ -6,7 +6,13 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { Resolver, useForm } from "react-hook-form";
 import { useReadStore } from "../../../state/readStore";
 
-const LanguageModal = ({ mangaInfo }: { mangaInfo: MangaDetails | null }) => {
+const LanguageModal = ({
+  mangaInfo,
+  langRef,
+}: {
+  mangaInfo: MangaDetails | null;
+  langRef: React.RefObject<HTMLDialogElement>;
+}) => {
   const setCurrentComicLanguage = useReadStore(
     (state) => state.setCurrentComicLanguage
   );
@@ -40,9 +46,7 @@ const LanguageModal = ({ mangaInfo }: { mangaInfo: MangaDetails | null }) => {
   function setLangData(data: { [key: string]: string }) {
     setCurrentComicLanguage(data.lang);
 
-    const modal = document.getElementById("lang_modal") as HTMLDialogElement;
-
-    if (modal) modal.close();
+    langRef.current?.close();
   }
 
   if (!data) {
@@ -50,7 +54,7 @@ const LanguageModal = ({ mangaInfo }: { mangaInfo: MangaDetails | null }) => {
   }
 
   return (
-    <dialog id="lang_modal" className="modal">
+    <dialog id="lang_modal" className="modal" ref={langRef}>
       <div className="modal-box w-11/12 max-w-5xl bg-primary-color">
         <form method="dialog" onSubmit={handleSubmit(setLangData)}>
           {errors && errors["field name"] && (
@@ -103,11 +107,7 @@ const LanguageModal = ({ mangaInfo }: { mangaInfo: MangaDetails | null }) => {
               type="reset"
               className="btn"
               onClick={() => {
-                const modal = document.getElementById(
-                  "lang_modal"
-                ) as HTMLDialogElement;
-
-                if (modal) modal.close();
+                langRef.current?.close();
               }}
             >
               Close

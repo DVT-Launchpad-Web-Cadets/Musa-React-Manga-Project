@@ -1,7 +1,13 @@
 import { FaGear } from "react-icons/fa6";
 import { IoLanguage, IoScan } from "react-icons/io5";
 
-const SettingsButton = () => {
+const SettingsButton = ({
+  scanRef,
+  langRef,
+}: {
+  scanRef: React.RefObject<HTMLDialogElement>;
+  langRef: React.RefObject<HTMLDialogElement>;
+}) => {
   return (
     <div className="dropdown dropdown-end">
       <div
@@ -17,10 +23,7 @@ const SettingsButton = () => {
       >
         <li
           onClick={() => {
-            const model = document.getElementById(
-              "scan_modal"
-            ) as HTMLDialogElement;
-            if (model) model.showModal();
+            scanRef.current?.showModal();
           }}
         >
           <a>
@@ -33,10 +36,7 @@ const SettingsButton = () => {
         </li>
         <li
           onClick={() => {
-            const model = document.getElementById(
-              "lang_modal"
-            ) as HTMLDialogElement;
-            if (model) model.showModal();
+            langRef.current?.showModal();
           }}
         >
           <a>

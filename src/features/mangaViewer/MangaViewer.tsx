@@ -10,7 +10,12 @@ const MangaViewer = () => {
     (state) => state.setCurrentComicScans
   );
 
+  const setCurrentComicLanguage = useReadStore(
+    (state) => state.setCurrentComicLanguage
+  );
+
   setCurrentComicScans([]);
+  setCurrentComicLanguage("");
 
   if (!details) return <LoadFail />;
 
