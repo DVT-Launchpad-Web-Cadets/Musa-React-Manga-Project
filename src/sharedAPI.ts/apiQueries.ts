@@ -18,7 +18,7 @@ export const getComicBySlug = async (slug: string): Promise<MangaDetails> => {
   return await comic.json();
 };
 
-export const getComicChapters = async (hid: string): Promise<Chapters> => {
+export const getComicChapters = async (hid: string | undefined): Promise<Chapters> => {
   const chapters = await fetch(
     `${apiBasieURL}/comic/${hid}/chapters?limit=20000&chap-order=1`
   );

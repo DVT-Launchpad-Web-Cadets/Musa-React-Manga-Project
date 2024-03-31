@@ -17,6 +17,7 @@ export default {
       "header-background": "rgba(0, 0, 0, 0.6)",
       "search-color": "#342d37",
       "search-header-color": "#120815",
+      "error-color": "rgb(187 55 55)",
       grey: "grey",
     },
     extend: {
