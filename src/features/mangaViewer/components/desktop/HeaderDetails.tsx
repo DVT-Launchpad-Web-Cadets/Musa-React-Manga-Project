@@ -1,11 +1,11 @@
 import { FaFlag, FaHeart, FaStar } from "react-icons/fa";
-import formatFollowers, { getMangaStatus } from "../../../utils/utils";
-import { useComicStore } from "../../../state/comicStore";
+import formatFollowers, { getMangaStatus } from "../../../../utils/utils";
+import { useComicStore } from "../../../../state/comicStore";
 
-const TopHeaderInfo = () => {
+const HeaderDetails = () => {
   const mangaInfo = useComicStore((state) => state.currentComic);
   return (
-    <div className="w-full flex flex-col gap-2 flex-1 h-full">
+    <div className="w-full flex flex-col gap-2 flex-1 h-fit">
       <h1 className="text-2xl font-semibold h-fit line-clamp-5">
         {mangaInfo?.comic?.title ?? "Comic Title"}
       </h1>
@@ -30,4 +30,4 @@ const TopHeaderInfo = () => {
   );
 };
 
-export default TopHeaderInfo;
+export default HeaderDetails;

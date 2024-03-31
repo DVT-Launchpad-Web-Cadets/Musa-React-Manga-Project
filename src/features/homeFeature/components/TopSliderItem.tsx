@@ -14,7 +14,7 @@ const TopSliderItem = ({
       <div className="absolute shadow-slider w-full h-full z-20"></div>
       <img
         src={`https://meo3.comick.pictures/${mangaInfo?.comic.md_covers[0]?.b2key}`}
-        className="w-full h-full object-cover object-top brightness-50 overflow-clip"
+        className="w-full h-full object-cover object-top brightness-75 overflow-clip"
         alt={mangaInfo?.comic?.title}
       />
       <TopSliderDetails
