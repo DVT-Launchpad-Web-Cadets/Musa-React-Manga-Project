@@ -1,8 +1,12 @@
 import { useComicStore } from "../../../state/comicStore";
 import MangaCard from "../../../sharedComponents/MangaCard";
 import { MangaDetails } from "../../../models/mangaDetails";
+import PrevButton from "./PrevButton";
+import NextButton from "./NextButton";
+import { useRef } from "react";
 
 const CardsCarousel = ({ comicType }: { comicType: string }) => {
+  const carousel = useRef(null);
   let topMangaList: (MangaDetails | undefined)[] | null = null;
 
   if (comicType === "manga")
@@ -15,8 +19,13 @@ const CardsCarousel = ({ comicType }: { comicType: string }) => {
     topMangaList = useComicStore((state) => state.topManhua);
 
   return (
-    <div className="carousel carousel-center p-4 space-x-4 h-[340px] flex gap-2">
-      {topMangaList?.slice(0, 6).map((manga) => (
+    <div
+      className="carousel carousel-center p-4 space-x-4 h-[340px] flex gap-2 relative"
+      ref={carousel}
+    >
+      <PrevButton carouselRef={carousel} />
+      <NextButton carouselRef={carousel} />
+      {topMangaList?.map((manga) => (
         <MangaCard key={manga?.comic?.slug} cardInfo={manga} />
       ))}
     </div>

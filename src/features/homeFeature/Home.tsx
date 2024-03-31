@@ -124,8 +124,8 @@ const Home = () => {
     );
   }
 
-  const trendingManga = mangaQueries.slice(0, 10).map((query) => query.data);
-  const topManga = mangaQueries.slice(11, 20).map((query) => query.data);
+  const trendingManga = mangaQueries.slice(0, 5).map((query) => query.data);
+  const topManga = mangaQueries.slice(6, 25).map((query) => query.data);
 
   const topManhwa = manhwaQueries.map((query) => query.data);
 

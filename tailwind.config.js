@@ -1,7 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 import defaultTheme from "tailwindcss/defaultTheme";
 export default {
-  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "node_modules/flowbite-react/lib/esm/**/*.js",
+    "./node_modules/tw-elements-react/dist/js/**/*.js",
+  ],
   theme: {
     colors: {
       white: "white",
@@ -30,5 +35,9 @@ export default {
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [
+    require("daisyui"),
+    require("flowbite/plugin"),
+    require("tw-elements-react/dist/plugin.cjs"),
+  ],
 };
