@@ -91,6 +91,7 @@ const Home = () => {
   )
     return (
       <>
+        <Logo />
         <TopSliderSkeleton />
         <BottomContainerSkeleton />
       </>
@@ -102,7 +103,7 @@ const Home = () => {
     !manhwaQuery.isPending &&
     !manhwaQuery.data &&
     !manhuaQuery.isPending &&
-    !manhuaQuery.data
+    !manhuaQuery.data 
   ) {
     return (
       <div className="h-full flex items-center justify-center"> No manga</div>

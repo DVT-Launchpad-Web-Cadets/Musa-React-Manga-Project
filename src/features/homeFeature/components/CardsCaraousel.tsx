@@ -1,8 +1,6 @@
 import { useComicStore } from "../../../state/comicStore";
 import MangaCard from "../../../sharedComponents/MangaCard";
 import { MangaDetails } from "../../../models/mangaDetails";
-import PrevButton from "./PrevButton";
-import NextButton from "./NextButton";
 import { useRef } from "react";
 
 const CardsCarousel = ({ comicType }: { comicType: string }) => {
