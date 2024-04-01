@@ -4,7 +4,10 @@ import { FaBook } from "react-icons/fa";
 
 const ChapterCard = ({ chapter }: { chapter: Chapter }) => {
   return (
-    <Link to={`/reader/${chapter?.hid}`}>
+    <Link
+      to={`/reader/${chapter?.hid}`}
+      aria-label="Navigate to a chapter reader"
+    >
       <div className="w-full h-20 flex justify-between py-2 px-4">
         <div className="w-10 flex items-center text-2xl text-icon-color">
           <FaBook />

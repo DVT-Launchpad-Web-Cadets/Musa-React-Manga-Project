@@ -4,6 +4,7 @@ import { RxCross2 } from "react-icons/rx";
 import { useLocation, useNavigate } from "react-router-dom";
 import {
   EMPTY,
+  catchError,
   debounceTime,
   distinctUntilChanged,
   fromEvent,
@@ -23,6 +24,7 @@ const SearchInput = () => {
   const inputRef = useRef<HTMLInputElement>(null);
   const setResults = useSearchStore((state) => state.setResults);
   const setisLoading = useSearchStore((state) => state.setIsLoading);
+  const setisError = useSearchStore((state) => state.setIsError);
 
   useEffect(() => {
     if (!inputRef?.current) return;
@@ -42,7 +44,15 @@ const SearchInput = () => {
             setisLoading(true);
             return fromFetch(
               `${apiBasieURL}/v1.0/search/?page=1&limit=15&showall=false&q=${value}&t=false`
-            ).pipe(switchMap((res) => fromPromise(res.json())));
+            ).pipe(
+              switchMap((res) => fromPromise(res.json())),
+              catchError((err) => {
+                console.error(err);
+                
+                setisError(true);
+                return EMPTY;
+              })
+            );
           }
           return EMPTY;
         })

@@ -8,7 +8,11 @@ const PrevButton = ({
   prevChapter: NeighborChapter | undefined;
 }) => {
   return (
-    <Link to={`/reader/${prevChapter?.hid}`} replace>
+    <Link
+      to={`/reader/${prevChapter?.hid}`}
+      replace
+      aria-label="Navigate to the previous chater reader"
+    >
       <button className="btn w-16 h-16 btn-circle bg-secondary-color text-3xl">
         <IoIosSkipBackward />
       </button>

@@ -1,6 +1,11 @@
 const ActionButton = () => {
   return (
-    <button className="btn bg-secondary-color w-24 self-center">Retry</button>
+    <button
+      onClick={() => window.location.reload()}
+      className="btn bg-secondary-color w-24 self-center"
+    >
+      Retry
+    </button>
   );
 };
 

@@ -1,6 +1,7 @@
 import { MangaDetails } from "../../../models/mangaDetails";
 import { useComicStore } from "../../../state/comicStore";
 import TopSliderItem from "./TopSliderItem";
+import { TECarousel, TECarouselItem } from "tw-elements-react";
 
 const TopSlider = ({
   topSliderManga,
@@ -10,17 +11,32 @@ const TopSlider = ({
   const setTrendingManga = useComicStore((state) => state.setTrendingManga);
   setTrendingManga(topSliderManga);
   return (
-    <div className="w-full h-[400px] carousel carousel-center bg-primary-text-color">
-      {topSliderManga ? (
-        <>
-          {topSliderManga?.slice(0, 10).map((manga) => (
-            <TopSliderItem key={manga?.comic?.slug} mangaInfo={manga} />
-          ))}
-        </>
-      ) : (
-        <h1>No manga to display</h1>
-      )}
-    </div>
+    <>
+      <TECarousel
+        showControls
+        showIndicators
+        ride="carousel"
+        className="h-[400px] md:h-[670px] md:my-20 md:mx-6 md:shadow-4xl md:rounded-lg"
+      >
+        <div className="relative w-full h-full overflow-hidden after:clear-both after:block after:content-['']">
+          {topSliderManga ? (
+            <>
+              {topSliderManga?.slice(0, 5).map((manga, index) => (
+                <TECarouselItem
+                  itemID={index + 1}
+                  key={manga?.comic?.slug}
+                  className="relative float-left -mr-[100%] hidden w-full h-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                >
+                  <TopSliderItem mangaInfo={manga} />
+                </TECarouselItem>
+              ))}
+            </>
+          ) : (
+            <h1>No manga to display</h1>
+          )}
+        </div>
+      </TECarousel>
+    </>
   );
 };
 

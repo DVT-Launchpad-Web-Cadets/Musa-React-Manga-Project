@@ -20,9 +20,13 @@ const MangaListHeader = ({ headerTitle }: { headerTitle: string }) => {
   }
 
   return (
-    <div className="flex justify-between px-4 pb-1">
+    <div className="flex justify-between px-6 pb-1">
       <p className="text-xl font-semibold">{headerTitle}</p>
-      <Link to="/topmanga" state={{ topMangaList, headerTitle }}>
+      <Link
+        to="/topmanga"
+        state={{ topMangaList, headerTitle }}
+        aria-label="Navigate to the manga view"
+      >
         <p className="text-text-botton-color">see all</p>
       </Link>
     </div>

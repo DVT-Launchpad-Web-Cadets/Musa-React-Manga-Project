@@ -44,9 +44,12 @@ const SimilarTab = ({
   const loadedComics = queries.map((query) => query.data);
 
   return (
-    <div className="py-10 px-4 grid grid-cols-2 gap-y-8 place-items-center grow-0 overflow-auto">
+    <div className="py-10 px-4 grid gap-y-8 place-items-center grow-0 overflow-auto xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
       {loadedComics?.map((comic) => (
-        <MangaCard key={comic?.comic?.slug} cardInfo={comic} />
+        <MangaCard
+          key={comic?.comic?.slug ?? comic?.comic?.title}
+          cardInfo={comic}
+        />
       ))}
     </div>
   );

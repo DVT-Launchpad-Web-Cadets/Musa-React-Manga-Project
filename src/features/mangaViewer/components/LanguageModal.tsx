@@ -49,10 +49,6 @@ const LanguageModal = ({
     langRef.current?.close();
   }
 
-  if (!data) {
-    return <h1>There are no scans</h1>;
-  }
-
   return (
     <dialog id="lang_modal" className="modal" ref={langRef}>
       <div className="modal-box w-11/12 max-w-5xl bg-primary-color">
@@ -115,7 +111,11 @@ const LanguageModal = ({
             {languages.length ? (
               <input type="submit" className="btn bg-secondary-color"></input>
             ) : (
-              <input type="submit" disabled className="btn"></input>
+              <input
+                type="submit"
+                disabled
+                className="btn bg-secondary-color"
+              ></input>
             )}
           </div>
         </form>

@@ -17,13 +17,15 @@ const ChaptersTab = ({ mangaDetails }: { mangaDetails: MangaDetails }) => {
     );
   }
 
-  if(isError){
-    return <h1 className="h-full flex items-center justify-center">No manga</h1>
+  if (isError) {
+    return (
+      <h1 className="h-full flex items-center justify-center">No manga</h1>
+    );
   }
 
   return (
-    <div className="grow-0 overflow-auto">
-      <ChapterList chapters={data}  />
+    <div className="overflow-auto">
+      <ChapterList chapters={data} />
     </div>
   );
 };

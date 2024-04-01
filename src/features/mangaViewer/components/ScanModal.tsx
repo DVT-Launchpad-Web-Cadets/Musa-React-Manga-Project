@@ -71,10 +71,6 @@ const ScanModal = ({
     scanRef.current?.close();
   }
 
-  if (!data) {
-    return <h1>There are no scans</h1>;
-  }
-
   return (
     <dialog id="scan_modal" className="modal" ref={scanRef}>
       <div className="modal-box w-11/12 max-w-5xl bg-primary-color">
