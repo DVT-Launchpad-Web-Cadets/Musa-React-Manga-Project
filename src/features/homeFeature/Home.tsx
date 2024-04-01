@@ -143,7 +143,9 @@ const Home = () => {
     <>
       <Logo />
       <SearchButton />
-      <TopSlider topSliderManga={trendingManga} />
+      <header>
+        <TopSlider topSliderManga={trendingManga} />
+      </header>
       <BottomContainer
         topManga={topManga}
         topManhwa={topManhwa}

@@ -13,7 +13,7 @@ export default {
       "primary-color": "#160b1a",
       "secondary-color": "#5c4ef2",
       "primary-text-color": "whitesmoke",
-      "text-botton-color": "#606abb",
+      "text-botton-color": "#C593FA",
       "card-follower-count": "#c36034",
       "icon-color": "yellow",
       "chip-color": "#2b161d",
