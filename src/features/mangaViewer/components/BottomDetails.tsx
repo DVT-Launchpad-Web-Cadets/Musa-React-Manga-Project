@@ -20,7 +20,9 @@ const BottomDetails = ({ mangaInfo }: { mangaInfo: MangaDetails }) => {
           onClick={() => setSelectedTab(1)}
         >
           <p className="text-sm text-nowrap flex gap-2 items-center">
-            <FaBook />
+            <span className="text-icon-color">
+              <FaBook />
+            </span>
             Chapters ({mangaInfo?.comic?.last_chapter})
           </p>
         </a>
@@ -30,7 +32,9 @@ const BottomDetails = ({ mangaInfo }: { mangaInfo: MangaDetails }) => {
           onClick={() => setSelectedTab(2)}
         >
           <p className="text-sm h-fit text-nowrap flex gap-2 items-center">
-            <TbListDetails />
+            <span className="text-icon-color">
+              <TbListDetails />
+            </span>
             Details
           </p>
         </a>
@@ -40,7 +44,9 @@ const BottomDetails = ({ mangaInfo }: { mangaInfo: MangaDetails }) => {
           onClick={() => setSelectedTab(3)}
         >
           <p className="text-sm h-fit text-nowrap flex gap-2 items-center">
-            <FaConfluence />
+            <span className="text-icon-color">
+              <FaConfluence />
+            </span>
             Similar
           </p>
         </a>
