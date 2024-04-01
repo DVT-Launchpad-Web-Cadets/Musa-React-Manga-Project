@@ -19,7 +19,7 @@ const MangaViewer = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
 
   setCurrentComicScans([]);
-  setCurrentComicLanguage("");
+  setCurrentComicLanguage("en");
 
   return (
     <>

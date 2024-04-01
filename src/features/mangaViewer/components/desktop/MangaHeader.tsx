@@ -5,7 +5,7 @@ const MangaHeader = () => {
   const details = useComicStore((state) => state.currentComic);
   return (
     <div
-      className="w-full h-96 rounded-xl flex items-end p-5 shadow-slider"
+      className="w-full h-96 rounded-xl flex items-end p-5 shadow-slider brightness-150"
       style={{
         backgroundImage: `url('https://meo3.comick.pictures/${
           details?.comic?.md_covers?.[1]?.b2key ??

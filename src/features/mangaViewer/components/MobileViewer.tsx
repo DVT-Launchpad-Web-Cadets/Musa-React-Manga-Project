@@ -19,8 +19,8 @@ const MobileViewer = () => {
           }`}
           alt=""
         />
-        <div className="h-4/5 w-full absolute z-40 bottom-0 bg-gradient-to-t from-primary-color from-20% via-gradient-color via-85% md:bg-gradient-color md:h-full"></div>
-        <div className="absolute z-40 top-0 w-full h-full flex flex-col">
+        <div className="h-4/5 w-full absolute z-40 bottom-0 bg-gradient-to-t from-primary-color from-20% via-gradient-color via-85%"></div>
+        <div className="absolute z-40 top-0 w-full h-full flex flex-col overflow-hidden">
           <TopHeader />
           <BottomDetails mangaInfo={details} />
         </div>

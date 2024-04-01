@@ -23,8 +23,6 @@ const CardsCarousel = ({ comicType }: { comicType: string }) => {
       className="carousel carousel-center p-4 space-x-4 h-[340px] flex gap-2 relative"
       ref={carousel}
     >
-      <PrevButton carouselRef={carousel} />
-      <NextButton carouselRef={carousel} />
       {topMangaList?.map((manga) => (
         <MangaCard key={manga?.comic?.slug} cardInfo={manga} />
       ))}

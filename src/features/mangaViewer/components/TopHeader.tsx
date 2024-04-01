@@ -12,12 +12,12 @@ const TopHeader = () => {
   const langRef = useRef<HTMLDialogElement>(null);
 
   return (
-    <div className="pt-10 pb-11 px-4 flex flex-col gap-4 w-full h-[550px]">
+    <div className="pt-10 pb-11 px-4 flex flex-col gap-4 w-full">
       <div className="flex justify-between pb-1">
         <BackButton />
         <SettingsButton scanRef={scanRef} langRef={langRef} />
       </div>
-      <div className="flex gap-4 w-full max-h-96 ">
+      <div className="flex gap-4 w-full max-h-80 ">
         <div className="object-cover object-top">
           <img
             src={`https://meo3.comick.pictures/${mangaInfo?.comic?.md_covers[0]?.b2key}`}

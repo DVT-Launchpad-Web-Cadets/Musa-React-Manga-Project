@@ -30,7 +30,7 @@ export default {
         rubik: ['"Rubik"', ...defaultTheme.fontFamily.sans],
       },
       boxShadow: {
-        slider: "rgba(0, 0, 0, 0.45) 0px -200px 36px -28px inset",
+        slider: "rgba(0, 0, 0, 0.56) 0px -200px 36px -28px inset",
         showButton: "rgba(0, 0, 0, 0.45) 0px -50 36px -28px inset",
       },
     },

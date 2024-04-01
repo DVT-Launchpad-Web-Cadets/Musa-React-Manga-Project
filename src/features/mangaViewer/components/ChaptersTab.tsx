@@ -24,7 +24,7 @@ const ChaptersTab = ({ mangaDetails }: { mangaDetails: MangaDetails }) => {
   }
 
   return (
-    <div className="grow-0 overflow-auto">
+    <div className="overflow-auto">
       <ChapterList chapters={data} />
     </div>
   );
