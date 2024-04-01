@@ -1,4 +1,4 @@
-import SkeletonCard from "./SkeletonCard";
+import SkeletonCard from "../../../sharedComponents/SkeletonCard";
 
 const CarouselSkeleton = () => {
   return (
