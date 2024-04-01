@@ -7,6 +7,7 @@ import TopSliderSkeleton from "./skeletons/TopSliderSkeletom";
 import BottomContainerSkeleton from "./skeletons/BottomContainerSkeleton";
 import SearchButton from "./components/SearchButton";
 import Logo from "./components/Logo";
+import toast, { Toaster } from "react-hot-toast";
 
 const Home = () => {
   const mangaQuery = useQuery({
@@ -23,8 +24,6 @@ const Home = () => {
     queryKey: ["manhua"],
     queryFn: () => getTopComics("manhua"),
   });
-
-  console.log(mangaQuery.isError);
 
   const mangaQueries = useQueries({
     queries: mangaQuery.data
@@ -67,11 +66,16 @@ const Home = () => {
           })
       : [],
   });
-  if (mangaQuery.isError) return <LoadFail />;
+  if (mangaQuery.isError || manhwaQuery.isError || manhuaQuery.isError) {
+    toast.error("Error Fetching data");
+    return (
+      <>
+        <LoadFail />;
+        <Toaster />
+      </>
+    );
+  }
 
-  if (manhwaQuery.isError) return <LoadFail />;
-
-  if (manhuaQuery.isError) return <LoadFail />;
   const mangaLoadingQuery = mangaQueries?.find((query) => query.isPending);
   const mangaErrorQuery = mangaQueries?.find((query) => query.isError);
 
@@ -106,7 +110,9 @@ const Home = () => {
     !manhuaQuery.data
   ) {
     return (
-      <div className="h-full flex items-center justify-center"> No manga</div>
+      <div className="h-full flex items-center justify-center text-4xl font-bold">
+        No manga to show
+      </div>
     );
   }
 

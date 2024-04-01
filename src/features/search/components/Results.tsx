@@ -6,13 +6,13 @@ import MangaCard from "../../../sharedComponents/MangaCard";
 import { useLocation } from "react-router-dom";
 import ResultSkeleton from "../skeleton/ResultSkeleton";
 import LoadFail from "../../../sharedComponents/LoadFail";
+import toast, { Toaster } from "react-hot-toast";
 
 const Results = () => {
   let isLoading = useSearchStore((state) => state.isLoading);
   let results = useSearchStore((state) => state.results);
   let error = useSearchStore((state) => state.isError);
   const setResults = useSearchStore((state) => state.setResults);
-
   const { state } = useLocation();
 
   if (state) {
@@ -52,7 +52,13 @@ const Results = () => {
   }
 
   if (errorQuery || error) {
-    return <LoadFail />;
+    toast.error("Error Fetching data");
+    return (
+      <>
+        <LoadFail />;
+        <Toaster />
+      </>
+    );
   }
 
   const comics = comicQueries.map((query) => query.data);

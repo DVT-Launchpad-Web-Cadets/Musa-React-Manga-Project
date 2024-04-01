@@ -23,7 +23,7 @@ const DesktopViewer = () => {
         <BackButton />
         <SettingsButton scanRef={scanRef} langRef={langRef} />
       </div>
-      <div className="grid grid-cols-3 grid-flow-row gap-10 px-16 py-10">
+      <div className="grid grid-cols-3 grid-flow-row gap-10 px-16 py-10 ">
         <div className="col-span-2 h-96">
           <MangaHeader />
         </div>
@@ -33,7 +33,7 @@ const DesktopViewer = () => {
         <div className="col-span-2 h-fit">
           <DetailsContainer mangaDetails={mangaInfo} />
         </div>
-        <div className="col-span-3 h-96">
+        <div className="col-span-3 h-[450px]">
           <SimilarContainer mangaDetails={mangaInfo} />
         </div>
       </div>

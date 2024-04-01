@@ -115,7 +115,7 @@ const LanguageModal = ({
             {languages.length ? (
               <input type="submit" className="btn bg-secondary-color"></input>
             ) : (
-              <input type="submit" disabled className="btn"></input>
+              <input type="submit" disabled className="btn bg-secondary-color"></input>
             )}
           </div>
         </form>
