@@ -46,7 +46,9 @@ const SearchInput = () => {
               `${apiBasieURL}/v1.0/search/?page=1&limit=15&showall=false&q=${value}&t=false`
             ).pipe(
               switchMap((res) => fromPromise(res.json())),
-              catchError(() => {
+              catchError((err) => {
+                console.error(err);
+                
                 setisError(true);
                 return EMPTY;
               })
