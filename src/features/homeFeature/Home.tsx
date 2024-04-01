@@ -24,11 +24,7 @@ const Home = () => {
     queryFn: () => getTopComics("manhua"),
   });
 
-  if (mangaQuery.isError) return <LoadFail />;
-
-  if (manhwaQuery.isError) return <LoadFail />;
-
-  if (manhuaQuery.isError) return <LoadFail />;
+  console.log(mangaQuery.isError);
 
   const mangaQueries = useQueries({
     queries: mangaQuery.data
@@ -71,7 +67,11 @@ const Home = () => {
           })
       : [],
   });
+  if (mangaQuery.isError) return <LoadFail />;
 
+  if (manhwaQuery.isError) return <LoadFail />;
+
+  if (manhuaQuery.isError) return <LoadFail />;
   const mangaLoadingQuery = mangaQueries?.find((query) => query.isPending);
   const mangaErrorQuery = mangaQueries?.find((query) => query.isError);
 
@@ -103,7 +103,7 @@ const Home = () => {
     !manhwaQuery.isPending &&
     !manhwaQuery.data &&
     !manhuaQuery.isPending &&
-    !manhuaQuery.data 
+    !manhuaQuery.data
   ) {
     return (
       <div className="h-full flex items-center justify-center"> No manga</div>

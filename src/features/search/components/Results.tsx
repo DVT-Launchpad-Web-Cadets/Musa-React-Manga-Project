@@ -5,24 +5,24 @@ import { getComicBySlug, searchQuery } from "../../../sharedAPI.ts/apiQueries";
 import MangaCard from "../../../sharedComponents/MangaCard";
 import { useLocation } from "react-router-dom";
 import ResultSkeleton from "../skeleton/ResultSkeleton";
+import LoadFail from "../../../sharedComponents/LoadFail";
 
 const Results = () => {
   let isLoading = useSearchStore((state) => state.isLoading);
   let results = useSearchStore((state) => state.results);
+  let error = useSearchStore((state) => state.isError);
   const setResults = useSearchStore((state) => state.setResults);
 
   const { state } = useLocation();
 
   if (state) {
-    const { isPending, data } = useQuery({
+    const { isPending, data, isError } = useQuery({
       queryKey: ["search", state.queryGenres, state.queryStatus],
       queryFn: () => searchQuery(state.queryGenres, state.queryStatus),
     });
     results = data;
     isLoading = isPending;
-  } else {
-    isLoading = useSearchStore((state) => state.isLoading);
-    results = useSearchStore((state) => state.results);
+    error = isError;
   }
 
   useEffect(() => {
@@ -51,10 +51,8 @@ const Results = () => {
     return <ResultSkeleton />;
   }
 
-  if (errorQuery) {
-    return (
-      <div className="h-full flex items-center justify-center"> No manga</div>
-    );
+  if (errorQuery || error) {
+    return <LoadFail />;
   }
 
   const comics = comicQueries.map((query) => query.data);
