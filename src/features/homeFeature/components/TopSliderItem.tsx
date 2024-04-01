@@ -10,7 +10,7 @@ const TopSliderItem = ({
 }) => {
   const setCurrentComic = useComicStore((state) => state.setCurrentComic);
   return (
-    <Link onClick={() => setCurrentComic(mangaInfo)} to="/manga">
+    <Link onClick={() => setCurrentComic(mangaInfo)} to="/manga" aria-label="Navigate to the manga viewer">
       <div className="absolute shadow-slider w-full h-full z-20"></div>
       <img
         src={`https://meo3.comick.pictures/${mangaInfo?.comic.md_covers[0]?.b2key}`}

@@ -9,7 +9,11 @@ const MangaCard = ({ cardInfo }: { cardInfo: MangaDetails | undefined }) => {
 
   return (
     <div className="carousel-item flex flex-col h-full w-40">
-      <Link onClick={() => setCurrentComic(cardInfo)} to="/manga">
+      <Link
+        onClick={() => setCurrentComic(cardInfo)}
+        to="/manga"
+        aria-label="Navigate to the selected manga"
+      >
         {cardInfo?.comic?.md_covers?.[0]?.b2key ? (
           <img
             src={`https://meo3.comick.pictures/${cardInfo?.comic?.md_covers?.[0]?.b2key}`}

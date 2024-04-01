@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const SearchButton = () => {
   return (
-    <Link to="/search/quick-search">
+    <Link to="/search/quick-search" aria-label="Naviage to the search page">
       <div className="absolute top-8 right-5 z-50 rounded-full w-fit p-2 bg-button-background brightness-150 text-lg md:top-3">
         <IoIosSearch />
       </div>

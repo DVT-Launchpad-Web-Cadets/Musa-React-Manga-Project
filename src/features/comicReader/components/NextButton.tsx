@@ -8,7 +8,11 @@ const NextButton = ({
   nextChapter: NeighborChapter | undefined;
 }) => {
   return (
-    <Link to={`/reader/${nextChapter?.hid}`} replace>
+    <Link
+      to={`/reader/${nextChapter?.hid}`}
+      replace
+      aria-label="Navigate to the next chater reader"
+    >
       <button className="btn w-16 h-16 btn-circle bg-secondary-color text-3xl">
         <IoIosSkipForward />
       </button>
