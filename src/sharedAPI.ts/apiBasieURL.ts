@@ -1,1 +1,1 @@
-export default "https://api.comick.io";
+export default "https://api.comick.fun";
